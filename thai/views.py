@@ -1,26 +1,17 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, reverse
 from .models import Meal, Home, Desert
 
 
 def home_view(request):
-    home_objects = Home.objects.all()
-    context = {
-        'home_objects': home_objects
-    }
-    return render(request, "index.html", context)
+    template = "thai/index.html"
+    return render(request, template)
 
 
 def meal_view(request):
-    meal_objects = Meal.objects.all()
-    context = {
-        'meal_objects': meal_objects
-    }
-    return render(request, "meal.html", context)
+    template = "thai/meal.html"
+    return render(request, template)
 
 
 def desert_view(request):
-    desert_objects = Desert.objects.all()
-    context = {
-        'desert_objects': desert_objects
-    }
-    return render(request, "desert.html", context)
+    template = "thai/desert.html"
+    return render(request, template)
