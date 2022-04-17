@@ -9,9 +9,17 @@ def home_view(request):
 
 def meal_view(request):
     template = "thai/meal.html"
-    return render(request, template)
+    meal_objects = Meal.objects.all()
+    context = {
+        'meal_objects': meal_objects
+    }
+    return render(request, template, context)
 
 
 def desert_view(request):
     template = "thai/desert.html"
-    return render(request, template)
+    desert_objects = Desert.objects.all()
+    context = {
+        'desert_objects': desert_objects
+    }
+    return render(request, template, context)
