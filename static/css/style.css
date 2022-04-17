@@ -33,6 +33,13 @@ body {
     z-index: -1;
 }
 
+.thai-food1 {
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    z-index: 10;
+}
+
 h1 {
     font-family: 'Beau Rivage', cursive;
     position: absolute;
