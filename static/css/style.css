@@ -1,0 +1,44 @@
+.navbar {
+    background-color: black;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.nav-link {
+    color: rgb(185, 14, 14);
+}
+
+.home {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Beau Rivage', cursive;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    font-size: 7rem;
+    font-weight: 600;
+    color: rgb(185, 14, 14);
+    z-index: 10;
+}
+
+h2 {
+    font-family: 'Beau Rivage', cursive;
+    padding-left: 10rem;
+    color: rgb(1, 209, 209);
+    font-size: 4rem;
+}
