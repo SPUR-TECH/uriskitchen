@@ -2,7 +2,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    min-height: 100%;
 }
 
 .row {
@@ -13,15 +12,38 @@ body {
     background-color: black;
 }
 
-.home-page {
-    background-image: linear-gradient(rgb(77, 77, 77), black);
-    height: 100vh;
+.color-overlay {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
     position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.home-background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -10;
 }
 
 .slate-background {
-    padding-top: 6rem;
+    margin-top: 200px;
     height: 35rem;
     width: 45rem;
     overflow: hidden;
@@ -30,46 +52,45 @@ body {
 
 .slate-container {
     margin-top: 8rem;
+
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 
-.slate-container span h4 {
+.slate-container h3 {
     font-family: 'Beau Rivage', cursive;
     font-size: 5rem;
     font-weight: 500;
     color: rgb(185, 14, 14);
-    margin-left: -20px;
+    position: absolute;
+    margin-top: 200px;
+
+}
+
+.slate-container h4 {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 300px;
 }
 
 h1 {
     font-family: 'Beau Rivage', cursive;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    padding-top: 2rem;
-    padding-left: 5rem;
     font-size: 5rem;
     font-weight: 500;
     color: rgb(185, 14, 14);
-
+    position: absolute;
+    left: 10px;
 }
 
 h2 {
     font-family: 'Beau Rivage', cursive;
     position: absolute;
-    top: 170px;
-    left: 130px;
-    color: rgb(0, 145, 145);
-    font-size: 3rem;
-
-}
-
-h3 {
-    font-family: 'Beau Rivage', cursive;
+    top: 80px;
+    right: 600px;
     color: rgb(0, 145, 145);
     font-size: 3rem;
 }
