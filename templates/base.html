@@ -28,12 +28,12 @@
         </a>
 
         <!-- Links -->
-        <ul class="navbar-nav" class="col-sm-12">
+        <ul class="navbar-nav " class="col-sm-12">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'home_view' %}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'meal_view' %}">MEALS</a>
+                <a class="nav-link " href="{% url 'meal_view' %}">MEALS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="{% url 'desert_view' %}">DESERTS</a>
@@ -41,14 +41,9 @@
         </ul>
     </nav>
 
-
-
-
     {% block content %}
     <!-- Content Goes here -->
     {% endblock content %}
-
-
 
 </body>
 

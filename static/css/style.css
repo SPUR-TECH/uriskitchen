@@ -12,23 +12,23 @@ body {
     background-color: black;
 }
 
-.color-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: .7;
-}
-
 .container {
+    height: 100%;
     width: 100%;
-    height: 100vh;
     position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding-left: 0px;
     margin: 0px;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .7;
 }
 
 .home-background {
@@ -45,19 +45,16 @@ body {
 .slate-background {
     margin-top: 200px;
     height: 35rem;
-    width: 45rem;
+    width: 35rem;
     overflow: hidden;
     border-radius: 5px;
 }
 
 .slate-container {
-    margin-top: 8rem;
-
-    padding-bottom: 2rem;
+    margin-bottom: 0px;
     display: flex;
     justify-content: center;
 }
-
 
 .slate-container h3 {
     font-family: 'Beau Rivage', cursive;
@@ -65,8 +62,7 @@ body {
     font-weight: 500;
     color: rgb(185, 14, 14);
     position: absolute;
-    margin-top: 200px;
-
+    margin-top: 230px;
 }
 
 .slate-container h4 {
@@ -74,7 +70,7 @@ body {
     color: rgb(0, 145, 145);
     font-size: 3rem;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 340px;
 }
 
 h1 {
@@ -83,14 +79,15 @@ h1 {
     font-weight: 500;
     color: rgb(185, 14, 14);
     position: absolute;
-    left: 10px;
+    left: 40px;
+    top: 100px;
 }
 
 h2 {
     font-family: 'Beau Rivage', cursive;
     position: absolute;
-    top: 80px;
-    right: 600px;
+    top: 180px;
+    left: 200px;
     color: rgb(0, 145, 145);
     font-size: 3rem;
 }
