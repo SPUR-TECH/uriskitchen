@@ -91,3 +91,25 @@ h2 {
     color: rgb(0, 145, 145);
     font-size: 3rem;
 }
+
+b {
+    color: rgb(160, 5, 5);
+}
+
+/* Footer styling */
+
+.footer {
+    width: 100%;
+    margin-top: 35px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+.copyright {
+    color: rgb(0, 0, 0);
+    background-color: rgba(131, 131, 131, 0.9);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
+}
