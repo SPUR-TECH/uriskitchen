@@ -43,9 +43,9 @@ body {
 }
 
 .slate-background {
-    margin-top: 200px;
+    margin-top: 180px;
     height: 35rem;
-    width: 35rem;
+    width: 55rem;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -70,8 +70,9 @@ body {
     color: rgb(0, 145, 145);
     font-size: 3rem;
     position: absolute;
-    margin-top: 340px;
+    margin-top: 310px;
 }
+
 
 h1 {
     font-family: 'Beau Rivage', cursive;
@@ -86,7 +87,7 @@ h1 {
 h2 {
     font-family: 'Beau Rivage', cursive;
     position: absolute;
-    top: 180px;
+    top: 150px;
     left: 200px;
     color: rgb(0, 145, 145);
     font-size: 3rem;
@@ -112,4 +113,83 @@ b {
     padding: 10px;
     margin: 0;
     font-size: 1.5rem;
+}
+
+@media all and (max-width: 1000px) {
+    .slate-background {
+        height: 35rem;
+        width: 35rem;
+    }
+
+    .slate-container h3 {
+        font-size: 3rem;
+        margin-top: 200px;
+    }
+
+    .slate-container h4 {
+        margin-top: 250px;
+        font-size: 2rem;
+    }
+
+    .slate-container h5 {
+        margin-top: 250px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        left: 40px;
+        top: 100px;
+    }
+
+    h2 {
+        top: 140px;
+        left: 150px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .slate-background {
+        height: 35rem;
+        width: 25rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        left: 40px;
+        top: 150px;
+    }
+
+    h2 {
+        top: 180px;
+        left: 150px;
+        font-size: 2rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .slate-background {
+        height: 30rem;
+        width: 25rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        top: 200px;
+        left: 60px;
+        font-size: 1.7rem;
+    }
+
+    .footer {
+        margin-top: 130px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+    }
+
+    .copyright {
+        padding: 10px;
+        font-size: .8rem;
+    }
 }
