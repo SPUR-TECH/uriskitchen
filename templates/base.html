@@ -32,13 +32,16 @@
         <!-- Links -->
         <ul class="navbar-nav " class="col-sm-12">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'home_view' %}">HOME</a>
+                <a class="nav-link {% if active_link == 'index' %}active{% endif %}" aria-current="page"
+                    href="{% url 'home_view' %}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="{% url 'meal_view' %}">MEALS</a>
+                <a class="nav-link {% if active_link == 'meal' %}active{% endif %}"
+                    href="{% url 'meal_view' %}">MEALS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="{% url 'desert_view' %}">DESERTS</a>
+                <a class="nav-link {% if active_link == 'desert' %}active{% endif %}"
+                    href="{% url 'desert_view' %}">DESERTS</a>
             </li>
         </ul>
     </nav>

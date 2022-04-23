@@ -2,11 +2,58 @@
 
 {% block content %}
 
-<div>
-    <h1>This is the Deserts page</h1>
+<div class="container"></div>
+<div class="color-overlay"></div>
+
+<img class="desert-background" src="static/images/desert-background.jpg" class="img-responsive"
+    alt="desert page thai food image">
+
+<div class="container-fluid">
+    <img class="slate-desert-background" src="static/images/slate-background.jpg" class="img-responsive"
+        alt="Slate image">
+
+    <div class="row text-center">
+        <div class="col-md-8">
+
+            <h6 class="title">Thai deserts</h6>
+            <h4 class="title2">Menu</h4>
+            <div class="row">
+                {% for desert in desert_objects %}
+                <div class="col-md-6">
+                    <h5 class="item-title">{{ desert.title }}</h5>
+
+                    <img class="desert-images" src="{{ desert.featured_image }}" alt="">
+
+                    <h5 class="item-description">{{ desert.description }}</h5>
+
+                    <div class="form-check-inline">
+                        <label class=" form-check-label">
+                            <input class="form-check-input" type="radio" checked>
+                            {{ desert.price_Medium }}
+                        </label>
+                    </div>
+
+                    <div class="form-check-inline">
+                        <label class=" form-check-label">
+                            <input class="form-check-input" type="radio" checked>
+                            {{ desert.price_Large }}
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn-info mt-3">Add To Cart</button>
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
 </div>
-{% for desert in desert_objects %}
-{{desert}}
-{% endfor %}
+
 
 {% endblock %}
