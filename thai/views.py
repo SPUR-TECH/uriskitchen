@@ -11,8 +11,8 @@ def meal_view(request):
     template = "thai/meal.html"
     meal_objects = Meal.objects.all()
     context = {
-        'meal_objects': meal_objects
-    }
+        'meal_objects': meal_objects}
+    print(meal_objects)
     return render(request, template, context)
 
 
@@ -20,6 +20,5 @@ def desert_view(request):
     template = "thai/desert.html"
     desert_objects = Desert.objects.all()
     context = {
-        'desert_objects': desert_objects
-    }
+        'desert_objects': desert_objects}
     return render(request, template, context)

@@ -4,12 +4,15 @@
 
 <div class="container"></div>
 <div class="color-overlay"></div>
-<img class="meal-background" src="static/images/meal-background-1.png" class="img-responsive" alt="thai food image">
+<img class="meal-background" src="static/images/meal-background.jpg" class="img-responsive"
+    alt="Meal page thai food image">
 <div>
     <h1>This is the Meals page</h1>
 </div>
 {% for meal in meal_objects %}
-<p>{{meal}}</p>
+
+<p>{{ meal }}</p>
+
 {% endfor %}
 
 {% endblock %}
