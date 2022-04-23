@@ -12,20 +12,37 @@
     <img class="slate-meal-background" src="static/images/slate-background.jpg" class="img-responsive"
         alt="Slate image">
 
-    <h6 class="title">Thai Meals</h6>
-    <p class="title2">Menu</p>
-    <div class="row">
+    <div class="row text-center">
         <div class="col-md-8">
+
+            <h6 class="title">Thai Meals</h6>
+            <h4 class="title2">Menu</h4>
             <div class="row">
                 {% for meal in meal_objects %}
                 <div class="col-md-6">
+                    <h5 class="item-title">{{ meal.title }}</h5>
 
-                    <h5>Meal name: {{ meal.title }}, <br>
-                        Description: {{ meal.description }}, <br>
-                        Price
-                        Medium:
-                        £{{ meal.price_Medium }}, <br>
-                        Price Medium: £{{ meal.price_Large }}</h5>
+                    <img class="meal-images" src="{{ meal.featured_image }}" alt="">
+
+                    <h5 class="item-description">{{ meal.description }}</h5>
+
+                    <div class="form-check-inline">
+                        <label class=" form-check-label">
+                            <input class="form-check-input" type="radio" checked>
+                            {{ meal.price_Medium }}
+                        </label>
+                    </div>
+
+                    <div class="form-check-inline">
+                        <label class=" form-check-label">
+                            <input class="form-check-input" type="radio" checked>
+                            {{ meal.price_Large }}
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn-info mt-3">Add To Cart</button>
+                    </div>
+
                 </div>
 
                 {% endfor %}
