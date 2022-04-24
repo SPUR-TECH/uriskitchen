@@ -4,13 +4,35 @@ body {
     box-sizing: border-box;
 }
 
-#overlay {
+#overlay-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/images/uris-kitchen-home.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+#overlay-meal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/images/meal-background.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+#overlay-desert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/images/desert-background.jpg");
     background-size: cover;
     z-index: -1;
 }
