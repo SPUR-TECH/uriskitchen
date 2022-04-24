@@ -209,7 +209,7 @@ b {
 .desert-background {
     width: 100%;
     height: 100vh;
-    background-image: url("../images/desert-background.jpg");
+    background-image: url("/static/images/desert-background.jpg");
     position: fixed;
     top: 0;
     left: 0;
@@ -217,6 +217,12 @@ b {
     background-position: center, center;
     background-repeat: no-repeat;
     z-index: -10;
+}
+
+.desert-images {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 @media all and (max-width: 1000px) {
