@@ -102,6 +102,25 @@ b {
     color: rgb(100, 184, 61);
 }
 
+.instruction-blue {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 50px;
+}
+
+.instruction-red {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(185, 14, 14);
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 500px;
+}
+
 /* Footer styling */
 
 .footer {
@@ -149,6 +168,7 @@ b {
     color: rgb(0, 145, 145);
     font-size: 3rem;
     margin: 0px;
+    padding-left: 20px;
     z-index: 100;
 }
 
@@ -202,7 +222,8 @@ b {
 @media all and (max-width: 1000px) {
     .slate-background {
         height: 35rem;
-        width: 35rem;
+        width: 70%;
+        margin-left: 0px;
     }
 
     .slate-container h3 {
@@ -217,6 +238,18 @@ b {
 
     .slate-container h5 {
         margin-top: 250px;
+    }
+
+    .instruction-blue {
+        font-size: 2rem;
+        margin-top: 190px;
+        margin-left: 50px;
+    }
+
+    .instruction-red {
+        font-size: 2rem;
+        margin-top: 440px;
+        margin-left: 340px;
     }
 
     h1 {
@@ -240,7 +273,6 @@ b {
 
     .slate-meal-background {
         height: 1100px;
-        width: 60%;
     }
 
     .meal-images {
@@ -269,6 +301,7 @@ b {
 @media all and (max-width: 770px) {
     .slate-meal-background {
         height: 2150px;
+        width: 70%;
     }
 }
 
@@ -276,6 +309,18 @@ b {
     .slate-background {
         height: 35rem;
         width: 25rem;
+    }
+
+    .instruction-blue {
+        font-size: 1.5rem;
+        margin-top: 140px;
+        padding-right: 30px;
+    }
+
+    .instruction-red {
+        font-size: 1.5rem;
+        margin-top: 400px;
+        margin-left: 140px;
     }
 
     h1 {
