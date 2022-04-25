@@ -1,1 +1,1 @@
-web: gunicorn uriskitchen.wsgi
+web: gunicorn uriskitchen.wsgi:application
