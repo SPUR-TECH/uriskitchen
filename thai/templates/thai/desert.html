@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% block title %}Deserts{% endblock %}
 {% load static %}
 
 
 <div id="overlay-desert"></div>
 <div class="container-fluid">
-    <div class="slate-meal-background"></div>
+    <div class="slate-desert-background"></div>
 
     <div class="row text-center">
-        <div class="col-md-8 ml-4">
+        <div class="col-md-8">
 
             <h6 class="title">Thai deserts</h6>
             <h4 class="title2">Menu</h4>
@@ -17,8 +18,6 @@
                 {% for desert in desert_objects %}
                 <div class="col-md-6">
                     <h5 class="item-title">{{ desert.title }}</h5>
-
-                    ﻿<img class="desert-images" src="{{ desert.featured_image.url }}" alt="">
 
                     <h5 class="item-description">{{ desert.description }}</h5>
 

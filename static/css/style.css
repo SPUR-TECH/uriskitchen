@@ -211,10 +211,10 @@ b {
 
 .slate-meal-background {
     background: linear-gradient(rgba(73, 73, 73, 0.8), rgba(0, 0, 0, 0.8));
-    height: 1400px;
+    height: 1200px;
     width: 65%;
     position: absolute;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 200px;
     overflow: hidden;
     border-radius: 15px;
@@ -241,6 +241,19 @@ b {
     background-position: center, center;
     background-repeat: no-repeat;
     z-index: -10;
+}
+
+.slate-desert-background {
+    background: linear-gradient(rgba(73, 73, 73, 0.8), rgba(0, 0, 0, 0.8));
+    height: 800px;
+    width: 65%;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .desert-images {
@@ -293,22 +306,37 @@ b {
         left: 150px;
     }
 
+    /* Meal page */
+
+    .slate-meal-background {
+        margin-left: 0px;
+    }
+
     .meal-images {
         width: 200px;
         height: 100px;
     }
 
+    /* Desert page */
+
+    .slate-desert-background {
+        margin-left: 0px;
+        height: 900px;
+    }
+
     .desert-images {
         width: 150px;
         height: 100px;
-
     }
 }
 
 @media all and (max-width: 850px) {
 
+    /* Meal page */
+
     .slate-meal-background {
         height: 1100px;
+        margin-left: 0px;
     }
 
     .meal-images {
@@ -328,16 +356,31 @@ b {
     }
 
     .title2 {
-
         font-size: 2rem;
         z-index: 10;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        height: 900px;
     }
 }
 
 @media all and (max-width: 770px) {
+
+    /* Meal page */
+
     .slate-meal-background {
-        height: 2150px;
-        width: 70%;
+        height: 1900px;
+        width: 95%;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        width: 95%;
+        height: 1400px;
     }
 }
 
@@ -373,9 +416,26 @@ b {
 }
 
 @media all and (max-width: 400px) {
+
+    /* Home page */
+
     .slate-background {
         height: 30rem;
         width: 25rem;
+    }
+
+    /* Meal page */
+
+    .slate-meal-background {
+        height: 1900px;
+        width: 90%;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        width: 90%;
+        height: 1300px;
     }
 
     h1 {
@@ -386,6 +446,14 @@ b {
         top: 200px;
         left: 60px;
         font-size: 1.7rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .item-description {
+        margin: 0px;
     }
 
     .footer {
