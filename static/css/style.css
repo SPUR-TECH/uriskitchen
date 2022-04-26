@@ -382,6 +382,17 @@ b {
         width: 95%;
         height: 1900px;
     }
+
+    .instruction-blue {
+        font-size: 1.5rem;
+        margin-top: 140px;
+        padding-right: 30px;
+    }
+
+    .instruction-red {
+
+        margin-left: 180px;
+    }
 }
 
 @media all and (max-width: 580px) {
@@ -393,11 +404,10 @@ b {
     .instruction-blue {
         font-size: 1.5rem;
         margin-top: 140px;
-        padding-right: 30px;
+        padding-right: 100px;
     }
 
     .instruction-red {
-        font-size: 1.5rem;
         margin-top: 400px;
         margin-left: 140px;
     }
@@ -422,6 +432,10 @@ b {
     .slate-background {
         height: 30rem;
         width: 25rem;
+    }
+
+    .instruction-blue {
+        padding-right: 40px;
     }
 
     /* Meal page */
