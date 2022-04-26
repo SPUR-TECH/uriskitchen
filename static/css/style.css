@@ -10,7 +10,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/media/images/uris-kitchen-home.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -21,7 +21,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/media/images/meal-background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002374/static/media/images/meals-background_isqaio.png");
     background-size: cover;
     z-index: -1;
 }
@@ -32,7 +32,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/static/media/images/desert-background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002269/static/media/images/desert-background_dkdjbh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -196,19 +196,6 @@ b {
     margin-left: 30px;
 }
 
-.meal-background {
-    width: 100%;
-    height: 100vh;
-    background-image: url("/static/media/images/meal-background.jpg");
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center, center;
-    background-repeat: no-repeat;
-    z-index: -10;
-}
-
 .slate-meal-background {
     background: linear-gradient(rgba(73, 73, 73, 0.8), rgba(0, 0, 0, 0.8));
     height: 1200px;
@@ -229,19 +216,6 @@ b {
 }
 
 /* Desert page */
-
-.desert-background {
-    width: 100%;
-    height: 100vh;
-    background-image: url("/static/media/images/desert-background.jpg");
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center, center;
-    background-repeat: no-repeat;
-    z-index: -10;
-}
 
 .slate-desert-background {
     background: linear-gradient(rgba(73, 73, 73, 0.8), rgba(0, 0, 0, 0.8));
