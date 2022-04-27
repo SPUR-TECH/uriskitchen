@@ -27,14 +27,16 @@
 
                     <div class="form-check-inline color-info ">
                         <label class=" form-check-label">
-                            <input class="form-check-input" type="radio" name="meal{{ meal.id }}" checked>
+                            <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
+                                value="{{ meal.price_Medium }}" checked>
                             <p class="price">( M ) £{{ meal.price_Medium }}</p>
                         </label>
                     </div>
 
                     <div class="form-check-inline">
                         <label class=" form-check-label">
-                            <input class="form-check-input" type="radio" name="meal{{ meal.id }}">
+                            <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
+                                value="{{ meal.price_Large }}">
                             <p class="price">( L ) £{{ meal.price_Large }}</p>
                         </label>
                     </div>
