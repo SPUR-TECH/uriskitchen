@@ -90,13 +90,6 @@ body {
     margin-top: 290px;
 }
 
-h5 {
-    margin-top: 50px;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    font-size: 1.5rem;
-}
-
 h1 {
     font-family: 'Beau Rivage', cursive;
     font-size: 5rem;
@@ -116,12 +109,42 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(185, 14, 14);
+    font-size: 3rem;
+}
+
+h4 {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2rem;
+}
+
+h5 {
+    margin-top: 50px;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 1.5rem;
+}
+
 b {
     color: rgb(160, 5, 5);
 }
 
 .price {
     color: rgb(100, 184, 61);
+}
+
+.order {
+    position: relative;
+    top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 35rem;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .instruction-blue {
@@ -194,12 +217,13 @@ b {
 
 .item-description {
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 .slate-meal-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
     height: 1200px;
-    width: 65%;
+    width: 62%;
     position: absolute;
     margin-left: 40px;
     margin-top: 200px;
@@ -243,234 +267,239 @@ b {
 
     }
 
-    @media all and (max-width: 1000px) {
-        .slate-background {
-            height: 35rem;
-            width: 70%;
-            margin-left: 0px;
-        }
+    .slate-meal-background {
+        width: 60%;
+    }
+}
 
-        .slate-container h3 {
-            font-size: 3rem;
-            margin-top: 200px;
-        }
-
-        .slate-container h4 {
-            margin-top: 250px;
-            font-size: 2rem;
-        }
-
-        .slate-container h5 {
-            margin-top: 250px;
-        }
-
-        .instruction-blue {
-            font-size: 2rem;
-            margin-top: 190px;
-            margin-left: 50px;
-        }
-
-        .instruction-red {
-            font-size: 2rem;
-            margin-top: 440px;
-            margin-left: 340px;
-        }
-
-        h1 {
-            font-size: 4rem;
-            left: 40px;
-            top: 100px;
-        }
-
-        h2 {
-            top: 140px;
-            left: 150px;
-        }
-
-        /* Meal page */
-
-        .slate-meal-background {
-            margin-left: 0px;
-        }
-
-        .meal-images {
-            width: 200px;
-            height: 100px;
-        }
-
-        /* Desert page */
-
-        .slate-desert-background {
-            margin-left: 0px;
-            height: 1100px;
-        }
-
-        .desert-images {
-            width: 150px;
-            height: 100px;
-        }
+@media all and (max-width: 1000px) {
+    .slate-background {
+        height: 35rem;
+        width: 70%;
+        margin-left: 0px;
     }
 
-    @media all and (max-width: 850px) {
-
-        /* Meal page */
-
-        .slate-meal-background {
-            height: 1200px;
-            margin-left: 0px;
-        }
-
-        .meal-images {
-            width: 150px;
-            height: 100px;
-        }
-
-        .title {
-            margin-top: 30px;
-            font-size: 4rem;
-        }
-
-        .item-title {
-
-            font-size: 2.5rem;
-            margin-top: 80px;
-        }
-
-        .title2 {
-            font-size: 2rem;
-            z-index: 10;
-        }
-
-        /* Desert page */
-
-        .slate-desert-background {
-            height: 1200px;
-        }
+    .slate-container h3 {
+        font-size: 3rem;
+        margin-top: 200px;
     }
 
-    @media all and (max-width: 766px) {
-
-        /* Meal page */
-
-        .slate-meal-background {
-            height: 1900px;
-            width: 95%;
-        }
-
-        /* Desert page */
-
-        .slate-desert-background {
-            width: 95%;
-            height: 1900px;
-        }
-
-        .instruction-blue {
-            font-size: 1.5rem;
-            margin-top: 140px;
-            padding-right: 30px;
-        }
-
-        .instruction-red {
-
-            margin-left: 180px;
-        }
+    .slate-container h4 {
+        margin-top: 250px;
+        font-size: 2rem;
     }
 
-    @media all and (max-width: 580px) {
-        .slate-background {
-            height: 35rem;
-            width: 25rem;
-        }
-
-        .instruction-blue {
-            font-size: 1.5rem;
-            margin-top: 140px;
-            padding-right: 100px;
-        }
-
-        .instruction-red {
-            margin-top: 400px;
-            margin-left: 140px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            left: 40px;
-            top: 150px;
-        }
-
-        h2 {
-            top: 180px;
-            left: 150px;
-            font-size: 2rem;
-        }
-
-        /* Meal page */
-
-        .slate-meal-background {
-            height: 2000px;
-        }
+    .slate-container h5 {
+        margin-top: 250px;
     }
 
-    @media all and (max-width: 400px) {
-
-        /* Home page */
-
-        .slate-background {
-            height: 35rem;
-            width: 25rem;
-            border-radius: 0px;
-        }
-
-        .instruction-red {
-            margin-top: 460px;
-            margin-left: 100px;
-        }
-
-        .instruction-blue {
-            padding-right: 40px;
-        }
-
-        /* Meal page */
-
-        .slate-meal-background {
-            height: 2000px;
-            width: 90%;
-        }
-
-        /* Desert page */
-
-        .slate-desert-background {
-            width: 90%;
-            height: 1800px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        h2 {
-            top: 200px;
-            left: 60px;
-            font-size: 1.7rem;
-        }
-
-        .title {
-            font-size: 3rem;
-        }
-
-        .item-description {
-            margin: 0px;
-        }
-
-        .footer {
-            margin-top: 380px;
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-        }
-
-        .copyright {
-            padding: 10px;
-            font-size: .8rem;
-        }
+    .instruction-blue {
+        font-size: 2rem;
+        margin-top: 190px;
+        margin-left: 50px;
     }
+
+    .instruction-red {
+        font-size: 2rem;
+        margin-top: 440px;
+        margin-left: 340px;
+    }
+
+    h1 {
+        font-size: 4rem;
+        left: 40px;
+        top: 100px;
+    }
+
+    h2 {
+        top: 140px;
+        left: 150px;
+    }
+
+    /* Meal page */
+
+    .slate-meal-background {
+        margin-left: 0px;
+    }
+
+    .meal-images {
+        width: 200px;
+        height: 100px;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        margin-left: 0px;
+        height: 1100px;
+    }
+
+    .desert-images {
+        width: 150px;
+        height: 100px;
+    }
+}
+
+@media all and (max-width: 850px) {
+
+    /* Meal page */
+
+    .slate-meal-background {
+        height: 1200px;
+        margin-left: 0px;
+    }
+
+    .meal-images {
+        width: 150px;
+        height: 100px;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-size: 4rem;
+    }
+
+    .item-title {
+
+        font-size: 2.5rem;
+        margin-top: 80px;
+    }
+
+    .title2 {
+        font-size: 2rem;
+        z-index: 10;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        height: 1200px;
+    }
+}
+
+@media all and (max-width: 766px) {
+
+    /* Meal page */
+
+    .slate-meal-background {
+        height: 1900px;
+        width: 95%;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        width: 95%;
+        height: 1900px;
+    }
+
+    .instruction-blue {
+        font-size: 1.5rem;
+        margin-top: 140px;
+        padding-right: 30px;
+    }
+
+    .instruction-red {
+
+        margin-left: 180px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .slate-background {
+        height: 35rem;
+        width: 25rem;
+    }
+
+    .instruction-blue {
+        font-size: 1.5rem;
+        margin-top: 140px;
+        padding-right: 100px;
+    }
+
+    .instruction-red {
+        margin-top: 400px;
+        margin-left: 140px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        left: 40px;
+        top: 150px;
+    }
+
+    h2 {
+        top: 180px;
+        left: 150px;
+        font-size: 2rem;
+    }
+
+    /* Meal page */
+
+    .slate-meal-background {
+        height: 2000px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    /* Home page */
+
+    .slate-background {
+        height: 35rem;
+        width: 25rem;
+        border-radius: 0px;
+    }
+
+    .instruction-red {
+        margin-top: 460px;
+        margin-left: 100px;
+    }
+
+    .instruction-blue {
+        padding-right: 40px;
+    }
+
+    /* Meal page */
+
+    .slate-meal-background {
+        height: 2000px;
+        width: 90%;
+    }
+
+    /* Desert page */
+
+    .slate-desert-background {
+        width: 90%;
+        height: 1800px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        top: 200px;
+        left: 60px;
+        font-size: 1.7rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .item-description {
+        margin: 0px;
+    }
+
+    .footer {
+        margin-top: 380px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+    }
+
+    .copyright {
+        padding: 10px;
+        font-size: .8rem;
+    }
+}
