@@ -9,4 +9,5 @@ if ('stepTime == null') {
         localStorage.clear();
         localStorage.setItem('stepTime', now);
     }
+
 }
