@@ -479,14 +479,14 @@ b {
     /* Home page */
 
     .slate-background {
-        height: 35rem;
+        height: 40rem;
         width: 25rem;
         border-radius: 0px;
     }
 
     .instruction-red {
-        margin-top: 470px;
-        margin-left: 150px;
+        margin-top: 520px;
+        margin-left: 120px;
     }
 
     .instruction-blue {
