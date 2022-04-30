@@ -1,15 +1,15 @@
-var hours = 24;
-var now = new Date().getTime();
-var stepTime = localStorage.getItem('stepTime');
+// var hours = 24;
+// var now = new Date().getTime();
+// var stepTime = sessionStorage.getItem('stepTime');
 
-if ('stepTime == null') {
-    localStorage.setItem('stepTime', now);
-} else {
-    if (now - stepTime > hours * 60 * 60 * 1000) {
-        localStorage.clear();
-        localStorage.setItem('stepTime', now);
-    }
-}
+// if ('stepTime == null') {
+//     sessionStorage.setItem('stepTime', now);
+// } else {
+//     if (now - stepTime > hours * 60 * 60 * 1000) {
+//         sessionStorage.clear();
+//         sessionStorage.setItem('stepTime', now);
+//     }
+// }
 
 var orders = JSON.parse(sessionStorage.getItem('order'));
 var total = sessionStorage.getItem('total');

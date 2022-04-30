@@ -140,6 +140,14 @@ b {
     font-size: 1.5rem;
 }
 
+#desertcart {
+    position: relative;
+    text-align: left;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 1.5rem;
+}
+
 .price {
     color: rgb(100, 184, 61);
 }

@@ -41,7 +41,7 @@
                         </label>
                     </div>
                     <div>
-                        <button class="btn-info mt-3">Add To Cart</button>
+                        <button class="btn-info mt-3" onclick="addDesert('{{ desert.id }}')">Add To Cart</button>
                     </div>
 
                 </div>
@@ -50,10 +50,10 @@
 
             </div>
         </div>
-        <div class="col-md-4 order">
+        <div class=" col-md-4 orders">
             <h3 class="text-center pt-3">Order List</h3>
-            <ul></ul>
-            <h4 class="text-left pl-5">Total:£ 0 </h4>
+            <ul id="desertcart"></ul>
+            <h4 class="text-right pr-5" id="deserttotal">Total:£ 0 </h4>
 
         </div>
     </div>
@@ -67,5 +67,9 @@
         </p>
     </div>
 </footer>
+
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/meal.js' %}"></script>
+<script src="{% static 'js/desert.js' %}"></script>
 
 {% endblock %}
