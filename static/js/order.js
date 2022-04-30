@@ -1,15 +1,12 @@
-var orders = JSON.parse(sessionStorage.getItem('order'));
-var total = sessionStorage.getItem('total');
+var mealcart = document.querySelector('#mealcart');
+var mealtotal = document.querySelector('#mealtotal');
 
-if (orders === null || orders === undefined) {
-    sessionStorage.setItem('orders', JSON.stringify([]));
-    orders = JSON.parse(sessionStorage.getItem('orders'));
+// add meals to order 
+
+function addMeal(mid) {
+
+    // Get name of meal
+
+    var name = document.querySelector('#mealname' + mid).innerHTML;
+    mealcart.innerHTML += '<li>' + name + '</li>';
 }
-
-if (total === null || total === undefined) {
-    sessionStorage.setItem('total', 0);
-    total = 0(sessionStorage.getItem('total'));
-}
-
-var cart = document.querySelector("#cart")
-cart.innerHTML = orders.length;

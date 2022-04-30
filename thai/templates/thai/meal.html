@@ -19,7 +19,7 @@
             <div class="row">
                 {% for meal in meal_objects %}
                 <div class="col-md-6">
-                    <h5 class="item-title pb-3" id="meal-name{{ meal.id }}">{{ meal.title }}</h5>
+                    <h5 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h5>
 
                     ﻿<img class="meal-images" src="{{ meal.featured_image.url }}" alt="">
 
@@ -41,7 +41,7 @@
                         </label>
                     </div>
                     <div>
-                        <button class="btn-info mt-3">Add To Cart</button>
+                        <button class="btn-info mt-3" onclick="addMeal('{{ meal.id }}')">Add To Cart</button>
                     </div>
 
                 </div>
@@ -50,11 +50,12 @@
 
             </div>
         </div>
-        <div class="col-md-4 order">
-            <h3 class="text-center pt-3">Order List</h3>
-            <ul></ul>
-            <h4 class="text-right pr-5">Total:£ 0 </h4>
-
+        <div class="col-md-4 orders">
+            <div>
+                <h3 class="text-center pt-3">Order List</h3>
+                <ul id="mealcart"></ul>
+                <h4 class="text-right mt-5 pr-5" id="mealtotal">Total: £ 0 </h4>
+            </div>
         </div>
     </div>
 </div>
@@ -67,5 +68,7 @@
         </p>
     </div>
 </footer>
+
+<script src="{% static 'js/order.js' %}"></script>
 
 {% endblock %}
