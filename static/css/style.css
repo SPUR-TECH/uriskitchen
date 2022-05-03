@@ -444,6 +444,7 @@ b {
     .slate-background {
         height: 35rem;
         width: 25rem;
+        margin-top: 100px;
     }
 
     .instruction-blue {
@@ -458,15 +459,27 @@ b {
     }
 
     h1 {
-        font-size: 2.6rem;
-        left: 10px;
-        top: 150px;
+        position: relative;
+        font-size: 3rem;
+        left: 30px;
+        width: 80%;
+        top: 30px;
     }
 
     h2 {
-        top: 180px;
-        left: 50px;
-        font-size: 2rem;
+        position: relative;
+        left: 90px;
+        top: -10px;
+        font-size: 2.5rem;
+        width: 80%;
+    }
+
+    .slate-container h3 {
+        margin-top: 110px;
+    }
+
+    .slate-container h4 {
+        margin-top: 160px;
     }
 
     /* Meal page */
@@ -515,12 +528,13 @@ b {
 
     h1 {
         font-size: 2.3rem;
+        left: 20px;
     }
 
     h2 {
-        top: 175px;
-        left: 50px;
         font-size: 1.7rem;
+        top: 0px;
+        left: 60px;
     }
 
     .title {
