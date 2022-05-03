@@ -19,7 +19,7 @@
             <div class="row">
                 {% for desert in desert_objects %}
                 <div class="col-md-6">
-                    <h5 class="item-title" desert-name{{ desert.id }}>{{ desert.title }}</h5>
+                    <h5 class="item-title" id="desertname{{ desert.id }}">{{ desert.title }}</h5>
 
                     ﻿<img class="desert-images" src="{{ desert.featured_image.url }}" alt="">
 
@@ -68,8 +68,6 @@
     </div>
 </footer>
 
-<script src="{% static 'js/script.js' %}"></script>
-<script src="{% static 'js/meal.js' %}"></script>
 <script src="{% static 'js/desert.js' %}"></script>
 
 {% endblock %}

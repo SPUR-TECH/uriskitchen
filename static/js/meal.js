@@ -26,7 +26,7 @@ function addMeal(mealid) {
     var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
-    // Save items in local storage so it will delete when user leaves the site
+    // Save items in local storage
 
     orders[cartSize] = [name, size, price];
     localStorage.setItem('orders', JSON.stringify(orders));
@@ -39,22 +39,31 @@ function addMeal(mealid) {
     var cart = document.querySelector("#cart")
     cart.innerHTML = orders.length;
 
-    var mealcart = document.querySelector('#mealcart');
-
+    remove = '<button <button class="del" onclick="removeMeal(' + cartSize + ')">X</button>';
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
-    mealcart.innerHTML += '<li>' + size + ' :   ' + name + ' £' + price + '</li>';
+    mealcart.innerHTML += '<li>' + size + ' : ' + name + ' £' + price + ' ' + remove + '</li>';
 }
 
 function mealshoppingCart() {
     var orders = JSON.parse(localStorage.getItem('orders'));
     var total = localStorage.getItem('total');
     var cartSize = orders.length;
-
     mealcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        mealcart.innerHTML += '<li>' + orders[i][0] + ' :   ' + orders[i][1] + ' £' + orders[i][2] + '</li>';
+        remove = '<button <button class="del" onclick="removeMeal(' + i + ')">X</button>';
+        mealcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
 }
 
 mealshoppingCart();
+
+function removeMeal(n) {
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
+    total = Number(total) - Number(orders[n][2]);
+    orders.splice(n, 1);
+    localStorage.setItem('orders', JSON.stringify(orders));
+    localStorage.setItem('total', total);
+    mealshoppingCart();
+}

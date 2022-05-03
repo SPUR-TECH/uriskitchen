@@ -22,17 +22,17 @@ function addDesert(desertid) {
         size = 'L'
     }
 
-    var orders = JSON.parse(sessionStorage.getItem('orders'));
-    var total = sessionStorage.getItem('total');
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
-    // Save items in session storage so it will delete when user leaves the site
+    // Save items in local storage so it will delete when user leaves the site
 
     orders[cartSize] = [name, size, price];
-    sessionStorage.setItem('orders', JSON.stringify(orders));
+    localStorage.setItem('orders', JSON.stringify(orders));
 
     total = Number(total) + Number(price);
-    sessionStorage.setItem('total', total);
+    localStorage.setItem('total', total);
 
     // Update items in cart
 
@@ -41,20 +41,32 @@ function addDesert(desertid) {
 
     var desertcart = document.querySelector('#desertcart');
 
+    remove = '<button <button class="del" onclick="removeDesert(' + cartSize + ')">X</button>';
     deserttotal.innerHTML = 'Total:  £' + total + ' ';
-    desertcart.innerHTML += '<li>' + size + ' :   ' + name + ' £' + price + '</li>';
+    desertcart.innerHTML += '<li>' + size + ' :   ' + name + ' £' + price + ' ' + remove + '</li>';
 }
 
 function desertshoppingCart() {
-    var orders = JSON.parse(sessionStorage.getItem('orders'));
-    var total = sessionStorage.getItem('total');
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
     desertcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        desertcart.innerHTML += '<li>' + orders[i][0] + ' :   ' + orders[i][1] + ' £' + orders[i][2] + '</li>';
+        remove = '<button <button class="del" onclick="removeDesert(' + i + ')">X</button>';
+        desertcart.innerHTML += '<li>' + orders[i][0] + ' :   ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     deserttotal.innerHTML = 'Total:  £' + total + ' ';
 }
 
 desertshoppingCart();
+
+function removeDesert(n) {
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
+    total = Number(total) - Number(orders[n][2]);
+    orders.splice(n, 1);
+    localStorage.setItem('orders', JSON.stringify(orders));
+    localStorage.setItem('total', total);
+    desertshoppingCart();
+}
