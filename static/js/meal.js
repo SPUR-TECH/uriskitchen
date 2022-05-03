@@ -22,17 +22,17 @@ function addMeal(mealid) {
         size = 'L'
     }
 
-    var orders = JSON.parse(sessionStorage.getItem('orders'));
-    var total = sessionStorage.getItem('total');
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
-    // Save items in session storage so it will delete when user leaves the site
+    // Save items in local storage so it will delete when user leaves the site
 
     orders[cartSize] = [name, size, price];
-    sessionStorage.setItem('orders', JSON.stringify(orders));
+    localStorage.setItem('orders', JSON.stringify(orders));
 
     total = Number(total) + Number(price);
-    sessionStorage.setItem('total', total);
+    localStorage.setItem('total', total);
 
     // Update items in cart
 
@@ -46,8 +46,8 @@ function addMeal(mealid) {
 }
 
 function mealshoppingCart() {
-    var orders = JSON.parse(sessionStorage.getItem('orders'));
-    var total = sessionStorage.getItem('total');
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
     mealcart.innerHTML = '';
