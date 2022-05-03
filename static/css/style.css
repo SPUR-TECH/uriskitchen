@@ -125,7 +125,7 @@ h5 {
     margin-top: 50px;
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 b {
@@ -175,10 +175,10 @@ b {
 .instruction-red {
     font-family: 'Beau Rivage', cursive;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(185, 14, 14);
     position: absolute;
-    margin-top: 460px;
+    margin-top: 490px;
     margin-left: 570px;
 }
 
@@ -238,7 +238,7 @@ b {
 
 .slate-meal-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1200px;
+    height: 1300px;
     width: 62%;
     position: absolute;
     margin-left: 40px;
@@ -285,10 +285,12 @@ b {
 
     .slate-meal-background {
         width: 60%;
+        height: 1400px;
     }
 
     .slate-desert-background {
         width: 60%;
+        height: 1400px;
     }
 }
 
@@ -340,6 +342,7 @@ b {
 
     .slate-meal-background {
         margin-left: 0px;
+        height: 1600px;
     }
 
     .meal-images {
@@ -351,7 +354,6 @@ b {
 
     .slate-desert-background {
         margin-left: 0px;
-        height: 1100px;
     }
 
     .desert-images {
@@ -365,7 +367,7 @@ b {
     /* Meal page */
 
     .slate-meal-background {
-        height: 1200px;
+        height: 1600px;
         margin-left: 0px;
     }
 
@@ -393,7 +395,7 @@ b {
     /* Desert page */
 
     .slate-desert-background {
-        height: 1200px;
+        height: 1450px;
     }
 
     .order h3 {
@@ -411,7 +413,7 @@ b {
     /* Meal page */
 
     .slate-meal-background {
-        height: 1900px;
+        height: 2100px;
         width: 95%;
     }
 
@@ -419,7 +421,7 @@ b {
 
     .slate-desert-background {
         width: 95%;
-        height: 1900px;
+        height: 2000px;
     }
 
     .instruction-blue {
@@ -470,7 +472,11 @@ b {
     /* Meal page */
 
     .slate-meal-background {
-        height: 2000px;
+        height: 2250px;
+    }
+
+    .slate-desert-background {
+        height: 2100px;
     }
 }
 
@@ -496,7 +502,7 @@ b {
     /* Meal page */
 
     .slate-meal-background {
-        height: 2000px;
+        height: 2200px;
         width: 90%;
     }
 
@@ -504,7 +510,7 @@ b {
 
     .slate-desert-background {
         width: 90%;
-        height: 1800px;
+        height: 2100px;
     }
 
     h1 {

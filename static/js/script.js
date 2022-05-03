@@ -1,27 +1,27 @@
-// var hours = 24;
-// var now = new Date().getTime();
-// var stepTime = sessionStorage.getItem('stepTime');
+var hours = 24;
+var now = new Date().getTime();
+var stepTime = localStorage.getItem('stepTime');
 
-// if ('stepTime == null') {
-//     sessionStorage.setItem('stepTime', now);
-// } else {
-//     if (now - stepTime > hours * 60 * 60 * 1000) {
-//         sessionStorage.clear();
-//         sessionStorage.setItem('stepTime', now);
-//     }
-// }
+if ('stepTime == null') {
+    localStorage.setItem('stepTime', now);
+} else {
+    if (now - stepTime > hours * 60 * 60 * 1000) {
+        localStorage.clear();
+        localStorage.setItem('stepTime', now);
+    }
+}
 
-var orders = JSON.parse(sessionStorage.getItem('order'));
-var total = sessionStorage.getItem('total');
+var orders = JSON.parse(localStorage.getItem('order'));
+var total = localStorage.getItem('total');
 
 if (orders === null || orders === undefined) {
-    sessionStorage.setItem('orders', JSON.stringify([]));
-    orders = JSON.parse(sessionStorage.getItem('orders'));
+    localStorage.setItem('orders', JSON.stringify([]));
+    orders = JSON.parse(localStorage.getItem('orders'));
 }
 
 if (total === null || total === undefined) {
-    sessionStorage.setItem('total', 0);
-    total = 0(sessionStorage.getItem('total'));
+    localStorage.setItem('total', 0);
+    total = 0(localStorage.getItem('total'));
 }
 
 var cart = document.querySelector("#cart")
