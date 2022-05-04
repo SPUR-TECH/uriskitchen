@@ -41,7 +41,7 @@ function addDesert(desertid) {
 
     var desertcart = document.querySelector('#desertcart');
 
-    remove = '<button class="del" onclick="removeDesert(' + cartSize + ')">X</button>';
+    remove = '<div class="del" onclick="removeDesert(' + cartSize + ')">X</div>';
     deserttotal.innerHTML = 'Total:  £' + total + ' ';
     desertcart.innerHTML += '<li>' + size + ' :   ' + name + ' £' + price + ' ' + remove + '</li>';
 }
@@ -53,7 +53,7 @@ function desertshoppingCart() {
 
     desertcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        remove = '<button class="del" onclick="removeDesert(' + i + ')">X</button>';
+        remove = '<div class="del" onclick="removeDesert(' + i + ')">X</div>';
         desertcart.innerHTML += '<li>' + orders[i][0] + ' :   ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     deserttotal.innerHTML = 'Total:  £' + total + ' ';

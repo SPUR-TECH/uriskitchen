@@ -163,6 +163,19 @@ b {
     border-radius: 10px;
 }
 
+.del {
+    background-color: transparent;
+    color: rgb(185, 14, 14);
+    position: absolute;
+    right: 30px;
+    height: 30px;
+    font-weight: 600;
+}
+
+li {
+    display: flex;
+}
+
 .instruction-blue {
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
@@ -293,6 +306,18 @@ b {
         width: 60%;
         height: 1400px;
     }
+
+    li {
+        font-size: 1.5rem;
+    }
+
+    #desertcart {
+        padding-left: 10px;
+    }
+
+    .del {
+        right: 0px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -351,6 +376,10 @@ b {
         height: 100px;
     }
 
+    li {
+        font-size: 1.3rem;
+    }
+
     /* Desert page */
 
     .slate-desert-background {
@@ -407,9 +436,25 @@ b {
         font-size: 1.5rem;
         margin-right: 20px;
     }
+
+    #desertcart {
+        padding-left: 0px;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
 }
 
 @media all and (max-width: 766px) {
+
+    #desertcart {
+        padding-left: 30px;
+    }
+
+    li {
+        font-size: 1.7rem;
+    }
 
     /* Meal page */
 
@@ -538,16 +583,33 @@ b {
         left: 60px;
     }
 
+    h3 {
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    #desertcart {
+        padding-left: 0px;
+    }
+
+    .del {
+        right: 0px;
+    }
+
     .title {
         font-size: 3rem;
     }
 
     .item-description {
         margin: 0px;
+        font-size: 1.5rem;
     }
 
     .footer {
-        margin-top: 380px;
+        margin-top: 400px;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 20px;
     }

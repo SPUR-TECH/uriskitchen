@@ -41,7 +41,7 @@ function addMeal(mealid) {
     var cart = document.querySelector("#cart")
     cart.innerHTML = orders.length;
 
-    remove = '<button class="del" onclick="removeMeal(' + cartSize + ')">X</button>';
+    remove = '<div class="del" onclick="removeMeal(' + cartSize + ')">X</div>';
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
     mealcart.innerHTML += '<li>' + size + ' : ' + name + ' £' + price + ' ' + remove + '</li>';
 }
@@ -52,7 +52,7 @@ function mealshoppingCart() {
     var cartSize = orders.length;
     mealcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        remove = '<button class="del" onclick="removeMeal(' + i + ')">X</button>';
+        remove = '<div class="del" onclick="removeMeal(' + i + ')">X</div>';
         mealcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
