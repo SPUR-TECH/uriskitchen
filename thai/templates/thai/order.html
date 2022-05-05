@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Order{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid b">
+    <div class="row">
+        <div class="col-md-12 slate-order-background mt-5 ml-5 text-center">
+            <div class="orderitems">
+                <h1>Order</h1>
+                <div class="col-md-2 mr-auto" id="name">
+                    <h2>Name</h2>
+                </div>
+                <div class="col-md-2 mr-auto" id="size">
+                    <h2>Size</h2>
+                </div>
+                <div class="col-md-2 mr-auto" id="price">
+                    <h2>Price</h2>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

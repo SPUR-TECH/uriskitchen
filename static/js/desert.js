@@ -1,7 +1,7 @@
 var desertcart = document.querySelector('#desertcart');
 var deserttotal = document.querySelector('#deserttotal');
 
-// add deserts to order 
+// Add deserts to order 
 
 function addDesert(desertid) {
 

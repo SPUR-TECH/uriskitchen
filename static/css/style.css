@@ -290,6 +290,35 @@ li {
     border-radius: 50%;
 }
 
+/* Order page */
+
+.slate-order-background {
+    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
+    height: 1200px;
+    width: 62%;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.orderitems h2 {
+    position: relative;
+    display: block;
+    left: 20px;
+}
+
+.orderitems h1 {
+    position: relative;
+}
+
+.btn-success {
+    left: 200px;
+}
+
 @media all and (max-width: 1500px) {
     .meal-images {
         width: 250px;
