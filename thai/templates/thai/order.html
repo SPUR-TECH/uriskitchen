@@ -6,28 +6,33 @@
 
 {% block content %}
 
-<div class="container-fluid b">
+<div class="container-fluid m-4">
     <div class="row">
-        <div class="col-md-12 slate-order-background mt-5 ml-5 text-center">
-            <div class="orderitems">
-                <h1>Order</h1>
-                <div class="col-md-2 mr-auto" id="name">
-                    <h2>Name</h2>
+        <div class="col-md-8 slate-order-background text-center">
+            <div class="row">
+                <div class="orderitems col-md-12">
+                    <h1>Order</h1>
+                    <div class="col-md-6" id="name">
+                        <h2>Name</h2>
+                    </div>
+                    <div class="col-md-6" id="size">
+                        <h2>Size</h2>
+                    </div>
+                    <div class="col-md-6" id="price">
+                        <h2>Price</h2>
+                    </div>
+                    <div class="col-md-1" id="rm">
+                    </div>
                 </div>
-                <div class="col-md-2 mr-auto" id="size">
-                    <h2>Size</h2>
+                <h3 id="total">Total</h3>
+                <div>
+                    <button type="submit" class="btn-success">Submit</button>
                 </div>
-                <div class="col-md-2 mr-auto" id="price">
-                    <h2>Price</h2>
-                </div>
-            </div>
-            <div>
-                <button type="submit" class="btn-success">Submit</button>
             </div>
         </div>
     </div>
 </div>
 
-
+<script src="{% static 'js/cart.js' %}"></script>
 
 {% endblock %}

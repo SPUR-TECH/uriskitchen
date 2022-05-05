@@ -293,22 +293,17 @@ li {
 /* Order page */
 
 .slate-order-background {
-    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1200px;
-    width: 62%;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 200px;
-    overflow: hidden;
-    border-radius: 15px;
+    margin-top: 180px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
+    width: 55rem;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .orderitems h2 {
     position: relative;
-    display: block;
-    left: 20px;
 }
 
 .orderitems h1 {
