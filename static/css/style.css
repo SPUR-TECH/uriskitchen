@@ -541,6 +541,10 @@ li {
     .slate-desert-background {
         height: 2100px;
     }
+
+    .orders {
+        margin-top: 100px;
+    }
 }
 
 @media all and (max-width: 400px) {
@@ -548,14 +552,14 @@ li {
     /* Home page */
 
     .slate-background {
-        height: 40rem;
+        height: 41rem;
         width: 25rem;
         border-radius: 0px;
     }
 
     .instruction-red {
-        margin-top: 520px;
-        margin-left: 120px;
+        margin-top: 530px;
+        margin-left: 100px;
     }
 
     .instruction-blue {
@@ -565,7 +569,7 @@ li {
     /* Meal page */
 
     .slate-meal-background {
-        height: 2200px;
+        height: 2050px;
         width: 90%;
     }
 
@@ -573,7 +577,11 @@ li {
 
     .slate-desert-background {
         width: 90%;
-        height: 2100px;
+        height: 1900px;
+    }
+
+    .orders {
+        margin-top: 150px;
     }
 
     h1 {
