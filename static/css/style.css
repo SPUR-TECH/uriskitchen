@@ -380,6 +380,10 @@ li {
         font-size: 1.3rem;
     }
 
+    #mealcart {
+        padding: 10px;
+    }
+
     /* Desert page */
 
     .slate-desert-background {
