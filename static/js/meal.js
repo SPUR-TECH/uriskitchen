@@ -9,7 +9,7 @@ function addMeal(mealid) {
 
     var name = document.querySelector('#mealname' + mealid).innerHTML;
 
-    //  Get meal prices
+    //  Get meal size
 
     var radio = 'meal' + mealid;
     var pri = document.getElementsByName(radio);
@@ -22,11 +22,12 @@ function addMeal(mealid) {
         size = 'L'
     }
 
+    // Save items in local storage
+
     var orders = JSON.parse(localStorage.getItem('orders'));
     var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
-    // Save items in local storage
 
     orders[cartSize] = [name, size, price];
     localStorage.setItem('orders', JSON.stringify(orders));
@@ -43,7 +44,7 @@ function addMeal(mealid) {
 
     remove = '<div class="del" onclick="removeMeal(' + cartSize + ')">X</div>';
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
-    mealcart.innerHTML += '<li>' + size + ' : ' + name + ' £' + price + ' ' + remove + '</li>';
+    mealcart.innerHTML += '<li>' + size + ' :   ' + name + ' £' + price + ' ' + remove + '</li>';
 }
 
 function mealshoppingCart() {

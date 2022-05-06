@@ -188,7 +188,6 @@ li {
 .instruction-red {
     font-family: 'Beau Rivage', cursive;
     font-size: 2.5rem;
-    font-weight: 600;
     color: rgb(185, 14, 14);
     position: absolute;
     margin-top: 490px;
@@ -290,35 +289,10 @@ li {
     border-radius: 50%;
 }
 
-/* Order page */
-
-.slate-order-background {
-    margin-top: 180px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 55rem;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.orderitems h2 {
-    position: relative;
-}
-
-.orderitems h1 {
-    position: relative;
-}
-
-.btn-success {
-    left: 200px;
-}
-
 @media all and (max-width: 1500px) {
     .meal-images {
         width: 250px;
         height: 150px;
-
     }
 
     .slate-meal-background {
@@ -593,7 +567,7 @@ li {
     /* Meal page */
 
     .slate-meal-background {
-        height: 2050px;
+        height: 2100px;
         width: 90%;
     }
 
@@ -601,7 +575,7 @@ li {
 
     .slate-desert-background {
         width: 90%;
-        height: 1900px;
+        height: 2000px;
     }
 
     .orders {

@@ -22,9 +22,3 @@ def desert_view(request):
     context = {
         'desert_objects': desert_objects,'active_link': 'desert'}
     return render(request, template, context)
-
-
-def order_view(request):
-    template = "thai/order.html"
-    context = {'active_link': 'order'}
-    return render(request, template, context)
