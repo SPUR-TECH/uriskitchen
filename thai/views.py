@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Meal, Home, Desert
 from django.contrib.auth.forms import UserCreationForm
-from django.views.decorators.csrf import csrf_exempt
 
 
 def home_view(request):

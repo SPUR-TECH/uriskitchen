@@ -2,15 +2,15 @@
 
 {% load static %}
 
-{% block title %}signup{% endblock %}
+{% block title %}SignUp{% endblock %}
 
 {% block content %}
 
 <div class="container-fluid mt-5 p-5">
     <div class="row">
         <div class="col-md-3"></div>
-        <div class="col-md-6 p-4 bg-dark text-light text-center">
-            <h1 class="signup-title">Signup</h1>
+        <div class="col-md-6 p-4 bg-dark text-light rounded text-center">
+            <h1 class="signup-title">SignUp</h1>
             <form method="POST">
                 {% csrf_token %}
 
@@ -34,7 +34,7 @@
                     {% endfor %}
                 </div>
 
-                <button type="submit" class="btn-info">Signup</button>
+                <button type="submit" class="btn-info rounded pb-1 mb-2">SignUp</button>
             </form>
         </div>
         <div class="col-md-3"></div>

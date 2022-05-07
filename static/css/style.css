@@ -352,6 +352,10 @@ li {
     #mealcart {
         padding-left: 0px;
     }
+
+    .cart li {
+        padding-left: 20px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -674,7 +678,8 @@ li {
     /* Cart page */
 
     .cart li {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        padding-left: 0px;
     }
 
     /* Footer */
