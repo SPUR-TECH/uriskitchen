@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Meal, Home, Desert
 from django.contrib.auth.forms import UserCreationForm
+from django.views.decorators.csrf import csrf_exempt
 
 
 def home_view(request):
@@ -31,7 +32,7 @@ def cart_view(request):
     return render(request, template, context)
 
 
-def signup(request):
+def signup_view(request):
     context = {}
     if request.POST:
         form = UserCreationForm(request.POST)

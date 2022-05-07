@@ -313,6 +313,14 @@ li {
     border-radius: 50%;
 }
 
+/* Signup page */
+
+.signup-title {
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
 @media all and (max-width: 1500px) {
     .meal-images {
         width: 250px;
