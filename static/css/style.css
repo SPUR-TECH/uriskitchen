@@ -187,6 +187,10 @@ b {
     font-weight: 600;
 }
 
+.del:hover {
+    cursor: pointer;
+}
+
 li {
     display: flex;
 }
