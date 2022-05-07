@@ -29,7 +29,7 @@ function addMeal(mealid) {
     var cartSize = orders.length;
 
 
-    orders[cartSize] = [name, size, price];
+    orders[cartSize] = [size, name, price];
     localStorage.setItem('orders', JSON.stringify(orders));
 
     console.log(`MEALS ORDERS: ${orders}`);
