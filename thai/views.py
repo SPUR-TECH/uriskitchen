@@ -22,3 +22,9 @@ def desert_view(request):
     context = {
         'desert_objects': desert_objects,'active_link': 'desert'}
     return render(request, template, context)
+
+
+def cart_view(request):
+    template = "thai/cart.html"
+    context = {'active_link': 'cart'}
+    return render(request, template, context)
