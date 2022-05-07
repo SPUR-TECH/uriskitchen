@@ -28,7 +28,7 @@ function addDesert(desertid) {
 
     // Save items in local storage so it will delete when user leaves the site
 
-    orders[cartSize] = [name, size, price];
+    orders[cartSize] = [size, name, price];
     localStorage.setItem('orders', JSON.stringify(orders));
 
     total = Number(total) + Number(price);

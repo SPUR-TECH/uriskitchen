@@ -163,6 +163,21 @@ b {
     border-radius: 10px;
 }
 
+.cart {
+    position: relative;
+    top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cart li {
+    font-size: 2.5rem;
+}
+
 .del {
     background-color: transparent;
     color: rgb(185, 14, 14);
@@ -174,6 +189,11 @@ b {
 
 li {
     display: flex;
+}
+
+.submit {
+    position: absolute;
+    right: 50px;
 }
 
 .instruction-blue {
@@ -314,11 +334,18 @@ li {
     }
 
     .del {
-        right: 0px;
+        right: 20px;
+    }
+
+    #mealcart {
+        padding-left: 0px;
     }
 }
 
 @media all and (max-width: 1000px) {
+
+    /* home page */
+
     .slate-background {
         height: 35rem;
         width: 70%;
@@ -391,6 +418,12 @@ li {
     .desert-images {
         width: 150px;
         height: 100px;
+    }
+
+    /* cart page */
+
+    .cart li {
+        font-size: 2rem;
     }
 }
 
@@ -486,6 +519,10 @@ li {
     .order {
         display: none;
     }
+
+    .orders-slate-background {
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 580px) {
@@ -542,6 +579,10 @@ li {
 
     .orders {
         margin-top: 100px;
+    }
+
+    .cart li {
+        font-size: 1.5rem;
     }
 }
 
@@ -606,7 +647,7 @@ li {
     }
 
     .del {
-        right: 0px;
+        right: 10px;
     }
 
     .title {
@@ -617,6 +658,14 @@ li {
         margin: 0px;
         font-size: 1.5rem;
     }
+
+    /* Cart page */
+
+    .cart li {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
 
     .footer {
         margin-top: 400px;

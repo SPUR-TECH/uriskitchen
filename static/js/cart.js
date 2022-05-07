@@ -4,14 +4,25 @@ function shoppingCart() {
     var orders = JSON.parse(localStorage.getItem('orders'));
     var total = localStorage.getItem('total');
     var cartSize = orders.length;
-    cart.innerHTML = '';
+    mealcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        remove = '<div class="del" onclick="removeitem(' + i + ')">X</div>';
-        cart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
+        remove = '<div class="del" onclick="removeMeal(' + i + ')">X</div>';
+        mealcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
-    total.innerHTML = 'Total:  £' + total + ' ';
+    mealtotal.innerHTML = 'Total:  £' + total + ' ';
     var cart = document.querySelector("#cart");
     cart.innerHTML = orders.length;
 }
 
 shoppingCart();
+
+function removeMeal(n) {
+    var orders = JSON.parse(localStorage.getItem('orders'));
+    var total = localStorage.getItem('total');
+    total = Number(total) - Number(orders[n][2]);
+    orders.splice(n, 1);
+    localStorage.setItem('orders', JSON.stringify(orders));
+    localStorage.setItem('total', total);
+
+    shoppingCart();
+}
