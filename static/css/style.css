@@ -356,6 +356,12 @@ li {
     .cart li {
         padding-left: 20px;
     }
+
+    /* Sign up page */
+
+    small li {
+        font-size: .7rem;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -440,6 +446,16 @@ li {
 
     .cart li {
         font-size: 2rem;
+    }
+
+    /* Sign up page */
+
+    small ul {
+        padding-left: 0px;
+    }
+
+    input {
+        width: 80%;
     }
 }
 
@@ -599,6 +615,12 @@ li {
 
     .cart li {
         font-size: 1.5rem;
+    }
+
+    /* Sign up page */
+
+    small {
+        font-size: 1rem;
     }
 }
 
