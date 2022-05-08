@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Meal, Home, Desert
-from django.contrib.auth.forms import UserCreationForm
 
 
 def home_view(request):
@@ -32,30 +31,12 @@ def cart_view(request):
 
 
 def signup_view(request):
-    context = {}
-    if request.POST:
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('index')
-        else:
-            context['form'] = form
-    else:
-        form = UserCreationForm()
-        context['form'] = form
-        return render(request, 'thai/signup.html', context)
+    template = "signup.html"
+    context = {'active_link': 'cart'}
+    return render(request, template, context)
 
 
 def login_view(request):
-    context = {}
-    if request.POST:
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('index')
-        else:
-            context['form'] = form
-    else:
-        form = UserCreationForm()
-        context['form'] = form
-        return render(request, 'thai/login.html', context)
+    template = "login.html"
+    context = {'active_link': 'cart'}
+    return render(request, template, context)

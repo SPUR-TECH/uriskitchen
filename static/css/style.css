@@ -583,7 +583,7 @@ li {
         margin-left: 140px;
     }
 
-    h1 {
+    .home-page h1 {
         position: relative;
         font-size: 3rem;
         left: 30px;
@@ -630,6 +630,10 @@ li {
     small {
         font-size: 1rem;
     }
+
+    .signup-title h1 {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 400px) {
@@ -644,7 +648,7 @@ li {
 
     .instruction-red {
         margin-top: 530px;
-        margin-left: 100px;
+        margin-left: 150px;
     }
 
     .instruction-blue {
@@ -669,7 +673,7 @@ li {
         margin-top: 150px;
     }
 
-    h1 {
+    .home-page h1 {
         font-size: 2.3rem;
         left: 20px;
     }
@@ -693,7 +697,7 @@ li {
     }
 
     .del {
-        right: 10px;
+        right: 15px;
     }
 
     .title {
@@ -714,6 +718,16 @@ li {
     .cart li {
         font-size: 1.2rem;
         padding-left: 10px;
+    }
+
+    /* Signup-form */
+
+    .signup-title {
+        font-size: 50px;
+    }
+
+    #delvery-address {
+        width: 80%;
     }
 
     /* Footer */
