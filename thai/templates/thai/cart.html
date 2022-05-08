@@ -8,31 +8,31 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8 cart-slate-background">
+        <div class="col-md-8 cart-slate-background text-center">
             <div class="cart">
                 <h3 class="text-center pt-3">Order List</h3>
                 <ul id="mealcart"></ul>
-                <h4 class="text-right mt-5 pr-5" id="mealtotal" id="deserttotal">Total: £ 0 </h4>
+                <h4 class="text-center mt-5" id="mealtotal" id="deserttotal">Total: £ 0 </h4>
                 <ul id="desertcart"></ul>
                 <div class="complete-order">
-                    <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Complete Order</button>
+                    <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Complete
+                        Order</button>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
 
 
-    <script src="{% static 'js/cart.js' %}"></script>
+        <script src="{% static 'js/cart.js' %}"></script>
 
-    <!-- Footer section -->
+        <!-- Footer section -->
 
-    <footer>
-        <div class="footer">
-            <p class="copyright">
-                &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
-            </p>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer">
+                <p class="copyright">
+                    &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
+                </p>
+            </div>
+        </footer>
 
-    {% endblock %}
+        {% endblock %}

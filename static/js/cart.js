@@ -26,3 +26,18 @@ function removeMeal(n) {
 
     shoppingCart();
 }
+
+function order() {
+    var orders = localStorage.getItem('orders');
+    var ur = '/thai/cart'
+    var orderData = {};
+    orderData['orders'];
+    $.ajax({
+        url: ur,
+        type: "POST",
+        data: orderData,
+        success: function (data) {
+            console.log('The data was sent')
+        }
+    })
+}

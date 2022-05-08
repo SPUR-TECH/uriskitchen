@@ -196,11 +196,6 @@ li {
     display: flex;
 }
 
-.submit {
-    position: absolute;
-    right: 50px;
-}
-
 .instruction-blue {
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
@@ -341,10 +336,6 @@ li {
     .slate-desert-background {
         width: 60%;
         height: 1400px;
-    }
-
-    li {
-        font-size: 1.5rem;
     }
 
     #desertcart {

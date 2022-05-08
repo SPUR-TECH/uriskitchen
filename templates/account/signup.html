@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-5 p-5">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="signup col-md-6 p-4 bg-dark text-light text-center">
+      <h1 class="signup-title">Sign Up</h1>
+      <h5>or</h5>
+      <a href="{% url 'login_view' %}">
+        <h3>Login</h3>
+      </a>
+      <form method="POST">
+        {% csrf_token %}
+
+        {% for field in form %}
+
+        <div class="form-group">
+          <div>
+            {{ field.label_tag }}
+          </div>
+          <div>
+            {{ field }}
+          </div>
+          {% if field.help_text %}
+          <small style="color: rgb(0, 225, 255);">{{ field.help_text }}</small>
+          {% endif %}
+        </div>
+        {%  endfor %}
+        <div>
+          {% for error in form.errors %}
+          <small style="color: rgb(255, 0, 0);">{{ field.help_text }}</small>
+          {% endfor %}
+        </div>
+
+        <button type="submit" class="btn-info rounded pb-1 mb-2">SignUp</button>
+      </form>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<!-- Footer section -->
+
+<footer>
+  <div class="footer">
+    <p class="copyright">
+      &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
+    </p>
+  </div>
+</footer>
+
+{% endblock %}
