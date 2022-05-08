@@ -30,7 +30,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["uriskitchen.herokuapp.com", "localhost"]
 
@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'cloudinary_storage',
-    'allauth.socialaccount',
     'cloudinary',
     'django.contrib.staticfiles',
     'thai',
