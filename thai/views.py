@@ -44,3 +44,18 @@ def signup_view(request):
         form = UserCreationForm()
         context['form'] = form
         return render(request, 'thai/signup.html', context)
+
+
+def login_view(request):
+    context = {}
+    if request.POST:
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+        else:
+            context['form'] = form
+    else:
+        form = UserCreationForm()
+        context['form'] = form
+        return render(request, 'thai/login.html', context)

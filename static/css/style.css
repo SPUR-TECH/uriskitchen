@@ -319,6 +319,11 @@ li {
     position: relative;
     top: -10px;
     left: -10px;
+    margin-bottom: 0px;
+}
+
+.signup h5 {
+    margin: 0px;
 }
 
 @media all and (max-width: 1500px) {
