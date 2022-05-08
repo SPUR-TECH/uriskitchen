@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Deserts{% endblock %}
+{% block title %}Desserts{% endblock %}
 
 {% block content %}
 
@@ -14,7 +14,7 @@
     <div class="row text-center">
         <div class="col-md-8">
 
-            <h6 class="title">Thai Deserts</h6>
+            <h6 class="title">Thai Desserts</h6>
             <h4 class="title2">Menu</h4>
             <div class="row">
                 {% for desert in desert_objects %}
@@ -50,13 +50,15 @@
 
             </div>
         </div>
-        <div class=" col-md-4 orders">
-            <h3 class="text-center pt-3">Order List</h3>
-            <ul id="desertcart"></ul>
-            <h4 class="text-right pr-5" id="deserttotal">Total:£ 0 </h4>
-        </div>
-        <div>
-            <button type="submit" class="btn-info rounded mt-3 pb-1">Complete Order</button>
+        <div class="col-md-4 orders">
+            <div>
+                <h3 class="text-center pt-3">Order List</h3>
+                <ul id="desertcart"></ul>
+                <h4 class="text-center mt-5" id="deserttotal">Total: £ 0 </h4>
+            </div>
+            <div>
+                <button type="submit" class="btn-info mt-3 pb-1">Complete Order</button>
+            </div>
         </div>
     </div>
 </div>

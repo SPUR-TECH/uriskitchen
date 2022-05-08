@@ -161,6 +161,7 @@ b {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
+    padding: 0px;
 }
 
 .cart {
@@ -355,7 +356,7 @@ li {
     }
 
     #mealcart {
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
     .cart li {
@@ -370,6 +371,12 @@ li {
 }
 
 @media all and (max-width: 1000px) {
+
+    /* nav */
+
+    .nav-link {
+        font-size: 19px;
+    }
 
     /* home page */
 
@@ -421,6 +428,7 @@ li {
     .slate-meal-background {
         margin-left: 0px;
         height: 1600px;
+        width: 61%;
     }
 
     .meal-images {
@@ -433,7 +441,7 @@ li {
     }
 
     #mealcart {
-        padding: 10px;
+        padding: 20px;
     }
 
     /* Desert page */
@@ -686,7 +694,7 @@ li {
     }
 
     #desertcart {
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
     .del {
@@ -704,9 +712,13 @@ li {
 
     /* Cart page */
 
+    .cart-slate-background {
+        padding: 0px;
+    }
+
     .cart li {
         font-size: 1.2rem;
-        padding-left: 0px;
+        padding-left: 10px;
     }
 
     /* Footer */
