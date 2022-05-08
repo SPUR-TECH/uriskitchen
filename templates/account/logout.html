@@ -1,21 +1,41 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% load static %}
+
+{% block title %}Log Out{% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<div class="container-fluid mt-5 p-5">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="logout col-md-4 p-4 bg-dark text-light text-center">
+      <h3 class="logout-title">Log Out</h3>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+      <p>Are you sure you want to log out?</p>
 
+      <form method="post" action="{% url 'account_logout' %}">
+        {% csrf_token %}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button type="submit" class="btn-info pb-1">{% trans 'Log Out' %}</button>
+      </form>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer section -->
+
+<footer>
+  <div class="footer">
+    <p class="copyright">
+      &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
+    </p>
+  </div>
+</footer>
 
 {% endblock %}

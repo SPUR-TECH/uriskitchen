@@ -322,6 +322,10 @@ li {
     margin: 0px;
 }
 
+.logout {
+    margin-top: 100px;
+}
+
 @media all and (max-width: 1500px) {
     .meal-images {
         width: 250px;
