@@ -23,24 +23,26 @@
           <div>
             {{ field }}
           </div>
-
-          <small style="color: rgb(0, 225, 255);">{{ field.help_text }}</small>
-
         </div>
         {%  endfor %}
         <div>
-          {% for error in form.errors %}
-          <small style="color: rgb(255, 0, 0);">{{ field.help_text }}</small>
+          {% if form.errors %}
+          {% for field in form %}
+          {% for error in field.errors %}
+          <div>
+            <small style="color: rgb(0, 225, 255);">{{ error }}</small>
+          </div>
           {% endfor %}
-        </div>
-        <div>
-          <p>Delivery Address
-          </p>
-          <textarea name="Delivery Address" placeholder="Delivery Address" id="delvery-address" required cols="30"
-            rows="10"></textarea>
-        </div>
+          {% endfor %}
+          {% endif %}
+          <div class="field">
+            <p>Delivery Address
+            </p>
+            <textarea name="Delivery Address" placeholder="Delivery Address" id="delvery-address" required cols="30"
+              rows="10"></textarea>
+          </div>
 
-        <button type="submit" class="btn-info pb-1 mt-3 mb-2">SignUp</button>
+          <button type="submit" class="btn-info pb-1 mt-3 mb-2">SignUp</button>
       </form>
     </div>
     <div class="col-md-3"></div>
