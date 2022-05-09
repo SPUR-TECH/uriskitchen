@@ -23,9 +23,9 @@
           <div>
             {{ field }}
           </div>
-          {% if field.help_text %}
+
           <small style="color: rgb(0, 225, 255);">{{ field.help_text }}</small>
-          {% endif %}
+
         </div>
         {%  endfor %}
         <div>
@@ -36,7 +36,7 @@
         <div>
           <p>Delivery Address
           </p>
-          <textarea name="Delivery Address" placeholder="Delivery Address" id="delvery-address" cols="30"
+          <textarea name="Delivery Address" placeholder="Delivery Address" id="delvery-address" required cols="30"
             rows="10"></textarea>
         </div>
 

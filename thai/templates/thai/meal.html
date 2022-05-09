@@ -40,7 +40,9 @@
                             <p class="price">( L ) £{{ meal.price_Large }}</p>
                         </label>
                     </div>
+
                     <div>
+
                         <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
                             Cart</button>
                     </div>
@@ -57,9 +59,16 @@
                 <ul id="mealcart"></ul>
                 <h4 class="text-center mt-5" id="mealtotal">Total: £ 0 </h4>
             </div>
-            <div>
-                <button type="submit" class="btn-info mt-3 pb-1">Log in</button>
+            {% if user.is_authenticated %}
+            <div class="complete-order">
+                <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Complete
+                    Order</button>
             </div>
+            {% else %}
+            <div>
+                <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mt-3 pb-1">Log in</button></a>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
