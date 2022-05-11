@@ -40,13 +40,10 @@
                             <p class="price">( L ) £{{ meal.price_Large }}</p>
                         </label>
                     </div>
-
                     <div>
-
                         <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
                             Cart</button>
                     </div>
-
                 </div>
 
                 {% endfor %}
@@ -67,6 +64,11 @@
             {% else %}
             <div>
                 <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mt-3 pb-1">Log in</button></a>
+            </div>
+            <h3>or</h3>
+            <div>
+                <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info mt-3 pb-1">Sign
+                        up</button></a>
             </div>
             {% endif %}
         </div>
