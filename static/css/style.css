@@ -47,6 +47,24 @@ body {
 
 /* Home page */
 
+.restaurant {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    width: 300px;
+    height: 120px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.phone {
+    position: relative;
+    top: 100px;
+    left: 120px;
+    width: 60%;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -533,6 +551,17 @@ li {
 
 @media all and (max-width: 766px) {
 
+    /* home page */
+
+    .restaurant {
+        font-size: xx-large;
+        width: 250px;
+    }
+
+    .phone {
+        font-size: x-large;
+    }
+
     #desertcart {
         padding-left: 30px;
     }
@@ -576,6 +605,20 @@ li {
 }
 
 @media all and (max-width: 580px) {
+
+    /* home page */
+
+    .restaurant {
+        top: 0px;
+        left: 50px;
+    }
+
+    .phone {
+        top: -60px;
+        left: 80px;
+        font-size: x-large;
+    }
+
     .slate-background {
         height: 35rem;
         width: 25rem;
@@ -649,6 +692,19 @@ li {
 @media all and (max-width: 400px) {
 
     /* Home page */
+
+    .restaurant {
+        top: 50px;
+        left: 30px;
+        height: 100px;
+        width: 230px;
+    }
+
+    .phone {
+        top: 0px;
+        left: 80px;
+        font-size: large;
+    }
 
     .slate-background {
         height: 41rem;
