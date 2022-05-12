@@ -34,10 +34,6 @@
             <li class="nav-item mt-3">
                 <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
             </li>
-            {% csrf_token %}
-            <li class="nav-item mt-3">
-                <a class="nav-link" href="{% url 'success_view' %}">success</a>
-            </li>
             {% else %}
             <li class="nav-item">
                 <a class="nav-link mt-3" href="{% url 'account_signup' %}">Sign Up</a>
