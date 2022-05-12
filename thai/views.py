@@ -40,3 +40,9 @@ def login_view(request):
     template = "login.html"
     context = {'active_link': 'cart'}
     return render(request, template, context)
+
+
+def success_view(request):
+    template = "thai/success.html"
+    context = {'active_link': 'cart'}
+    return render(request, template, context)

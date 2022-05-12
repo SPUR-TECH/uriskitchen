@@ -326,6 +326,21 @@ li {
     margin-top: 100px;
 }
 
+/* success page */
+
+.success-title {
+    position: relative;
+    top: 20px;
+    padding-bottom: 10px;
+}
+
+.success-title2 {
+    position: relative;
+    left: 100px;
+    top: 10px;
+    padding-bottom: 100px;
+}
+
 @media all and (max-width: 1500px) {
     .meal-images {
         width: 250px;
