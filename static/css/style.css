@@ -622,13 +622,13 @@ b {
     /* home page */
 
     .home-page h1 {
-        font-size: 3rem;
-        width: 350px;
+        font-size: 2.5rem;
+        width: 400px;
     }
 
     .home-page h2 {
         top: 150px;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .call {
