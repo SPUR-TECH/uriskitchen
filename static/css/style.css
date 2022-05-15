@@ -794,20 +794,19 @@ b {
         font-size: 1.3rem;
         top: 0px;
         left: 30px;
-        height: 120px;
+        height: 160px;
         width: 250px;
         padding-top: 10px;
-        width: 200px;
     }
 
     .phone {
-        top: -80px;
+        top: -120px;
         left: 60px;
         font-size: large;
     }
 
     .slate-background {
-        height: 34rem;
+        height: 40rem;
         width: 25rem;
         border-radius: 0px;
         margin-top: 50px;
@@ -820,7 +819,7 @@ b {
     }
 
     .enjoy h3 {
-        margin-top: 90px;
+        margin-top: 150px;
         left: -30px;
         font-size: 30px;
     }
