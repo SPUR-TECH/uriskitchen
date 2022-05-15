@@ -777,17 +777,18 @@ b {
         font-size: 1.7rem;
         top: -20px;
         left: 70px;
-        width: 200px;
+        width: 250px;
     }
 
     .call {
         font-size: 1.3rem;
         top: 0px;
         left: 30px;
-        height: 110px;
-        width: 240px;
+        height: 120px;
+        width: 250px;
         padding-top: 10px;
         width: 200px;
+        border-radius: 10px;
     }
 
     .phone {
