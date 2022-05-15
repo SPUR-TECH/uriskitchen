@@ -633,7 +633,7 @@ b {
 
     .call {
         font-size: xx-large;
-        width: 250px;
+        width: 300px;
     }
 
     .phone {
@@ -652,8 +652,8 @@ b {
     }
 
     .enjoy {
-        margin-top: 250px;
-        margin-left: 140px;
+        margin-top: 270px;
+        margin-left: 130px;
     }
 
     /* Meal page */
@@ -786,6 +786,8 @@ b {
 
     .home-page h1 {
         left: 10px;
+        font-size: 2rem;
+        width: 300px;
     }
 
     .home-page h2 {
