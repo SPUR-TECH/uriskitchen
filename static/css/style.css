@@ -390,14 +390,18 @@ b {
 
 /* success page */
 
-.success-title {
+.cart h1 {
     position: relative;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(185, 14, 14);
     top: 20px;
     padding-bottom: 10px;
 }
 
-.success-title2 {
+.cart h2 {
     position: relative;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
     top: 20px;
     padding-bottom: 100px;
 }
@@ -698,7 +702,7 @@ b {
     .home-page h2 {
         position: relative;
         left: 100px;
-        top: -25px;
+        top: -20px;
         font-size: 2rem;
         width: 300px;
         ;
@@ -787,7 +791,7 @@ b {
 
     .home-page h2 {
         font-size: 1.7rem;
-        top: -20px;
+        top: -18px;
         left: 70px;
         width: 250px;
     }
