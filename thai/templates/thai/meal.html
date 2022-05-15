@@ -13,37 +13,38 @@
 
     <div class="row text-center">
         <div class="col-md-8 text-center">
-
-            <h6 class="title">Thai Meals</h6>
-            <h4 class="title2">Menu</h4>
+            <h1 class="title">Thai Meals</h1>
+            <h2 class="title2">Menu</h2>
             <div class="row">
                 {% for meal in meal_objects %}
                 <div class="col-md-6">
-                    <h5 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h5>
+                    <h3 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h3>
 
                     ﻿<img class="meal-images" src="{{ meal.featured_image.url }}" alt="">
 
-                    <h5 class="item-description">{{ meal.description }}</h5>
+                    <h4 class="item-description">{{ meal.description }}</h4>
+                    <fieldset>
+                        <legend></legend>
+                        <div class="form-check-inline color-info ">
+                            <label class=" form-check-label">
+                                <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
+                                    value="{{ meal.price_Medium }}" checked>
+                                <p class="price">( M ) £{{ meal.price_Medium }}</p>
+                            </label>
+                        </div>
 
-                    <div class="form-check-inline color-info ">
-                        <label class=" form-check-label">
-                            <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
-                                value="{{ meal.price_Medium }}" checked>
-                            <p class="price">( M ) £{{ meal.price_Medium }}</p>
-                        </label>
-                    </div>
-
-                    <div class="form-check-inline">
-                        <label class=" form-check-label">
-                            <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
-                                value="{{ meal.price_Large }}">
-                            <p class="price">( L ) £{{ meal.price_Large }}</p>
-                        </label>
-                    </div>
-                    <div>
-                        <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
-                            Cart</button>
-                    </div>
+                        <div class="form-check-inline">
+                            <label class=" form-check-label">
+                                <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
+                                    value="{{ meal.price_Large }}">
+                                <p class="price">( L ) £{{ meal.price_Large }}</p>
+                            </label>
+                        </div>
+                        <div>
+                            <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
+                                Cart</button>
+                        </div>
+                    </fieldset>
                 </div>
 
                 {% endfor %}
@@ -52,7 +53,7 @@
         </div>
         <div class="col-md-4 orders">
             <div>
-                <h3 class="text-center pt-3">Order List</h3>
+                <h3 class="text-center order-list pt-3">Order List</h3>
                 <ul id="mealcart"></ul>
                 <h4 class="text-center mt-5" id="mealtotal">Total: £ 0 </h4>
             </div>
