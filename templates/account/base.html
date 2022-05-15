@@ -22,11 +22,13 @@
 </head>
 
 <body>
+
     <div id="overlay-home"></div>
     <nav class="navbar navbar-expand-sm navbar-dark">
         <!-- Brand/logo -->
         <a class="navbar-brand mr-4" href="{% url 'home_view' %}">
-            <img src="{% static 'media/images/hot_chilli.jpg' %}" name="nav-toggler" alt="logo" style="width:40px;">
+            <img src="{% static 'media/images/hot_chilli.jpg' %}" name="nav-toggler" alt="chilli logo"
+                style="width:40px;">
         </a>
 
         <ul class="navbar-nav text-center">
@@ -50,8 +52,9 @@
             </li>
         </ul>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" aria="collapse" input="collapse" value="collapse"
+            data-toggle="collapse" data-target="#mynav" aria-controls="mynav">
+            <span class="navbar-toggler-icon">menu</span>
         </button>
         <div class="collapse navbar-collapse text-right" id="mynav">
             <!-- Links -->

@@ -45,6 +45,10 @@ body {
     background-color: black;
 }
 
+.navbar-toggler-icon {
+    color: transparent;
+}
+
 /* Home page */
 
 .call {
@@ -110,7 +114,7 @@ body {
     margin-top: 290px;
 }
 
-h1 {
+.home-page h1 {
     font-family: 'Beau Rivage', cursive;
     font-size: 5rem;
     font-weight: 500;
@@ -124,7 +128,7 @@ h1 {
     width: 550px;
 }
 
-h2 {
+.home-page h2 {
     font-family: 'Beau Rivage', cursive;
     position: absolute;
     top: 175px;
@@ -142,29 +146,41 @@ h2 {
     margin-left: 50px;
 }
 
-.instruction-red {
+.enjoy {
     position: relative;
     font-family: 'Beau Rivage', cursive;
     font-size: 2.5rem;
     color: rgb(185, 14, 14);
     position: absolute;
-    margin-top: 650px;
-    margin-left: 570px;
+    margin-top: 450px;
+    margin-left: 400px;
 }
 
-h3 {
+.order-list {
     font-family: 'Beau Rivage', cursive;
     color: rgb(185, 14, 14);
     font-size: 3rem;
 }
 
-h4 {
+.call {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(185, 14, 14);
+    font-size: 3rem;
+}
+
+.phone {
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
     font-size: 2rem;
 }
 
-h5 {
+#mealtotal {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2rem;
+}
+
+.item-description {
     margin-top: 50px;
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
@@ -260,11 +276,6 @@ li {
     margin-top: 50px;
 }
 
-.item-description {
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
 .meal-images {
     position: relative;
     width: 300px;
@@ -272,8 +283,21 @@ li {
     border-radius: 50%;
 }
 
+.item-description {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .price {
-    color: rgb(100, 184, 61);
+    color: rgb(86, 196, 36);
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    padding: 5px;
+}
+
+.btn-info {
+    background-color: rgb(16, 94, 94);
 }
 
 #mealcart {
@@ -282,6 +306,12 @@ li {
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
     font-size: 1.5rem;
+}
+
+h3 {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 3rem;
+    color: rgb(185, 14, 14);
 }
 
 /* Dessert page */
@@ -313,6 +343,13 @@ li {
     font-size: 1.5rem;
 }
 
+#desserttotal {
+    text-align: left;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2rem;
+}
+
 /* Footer styling */
 
 .footer {
@@ -340,12 +377,14 @@ b {
 
 .signup-title {
     position: relative;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(185, 14, 14);
     top: -10px;
     left: -10px;
     margin-bottom: 0px;
 }
 
-.signup h5 {
+.signup {
     margin: 0px;
 }
 
@@ -361,6 +400,14 @@ b {
     position: relative;
     top: 20px;
     padding-bottom: 100px;
+}
+
+/* logout page */
+
+.logout-title {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 3rem;
+    color: rgb(185, 14, 14);
 }
 
 @media all and (max-width: 1500px) {
@@ -419,14 +466,14 @@ b {
 
     /* home page */
 
-    h1 {
+    .home-page h1 {
         font-size: 4rem;
         left: 40px;
         top: 100px;
         width: 450px;
     }
 
-    h2 {
+    .home-page h2 {
         top: 160px;
         left: 150px;
     }
@@ -457,10 +504,10 @@ b {
         margin-left: 50px;
     }
 
-    .instruction-red {
+    .enjoy {
         font-size: 2rem;
-        margin-top: 630px;
-        margin-left: 340px;
+        margin-top: 430px;
+        margin-left: 300px;
     }
 
     /* Meal page */
@@ -579,20 +626,20 @@ b {
         font-size: x-large;
     }
 
+    .slate-background {
+        height: 600px;
+        width: 400px;
+    }
+
     .instruction-blue {
         font-size: 1.5rem;
         margin-top: 140px;
         padding-right: 30px;
     }
 
-    .slate-background {
-        height: 600px;
-        width: 400px;
-    }
-
-    .instruction-red {
-        margin-top: 450px;
-        margin-left: 180px;
+    .enjoy {
+        margin-top: 250px;
+        margin-left: 140px;
     }
 
     /* Meal page */
@@ -630,7 +677,7 @@ b {
 
     /* home page */
 
-    h1 {
+    .home-page h1 {
         position: relative;
         font-size: 3rem;
         left: 30px;
@@ -638,7 +685,7 @@ b {
         top: 30px;
     }
 
-    h2 {
+    .home-page h2 {
         position: relative;
         left: 100px;
         top: -25px;
@@ -672,8 +719,8 @@ b {
         margin-left: 20px;
     }
 
-    .instruction-red {
-        margin-top: 470px;
+    .enjoy {
+        margin-top: 370px;
         margin-left: 140px;
     }
 
@@ -720,13 +767,13 @@ b {
 
     /* Home page */
 
-    h1 {
+    .home-page h1 {
         width: 270px;
         left: 10px;
         font-size: 2.3rem;
     }
 
-    h2 {
+    .home-page h2 {
         font-size: 1.7rem;
         top: -20px;
         left: 70px;
@@ -761,9 +808,10 @@ b {
         font-size: 21px;
     }
 
-    .instruction-red {
-        margin-top: 430px;
-        margin-left: 150px;
+    .enjoy {
+        margin-top: 320px;
+        left: 0px;
+
     }
 
     /* Meal page */
@@ -782,10 +830,6 @@ b {
 
     .orders {
         margin-top: 150px;
-    }
-
-    h3 {
-        font-size: 2rem;
     }
 
     li {
@@ -813,6 +857,10 @@ b {
 
     .cart-slate-background {
         padding: 0px;
+    }
+
+    .order-list {
+        font-size: 40px;
     }
 
     .cart li {
