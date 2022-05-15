@@ -174,19 +174,6 @@ body {
     font-size: 2rem;
 }
 
-#mealtotal {
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    font-size: 2rem;
-}
-
-.item-description {
-    margin-top: 50px;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    font-size: 2rem;
-}
-
 /* Cart  */
 
 .orders {
@@ -283,7 +270,17 @@ li {
     border-radius: 50%;
 }
 
+#mealtotal {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2rem;
+}
+
 .item-description {
+    margin-top: 50px;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2rem;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -828,7 +825,7 @@ b {
     /* Meal page */
 
     .meal-menu-background {
-        height: 2100px;
+        height: 2200px;
         width: 90%;
     }
 
@@ -836,7 +833,7 @@ b {
 
     .dessert-menu-background {
         width: 90%;
-        height: 2000px;
+        height: 2100px;
     }
 
     .orders {
@@ -859,8 +856,12 @@ b {
         font-size: 3rem;
     }
 
+    .item-title {
+        margin-bottom: 10px;
+    }
+
     .item-description {
-        margin: 0px;
+        margin-top: 10px;
         font-size: 1.5rem;
     }
 
