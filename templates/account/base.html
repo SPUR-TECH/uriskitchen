@@ -43,7 +43,8 @@
             </li>
             {% endif %}
             <li class="nav-item mt-3 mr-4">
-                <a href="{% url 'cart_view' %}" class="nav-link {% if active_link == 'order' %}active{% endif %}">
+                <a href="{% url 'cart_view' %}" name="cart"
+                    class="nav-link {% if active_link == 'order' %}active{% endif %}">
                     <img src="https://res.cloudinary.com/dnczeth0j/image/upload/c_scale,w_30/v1651084569/static/images/icons8-shopping-cart-48_1_uxuqae.png"
                         alt="shopping cart"> <span id="cart"></span></a>
             </li>
@@ -64,8 +65,8 @@
                         href="{% url 'meal_view' %}">MEALS</a>
                 </li>
                 <li class="nav-item mt-1">
-                    <a class="nav-link {% if active_link == 'desert' %}active{% endif %}"
-                        href="{% url 'desert_view' %}">DESSERTS</a>
+                    <a class="nav-link {% if active_link == 'dessert' %}active{% endif %}"
+                        href="{% url 'dessert_view' %}">DESSERTS</a>
                 </li>
             </ul>
 

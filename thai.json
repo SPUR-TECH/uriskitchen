@@ -1,0 +1,41 @@
+[{
+        "model": "thai.meal",
+        "pk": 1,
+        "fields": {
+            "title": "Thai Green Curry",
+            "description": "A beautifully delicious Thai curry with red peppers, runner beans, garlic and authentic Thai herbs and spices.\r\n\r\nServed with white rice.",
+            "price_Medium": "6.00",
+            "price_Large": "8.00",
+            "featured_image": "image/upload/v1650717524/gu8tylcmrue31u1udxub.jpg"
+        }
+    }, {
+        "model": "thai.meal",
+        "pk": 2,
+        "fields": {
+            "title": "Spinach squash salad",
+            "description": "Spinach and squash salad with fresh crunchy salad and a delicious coconut dressing",
+            "price_Medium": "6.00",
+            "price_Large": "8.00",
+            "featured_image": "image/upload/v1650824904/mb31q2frklytqfsbpbvn.jpg"
+        }
+    }, {
+        "model": "thai.meal",
+        "pk": 3,
+        "fields": {
+            "title": "Thai Noodles",
+            "description": "Thai noodles with red peppers, orange peppers, bean shoots and authentic Thai spices.",
+            "price_Medium": "6.00",
+            "price_Large": "8.00",
+            "featured_image": "image/upload/v1650717398/fg0lxnxtzrxhywlpt4m8.jpg"
+        }
+    }, {
+        "model": "thai.meal",
+        "pk": 4,
+        "fields": {
+            "title": "Thai spiced beef",
+            "description": "A deliciously spicy beef with lemon zest, red peppers, chilies and organic Thai style herbs.\r\n\r\nServed with white rice",
+            "price_Medium": "6.00",
+            "price_Large": "8.00",
+            "featured_image": "image/upload/v1650717824/lpht0wura1yi3xlaooyh.jpg"
+        }
+    }
