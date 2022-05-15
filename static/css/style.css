@@ -693,33 +693,34 @@ b {
 
     .home-page h1 {
         position: relative;
-        font-size: 2.5rem;
-        left: 30px;
-        width: 340px;
+        font-size: 2.2rem;
+        left: 10px;
+        width: 300px;
         top: 30px;
     }
 
     .home-page h2 {
         position: relative;
         left: 100px;
-        top: -20px;
-        font-size: 2rem;
-        width: 300px;
+        top: -18px;
+        font-size: 1.5rem;
+        width: 80%;
         ;
     }
 
     .call {
+        font-size: 1.3rem;
         top: 0px;
-        left: 50px;
-        font-size: 2rem;
+        left: 30px;
         height: 160px;
-        width: 300px;
+        width: 250px;
+        padding-top: 10px;
     }
 
     .phone {
-        top: -110px;
-        left: 100px;
-        font-size: x-large;
+        top: -120px;
+        left: 60px;
+        font-size: large;
     }
 
     .slate-background {
@@ -784,16 +785,13 @@ b {
     /* Home page */
 
     .home-page h1 {
-        width: 300px;
         left: 10px;
-        font-size: 2rem;
     }
 
     .home-page h2 {
         font-size: 1.7rem;
         top: -18px;
         left: 70px;
-        width: 250px;
     }
 
     .call {
