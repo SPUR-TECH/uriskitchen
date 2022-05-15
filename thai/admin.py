@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Meal, Desert
+from .models import Meal, Dessert
 
 
 class MealAdmin(admin.ModelAdmin):
@@ -9,8 +9,8 @@ class MealAdmin(admin.ModelAdmin):
 admin.site.register(Meal, MealAdmin)
 
 
-class DesertAdmin(admin.ModelAdmin):
+class DessertAdmin(admin.ModelAdmin):
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-admin.site.register(Desert, DesertAdmin)
+admin.site.register(Dessert, DessertAdmin)

@@ -22,7 +22,7 @@ class Meal(models.Model):
         return self.title
 
 
-class Desert(models.Model):
+class Dessert(models.Model):
     title = models.CharField(max_length=120)
     description = models.TextField()
     price_Medium = models.DecimalField(max_digits=5, decimal_places=2)

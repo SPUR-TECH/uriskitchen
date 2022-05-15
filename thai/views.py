@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-from .models import Meal, Home, Desert
+from .models import Meal, Home, Dessert
 
 
 def home_view(request):
@@ -16,11 +16,11 @@ def meal_view(request):
     return render(request, template, context)
 
 
-def desert_view(request):
-    template = "thai/desert.html"
-    desert_objects = Desert.objects.all()
+def dessert_view(request):
+    template = "thai/dessert.html"
+    dessert_objects = Dessert.objects.all()
     context = {
-        'desert_objects': desert_objects,'active_link': 'desert'}
+        'dessert_objects': dessert_objects,'active_link': 'dessert'}
     return render(request, template, context)
 
 

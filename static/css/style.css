@@ -26,13 +26,13 @@ body {
     z-index: -1;
 }
 
-#overlay-desert {
+#overlay-dessert {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002269/static/media/images/desert-background_dkdjbh.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002269/static/media/images/dessert-background_dkdjbh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -171,29 +171,7 @@ h5 {
     font-size: 2rem;
 }
 
-b {
-    color: rgb(160, 5, 5);
-}
-
-#mealcart {
-    position: relative;
-    text-align: left;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    font-size: 1.5rem;
-}
-
-#desertcart {
-    position: relative;
-    text-align: left;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    font-size: 1.5rem;
-}
-
-.price {
-    color: rgb(100, 184, 61);
-}
+/* Cart  */
 
 .orders {
     position: relative;
@@ -239,25 +217,6 @@ li {
     display: flex;
 }
 
-/* Footer styling */
-
-.footer {
-    width: 100%;
-    margin-top: 335px;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-}
-
-.copyright {
-    color: rgb(0, 0, 0);
-    background-color: rgba(131, 131, 131, 0.9);
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    font-size: 1.5rem;
-    z-index: 100;
-}
-
 /* Meal page */
 
 .title {
@@ -280,6 +239,19 @@ li {
     z-index: 100;
 }
 
+.meal-menu-background {
+    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
+    height: 1300px;
+    width: 62%;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .item-title {
     font-family: 'Beau Rivage', cursive;
     font-size: 3rem;
@@ -293,19 +265,6 @@ li {
     margin-right: 30px;
 }
 
-.slate-meal-background {
-    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1300px;
-    width: 62%;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 200px;
-    overflow: hidden;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .meal-images {
     position: relative;
     width: 300px;
@@ -313,9 +272,21 @@ li {
     border-radius: 50%;
 }
 
-/* Desert page */
+.price {
+    color: rgb(100, 184, 61);
+}
 
-.slate-desert-background {
+#mealcart {
+    position: relative;
+    text-align: left;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 1.5rem;
+}
+
+/* Dessert page */
+
+.dessert-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
     height: 1200px;
     width: 62%;
@@ -328,10 +299,41 @@ li {
     background-size: cover;
 }
 
-.desert-images {
+.dessert-images {
     width: 200px;
     height: 150px;
     border-radius: 50%;
+}
+
+#dessertcart {
+    position: relative;
+    text-align: left;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 1.5rem;
+}
+
+/* Footer styling */
+
+.footer {
+    width: 100%;
+    margin-top: 335px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+}
+
+.copyright {
+    color: rgb(0, 0, 0);
+    background-color: rgba(131, 131, 131, 0.9);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
+    z-index: 100;
+}
+
+b {
+    color: rgb(160, 5, 5);
 }
 
 /* Signup page */
@@ -362,35 +364,42 @@ li {
 }
 
 @media all and (max-width: 1500px) {
+
+    /* Meal page */
+
     .meal-images {
         width: 250px;
         height: 150px;
     }
 
-    .slate-meal-background {
+    .meal-menu-background {
         width: 60%;
         height: 1400px;
-    }
-
-    .slate-desert-background {
-        width: 60%;
-        height: 1400px;
-    }
-
-    #desertcart {
-        padding-left: 10px;
-    }
-
-    .del {
-        right: 20px;
     }
 
     #mealcart {
         padding-left: 10px;
     }
 
+    /* Dessert page */
+
+    .dessert-menu-background {
+        width: 60%;
+        height: 1400px;
+    }
+
+    #dessertcart {
+        padding-left: 10px;
+    }
+
+    /* Cart */
+
     .cart li {
         padding-left: 20px;
+    }
+
+    .del {
+        right: 20px;
     }
 
     /* Sign up page */
@@ -409,6 +418,18 @@ li {
     }
 
     /* home page */
+
+    h1 {
+        font-size: 4rem;
+        left: 40px;
+        top: 100px;
+        width: 450px;
+    }
+
+    h2 {
+        top: 160px;
+        left: 150px;
+    }
 
     .slate-background {
         height: 45rem;
@@ -442,21 +463,9 @@ li {
         margin-left: 340px;
     }
 
-    h1 {
-        font-size: 4rem;
-        left: 40px;
-        top: 100px;
-        width: 450px;
-    }
-
-    h2 {
-        top: 160px;
-        left: 150px;
-    }
-
     /* Meal page */
 
-    .slate-meal-background {
+    .meal-menu-background {
         margin-left: 0px;
         height: 1600px;
         width: 61%;
@@ -475,13 +484,13 @@ li {
         padding: 20px;
     }
 
-    /* Desert page */
+    /* Dessert page */
 
-    .slate-desert-background {
+    .dessert-menu-background {
         margin-left: 0px;
     }
 
-    .desert-images {
+    .dessert-images {
         width: 150px;
         height: 100px;
     }
@@ -507,7 +516,7 @@ li {
 
     /* Meal page */
 
-    .slate-meal-background {
+    .meal-menu-background {
         height: 1600px;
         margin-left: 0px;
     }
@@ -533,9 +542,9 @@ li {
         z-index: 10;
     }
 
-    /* Desert page */
+    /* Dessert page */
 
-    .slate-desert-background {
+    .dessert-menu-background {
         height: 1450px;
     }
 
@@ -548,7 +557,7 @@ li {
         margin-right: 20px;
     }
 
-    #desertcart {
+    #dessertcart {
         padding-left: 0px;
     }
 
@@ -561,7 +570,7 @@ li {
 
     /* home page */
 
-    .restaurant {
+    .call {
         font-size: xx-large;
         width: 250px;
     }
@@ -588,19 +597,19 @@ li {
 
     /* Meal page */
 
-    .slate-meal-background {
+    .meal-menu-background {
         height: 2100px;
         width: 95%;
     }
 
-    /* Desert page */
+    /* Dessert page */
 
-    .slate-desert-background {
+    .dessert-menu-background {
         width: 95%;
         height: 2000px;
     }
 
-    #desertcart {
+    #dessertcart {
         padding-left: 30px;
     }
 
@@ -678,12 +687,14 @@ li {
 
     /* Meal page */
 
-    .slate-meal-background {
+    .meal-menu-background {
         height: 2250px;
     }
 
-    .slate-desert-background {
-        height: 2100px;
+    /* Dessert page */
+
+    .dessert-menu-background {
+        height: 2200px;
     }
 
     .orders {
@@ -757,14 +768,14 @@ li {
 
     /* Meal page */
 
-    .slate-meal-background {
-        height: 2200px;
+    .meal-menu-background {
+        height: 2100px;
         width: 90%;
     }
 
-    /* Desert page */
+    /* Dessert page */
 
-    .slate-desert-background {
+    .dessert-menu-background {
         width: 90%;
         height: 2000px;
     }
@@ -781,7 +792,7 @@ li {
         font-size: 1.2rem;
     }
 
-    #desertcart {
+    #dessertcart {
         padding-left: 10px;
     }
 

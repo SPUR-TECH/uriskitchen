@@ -7,9 +7,9 @@
 {% load static %}
 
 
-<div id="overlay-desert"></div>
+<div id="overlay-dessert"></div>
 <div class="container-fluid">
-    <div class="slate-desert-background"></div>
+    <div class="dessert-menu-background"></div>
 
     <div class="row text-center">
         <div class="col-md-8">
@@ -17,31 +17,31 @@
             <h6 class="title">Thai Desserts</h6>
             <h4 class="title2">Menu</h4>
             <div class="row">
-                {% for desert in desert_objects %}
+                {% for dessert in dessert_objects %}
                 <div class="col-md-6">
-                    <h5 class="item-title" id="desertname{{ desert.id }}">{{ desert.title }}</h5>
+                    <h5 class="item-title" id="dessertname{{ dessert.id }}">{{ dessert.title }}</h5>
 
-                    ﻿<img class="desert-images" src="{{ desert.featured_image.url }}" alt="">
+                    ﻿<img class="dessert-images" src="{{ dessert.featured_image.url }}" alt="">
 
-                    <h5 class="item-description">{{ desert.description }}</h5>
+                    <h5 class="item-description">{{ dessert.description }}</h5>
 
                     <div class="form-check-inline color-info ">
                         <label class=" form-check-label">
-                            <input class="form-check-input" type="radio" name="desert{{ desert.id }}"
-                                value="{{ desert.price_Medium }}" checked>
-                            <p class="price">( M ) £{{ desert.price_Medium }}</p>
+                            <input class="form-check-input" type="radio" name="dessert{{ dessert.id }}"
+                                value="{{ dessert.price_Medium }}" checked>
+                            <p class="price">( M ) £{{ dessert.price_Medium }}</p>
                         </label>
                     </div>
 
                     <div class="form-check-inline">
                         <label class=" form-check-label">
-                            <input class="form-check-input" type="radio" name="desert{{ desert.id }}"
-                                value="{{ desert.price_Large }}">
-                            <p class="price">( L ) £{{ desert.price_Large }}</p>
+                            <input class="form-check-input" type="radio" name="dessert{{ dessert.id }}"
+                                value="{{ dessert.price_Large }}">
+                            <p class="price">( L ) £{{ dessert.price_Large }}</p>
                         </label>
                     </div>
                     <div>
-                        <button class="btn-info mt-3" onclick="addDesert('{{ desert.id }}')">Add To Cart</button>
+                        <button class="btn-info mt-3" onclick="addDessert('{{ dessert.id }}')">Add To Cart</button>
                     </div>
 
                 </div>
@@ -53,8 +53,8 @@
         <div class="col-md-4 orders">
             <div>
                 <h3 class="text-center pt-3">Order List</h3>
-                <ul id="desertcart"></ul>
-                <h4 class="text-center mt-5" id="deserttotal">Total: £ 0 </h4>
+                <ul id="dessertcart"></ul>
+                <h4 class="text-center mt-5" id="desserttotal">Total: £ 0 </h4>
             </div>
             {% if user.is_authenticated %}
             <div class="complete-order">
@@ -85,6 +85,6 @@
     </div>
 </footer>
 
-<script src="{% static 'js/desert.js' %}"></script>
+<script src="{% static 'js/dessert.js' %}"></script>
 
 {% endblock %}
