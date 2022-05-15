@@ -10,7 +10,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -21,7 +21,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002374/static/media/images/meals-background_isqaio.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002374/static/media/images/meals-background_isqaio.png");
     background-size: cover;
     z-index: -1;
 }
@@ -32,7 +32,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002269/static/media/images/desert-background_dkdjbh.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002269/static/media/images/desert-background_dkdjbh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -47,22 +47,22 @@ body {
 
 /* Home page */
 
-.restaurant {
+.call {
     position: relative;
-    top: 150px;
+    top: 180px;
     left: 100px;
     width: 300px;
-    height: 120px;
+    height: 210px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: black;
 }
 
 .phone {
     position: relative;
-    top: 100px;
     left: 120px;
     width: 60%;
+    top: 40px;
 }
 
 .container {
@@ -82,11 +82,13 @@ body {
 }
 
 .slate-background {
+    display: flex;
+    justify-content: center;
     margin-top: 180px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
-    height: 40rem;
-    width: 55rem;
+    height: 50rem;
+    width: 50rem;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -116,15 +118,38 @@ h1 {
     position: absolute;
     left: 40px;
     top: 100px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 50%;
+    width: 550px;
 }
 
 h2 {
     font-family: 'Beau Rivage', cursive;
     position: absolute;
-    top: 155px;
+    top: 175px;
     left: 240px;
     color: rgb(0, 145, 145);
     font-size: 3rem;
+}
+
+.instruction-blue {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(0, 145, 145);
+    font-size: 2.5rem;
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 50px;
+}
+
+.instruction-red {
+    position: relative;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 2.5rem;
+    color: rgb(185, 14, 14);
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 570px;
 }
 
 h3 {
@@ -212,24 +237,6 @@ b {
 
 li {
     display: flex;
-}
-
-.instruction-blue {
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    font-size: 2.5rem;
-    position: absolute;
-    margin-top: 190px;
-    margin-left: 50px;
-}
-
-.instruction-red {
-    font-family: 'Beau Rivage', cursive;
-    font-size: 2.5rem;
-    color: rgb(185, 14, 14);
-    position: absolute;
-    margin-top: 490px;
-    margin-left: 570px;
 }
 
 /* Footer styling */
@@ -404,7 +411,7 @@ li {
     /* home page */
 
     .slate-background {
-        height: 35rem;
+        height: 45rem;
         width: 70%;
         margin-left: 0px;
     }
@@ -431,7 +438,7 @@ li {
 
     .instruction-red {
         font-size: 2rem;
-        margin-top: 440px;
+        margin-top: 630px;
         margin-left: 340px;
     }
 
@@ -439,10 +446,11 @@ li {
         font-size: 4rem;
         left: 40px;
         top: 100px;
+        width: 450px;
     }
 
     h2 {
-        top: 140px;
+        top: 160px;
         left: 150px;
     }
 
@@ -562,12 +570,20 @@ li {
         font-size: x-large;
     }
 
-    #desertcart {
-        padding-left: 30px;
+    .instruction-blue {
+        font-size: 1.5rem;
+        margin-top: 140px;
+        padding-right: 30px;
     }
 
-    li {
-        font-size: 1.7rem;
+    .slate-background {
+        height: 600px;
+        width: 400px;
+    }
+
+    .instruction-red {
+        margin-top: 450px;
+        margin-left: 180px;
     }
 
     /* Meal page */
@@ -584,15 +600,12 @@ li {
         height: 2000px;
     }
 
-    .instruction-blue {
-        font-size: 1.5rem;
-        margin-top: 140px;
-        padding-right: 30px;
+    #desertcart {
+        padding-left: 30px;
     }
 
-    .instruction-red {
-
-        margin-left: 180px;
+    li {
+        font-size: 1.7rem;
     }
 
     .order {
@@ -608,14 +621,33 @@ li {
 
     /* home page */
 
-    .restaurant {
+    h1 {
+        position: relative;
+        font-size: 3rem;
+        left: 30px;
+        width: 340px;
+        top: 30px;
+    }
+
+    h2 {
+        position: relative;
+        left: 100px;
+        top: -25px;
+        font-size: 2.3rem;
+        width: 300px;
+        ;
+    }
+
+    .call {
         top: 0px;
         left: 50px;
+        font-size: 2rem;
+        height: 160px;
     }
 
     .phone {
-        top: -60px;
-        left: 80px;
+        top: -110px;
+        left: 100px;
         font-size: x-large;
     }
 
@@ -628,28 +660,12 @@ li {
     .instruction-blue {
         font-size: 1.5rem;
         margin-top: 140px;
-        padding-right: 100px;
+        margin-left: 20px;
     }
 
     .instruction-red {
         margin-top: 470px;
         margin-left: 140px;
-    }
-
-    .home-page h1 {
-        position: relative;
-        font-size: 3rem;
-        left: 30px;
-        width: 80%;
-        top: 30px;
-    }
-
-    h2 {
-        position: relative;
-        left: 90px;
-        top: -10px;
-        font-size: 2.5rem;
-        width: 80%;
     }
 
     .slate-container h3 {
@@ -693,32 +709,50 @@ li {
 
     /* Home page */
 
-    .restaurant {
-        top: 50px;
+    h1 {
+        width: 270px;
+        left: 10px;
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        top: -20px;
+        left: 70px;
+        width: 200px;
+    }
+
+    .call {
+        font-size: 1.3rem;
+        top: 0px;
         left: 30px;
-        height: 100px;
+        height: 110px;
         width: 240px;
+        padding-top: 10px;
+        width: 200px;
     }
 
     .phone {
-        top: 0px;
-        left: 80px;
+        top: -80px;
+        left: 60px;
         font-size: large;
     }
 
     .slate-background {
-        height: 41rem;
+        height: 31rem;
         width: 25rem;
         border-radius: 0px;
-    }
-
-    .instruction-red {
-        margin-top: 530px;
-        margin-left: 150px;
+        margin-top: 50px;
     }
 
     .instruction-blue {
-        padding-right: 40px;
+        padding-right: 10px;
+        font-size: 21px;
+    }
+
+    .instruction-red {
+        margin-top: 430px;
+        margin-left: 150px;
     }
 
     /* Meal page */
@@ -737,17 +771,6 @@ li {
 
     .orders {
         margin-top: 150px;
-    }
-
-    .home-page h1 {
-        font-size: 2.3rem;
-        left: 20px;
-    }
-
-    h2 {
-        font-size: 1.7rem;
-        top: 0px;
-        left: 60px;
     }
 
     h3 {
