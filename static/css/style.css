@@ -43,6 +43,7 @@ body {
 
 .navbar {
     background-color: black;
+    margin-bottom: 100px;
 }
 
 .navbar-toggler-icon {
@@ -114,25 +115,27 @@ body {
     margin-top: 290px;
 }
 
+.home-black-background {
+    background-color: black;
+    height: 200px;
+    width: 650px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
 .home-page h1 {
     font-family: 'Beau Rivage', cursive;
     font-size: 5rem;
     font-weight: 500;
     color: rgb(185, 14, 14);
-    position: absolute;
-    left: 40px;
-    top: 100px;
-    background-color: black;
-    padding: 20px;
-    border-radius: 50%;
-    width: 550px;
+    margin-left: 50px;
+    padding-top: 40px;
 }
 
 .home-page h2 {
     font-family: 'Beau Rivage', cursive;
-    position: absolute;
-    top: 175px;
-    left: 240px;
+    margin-top: -45px;
+    margin-left: 240px;
     color: rgb(0, 145, 145);
     font-size: 3rem;
 }
@@ -176,10 +179,18 @@ body {
 
 /* Meal page */
 
+.black-background {
+    background-color: black;
+    height: 120px;
+    width: 500px;
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+
 .title {
-    text-align: center;
-    margin: 0px;
-    margin-top: 30px;
+    right: 200px;
+    padding-top: 10px;
+    margin-top: 10px;
     font-family: 'Beau Rivage', cursive;
     font-size: 5rem;
     font-weight: 500;
@@ -193,7 +204,8 @@ body {
     font-weight: 500;
     color: rgb(0, 145, 145);
     font-size: 3rem;
-    z-index: 100;
+    margin-top: -50px;
+    margin-left: 110px;
 }
 
 .meal-menu-background {
@@ -468,16 +480,18 @@ b {
 
     /* home page */
 
+    .home-black-background {
+        height: 160px;
+        width: 550px;
+        margin-left: 100px;
+    }
+
     .home-page h1 {
         font-size: 4rem;
-        left: 40px;
-        top: 100px;
-        width: 450px;
     }
 
     .home-page h2 {
-        top: 160px;
-        left: 150px;
+        margin-left: 150px;
     }
 
     .slate-background {
@@ -575,20 +589,25 @@ b {
         height: 100px;
     }
 
+    .black-background {
+        width: 350px;
+        height: 100px;
+    }
+
     .title {
         margin-top: 30px;
         font-size: 4rem;
+    }
+
+    .title2 {
+        font-size: 2.5rem;
+        margin-top: -40px;
     }
 
     .item-title {
 
         font-size: 2.5rem;
         margin-top: 80px;
-    }
-
-    .title2 {
-        font-size: 2rem;
-        z-index: 10;
     }
 
     /* Dessert page */
@@ -619,13 +638,19 @@ b {
 
     /* home page */
 
-    .home-page h1 {
-        font-size: 2.5rem;
+    .home-black-background {
+        height: 140px;
         width: 400px;
+        margin-left: 100px;
+    }
+
+    .home-page h1 {
+        font-size: 3.5rem;
+        margin-left: 20px;
     }
 
     .home-page h2 {
-        top: 150px;
+        margin-top: -35px;
         font-size: 1.8rem;
     }
 
@@ -689,21 +714,24 @@ b {
 
     /* home page */
 
+    .home-black-background {
+        height: 100px;
+        width: 350px;
+        margin-top: -10px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    }
+
     .home-page h1 {
-        position: relative;
-        font-size: 2.2rem;
-        left: 10px;
-        width: 300px;
-        top: 30px;
+        font-size: 3rem;
+        margin-left: 20px;
+        padding-top: 20px;
     }
 
     .home-page h2 {
-        position: relative;
-        left: 100px;
-        top: -18px;
-        font-size: 1.5rem;
-        width: 80%;
-        ;
+        margin-top: -25px;
+        font-size: 1.8rem;
+        margin-left: 100px;
     }
 
     .call {
@@ -749,6 +777,11 @@ b {
 
     /* Meal page */
 
+    .black-background {
+        width: 300px;
+        height: 80px;
+    }
+
     .meal-menu-background {
         height: 2250px;
     }
@@ -782,16 +815,21 @@ b {
 
     /* Home page */
 
+    .home-black-background {
+        height: 90px;
+        width: 280px;
+        margin-top: -10px;
+        margin-bottom: 100px;
+        margin-left: 10px;
+    }
+
     .home-page h1 {
-        left: 10px;
         font-size: 2rem;
-        width: 300px;
     }
 
     .home-page h2 {
         font-size: 1.7rem;
-        top: -18px;
-        left: 70px;
+        margin-left: 70px;
     }
 
     .call {
