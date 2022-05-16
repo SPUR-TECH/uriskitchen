@@ -287,6 +287,10 @@ li {
 
 .price {
     color: rgb(86, 196, 36);
+    background-color: black;
+    width: 100px;
+    border-radius: 50%;
+    padding-bottom: 5px;
 }
 
 .btn-info {
@@ -825,7 +829,7 @@ b {
     /* Meal page */
 
     .meal-menu-background {
-        height: 2200px;
+        height: 2400px;
         width: 90%;
     }
 
@@ -833,7 +837,7 @@ b {
 
     .dessert-menu-background {
         width: 90%;
-        height: 2100px;
+        height: 2300px;
     }
 
     .orders {
