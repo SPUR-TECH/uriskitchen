@@ -210,7 +210,7 @@ body {
 
 .meal-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1300px;
+    height: 1400px;
     width: 62%;
     position: absolute;
     margin-left: 40px;
@@ -580,7 +580,7 @@ b {
     /* Meal page */
 
     .meal-menu-background {
-        height: 1600px;
+        height: 1700px;
         margin-left: 0px;
     }
 
@@ -613,7 +613,7 @@ b {
     /* Dessert page */
 
     .dessert-menu-background {
-        height: 1450px;
+        height: 1650px;
     }
 
     .order h3 {
@@ -682,7 +682,7 @@ b {
     /* Meal page */
 
     .meal-menu-background {
-        height: 2100px;
+        height: 2200px;
         width: 95%;
     }
 
@@ -690,7 +690,7 @@ b {
 
     .dessert-menu-background {
         width: 95%;
-        height: 2000px;
+        height: 2100px;
     }
 
     #dessertcart {
@@ -782,14 +782,23 @@ b {
         height: 80px;
     }
 
+    .title {
+        font-size: 3rem;
+    }
+
+    .title2 {
+        font-size: 2rem;
+        margin-top: -35px;
+    }
+
     .meal-menu-background {
-        height: 2250px;
+        height: 2400px;
     }
 
     /* Dessert page */
 
     .dessert-menu-background {
-        height: 2200px;
+        height: 2350px;
     }
 
     .orders {
@@ -867,8 +876,12 @@ b {
 
     /* Meal page */
 
+    .black-background {
+        width: 250px;
+    }
+
     .meal-menu-background {
-        height: 2500px;
+        height: 2600px;
         width: 90%;
     }
 
@@ -876,7 +889,7 @@ b {
 
     .dessert-menu-background {
         width: 90%;
-        height: 2300px;
+        height: 2500px;
     }
 
     .orders {
