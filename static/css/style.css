@@ -878,6 +878,17 @@ b {
 
     .black-background {
         width: 250px;
+        height: 80px;
+        margin-left: -10px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .title2 {
+        font-size: 2rem;
+        margin-top: -30px;
     }
 
     .meal-menu-background {
@@ -906,10 +917,6 @@ b {
 
     .del {
         right: 15px;
-    }
-
-    .title {
-        font-size: 3rem;
     }
 
     .item-title {
