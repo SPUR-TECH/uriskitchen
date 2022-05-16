@@ -174,52 +174,6 @@ body {
     font-size: 2rem;
 }
 
-/* Cart  */
-
-.orders {
-    position: relative;
-    top: 200px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
-    background-repeat: no-repeat;
-    height: 45rem;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 0px;
-}
-
-.cart {
-    position: relative;
-    top: 200px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
-    background-repeat: no-repeat;
-    height: 60rem;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.cart li {
-    font-size: 2.5rem;
-}
-
-.del {
-    background-color: transparent;
-    color: rgb(185, 14, 14);
-    position: absolute;
-    right: 30px;
-    height: 30px;
-    font-weight: 600;
-}
-
-.del:hover {
-    cursor: pointer;
-}
-
-li {
-    display: flex;
-}
-
 /* Meal page */
 
 .title {
@@ -290,7 +244,8 @@ li {
     background-color: black;
     width: 100px;
     border-radius: 50%;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .btn-info {
@@ -345,6 +300,52 @@ h3 {
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
     font-size: 2rem;
+}
+
+/* Cart  */
+
+.orders {
+    position: relative;
+    top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.cart {
+    position: relative;
+    top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cart li {
+    font-size: 2.5rem;
+}
+
+.del {
+    background-color: transparent;
+    color: rgb(185, 14, 14);
+    position: absolute;
+    right: 30px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.del:hover {
+    cursor: pointer;
+}
+
+li {
+    display: flex;
 }
 
 /* Footer styling */
