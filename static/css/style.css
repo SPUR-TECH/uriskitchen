@@ -290,7 +290,7 @@ li {
     background-color: black;
     width: 100px;
     border-radius: 50%;
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 .btn-info {
@@ -829,7 +829,7 @@ b {
     /* Meal page */
 
     .meal-menu-background {
-        height: 2400px;
+        height: 2500px;
         width: 90%;
     }
 
