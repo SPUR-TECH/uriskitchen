@@ -658,18 +658,18 @@ b {
 
     .home-black-background {
         height: 140px;
-        width: 400px;
+        width: 420px;
         margin-left: 100px;
     }
 
     .red-circle {
         height: 130px;
-        width: 390px;
+        width: 410px;
     }
 
     .home-page h1 {
         font-size: 3.5rem;
-        margin-left: 20px;
+        margin-left: 30px;
         margin-top: -10px;
     }
 
@@ -758,7 +758,7 @@ b {
     }
 
     .home-page h2 {
-        margin-top: -25px;
+        margin-top: -30px;
         font-size: 1.8rem;
         margin-left: 100px;
     }
@@ -855,24 +855,25 @@ b {
 
     .home-black-background {
         height: 120px;
-        width: 310px;
-        margin-top: -10px;
+        width: 320px;
+        margin-top: -50px;
         margin-bottom: 100px;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .red-circle {
         height: 110px;
-        width: 300px;
+        width: 310px;
     }
 
     .home-page h1 {
         font-size: 2.3rem;
+        margin-left: 30px;
     }
 
     .home-page h2 {
         font-size: 1.6rem;
-        margin-left: 60px;
+        margin-left: 100px;
     }
 
     .call {
