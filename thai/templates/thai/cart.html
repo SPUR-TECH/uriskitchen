@@ -17,17 +17,17 @@
                 {% if user.is_authenticated %}
                 <div class="complete-order">
                     <a href="{% url 'success_view' %}">
-                        <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Complete
+                        <button type="submit" class="submit btn-info pb-1" onclick="order()">Complete
                             Order</button></a>
                 </div>
                 {% else %}
                 <div>
-                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mt-3 pb-1">Log
+                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info pb-1">Log
                             in</button></a>
                 </div>
                 <h3>or</h3>
                 <div>
-                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info mt-3 pb-1">Sign
+                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info pb-1">Sign
                             up</button></a>
                 </div>
                 {% endif %}

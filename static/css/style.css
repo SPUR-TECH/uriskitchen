@@ -1019,6 +1019,7 @@ b {
 
     .cart-slate-background {
         padding: 0px;
+        top: -150px;
     }
 
     .order-list {
