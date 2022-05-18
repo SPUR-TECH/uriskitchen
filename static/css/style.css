@@ -737,9 +737,10 @@ b {
         padding-right: 30px;
     }
 
-    .enjoy {
-        margin-top: 270px;
-        margin-left: 130px;
+    .enjoy h3 {
+        margin-top: 70px;
+        margin-left: -100px;
+        font-size: 40px;
     }
 
     /* Meal page */
@@ -829,9 +830,8 @@ b {
         margin-left: 20px;
     }
 
-    .enjoy {
-        margin-top: 370px;
-        margin-left: 50px;
+    .enjoy h3 {
+        top: -70px;
     }
 
     .slate-container h3 {
@@ -956,7 +956,7 @@ b {
 
     .enjoy h3 {
         margin-top: 150px;
-        left: -30px;
+        left: -60px;
     }
 
     /* Meal page */
