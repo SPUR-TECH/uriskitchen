@@ -955,12 +955,12 @@ b {
 
     .black-background {
         width: 250px;
-        height: 100px;
+        height: 120px;
         margin-left: -10px;
     }
 
     .red-circle-meal {
-        height: 90px;
+        height: 110px;
         width: 240px;
     }
 
@@ -986,7 +986,7 @@ b {
     }
 
     .red-circle-dessert {
-        height: 90px;
+        height: 110px;
         width: 240px;
     }
 
