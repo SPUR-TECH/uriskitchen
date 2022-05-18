@@ -487,6 +487,10 @@ b {
         padding-left: 10px;
     }
 
+    li {
+        font-size: 20px;
+    }
+
     /* Cart */
 
     .cart li {
