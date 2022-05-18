@@ -752,15 +752,15 @@ b {
     }
 
     .home-page h1 {
-        font-size: 3rem;
-        margin-left: 20px;
+        font-size: 2.6rem;
+        margin-left: 30px;
         padding-top: 40px;
     }
 
     .home-page h2 {
         margin-top: -30px;
         font-size: 1.8rem;
-        margin-left: 100px;
+        margin-left: 110px;
     }
 
     .call {
@@ -855,7 +855,7 @@ b {
 
     .home-black-background {
         height: 120px;
-        width: 320px;
+        width: 100%;
         margin-top: -50px;
         margin-bottom: 100px;
         margin-left: 0px;
@@ -863,7 +863,7 @@ b {
 
     .red-circle {
         height: 110px;
-        width: 310px;
+        width: 99%;
     }
 
     .home-page h1 {
@@ -873,7 +873,7 @@ b {
 
     .home-page h2 {
         font-size: 1.6rem;
-        margin-left: 100px;
+        margin-left: 60px;
     }
 
     .call {
