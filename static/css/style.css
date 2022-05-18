@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Playfair+Display:ital@1&family=Red+Hat+Display:wght@300&family=Square+Peg&family=Tapestry&family=Updock&display=swap');
+
 body {
     padding: 0;
     margin: 0;
@@ -154,9 +156,9 @@ body {
 }
 
 .instruction-blue {
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Red Hat Display', sans-serif;
     color: rgb(0, 145, 145);
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: absolute;
     margin-top: 190px;
     margin-left: 50px;
@@ -269,9 +271,9 @@ body {
 
 .item-description {
     margin-top: 50px;
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Red Hat Display', sans-serif;
     color: rgb(0, 145, 145);
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -373,6 +375,11 @@ h3 {
     border-radius: 10px;
 }
 
+li {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+}
+
 .cart li {
     font-size: 2.5rem;
 }
@@ -388,10 +395,6 @@ h3 {
 
 .del:hover {
     cursor: pointer;
-}
-
-li {
-    display: flex;
 }
 
 /* Footer styling */
@@ -492,12 +495,13 @@ b {
     }
 
     li {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     /* Cart */
 
     .cart li {
+        font-size: 30px;
         padding-left: 20px;
     }
 
@@ -562,7 +566,7 @@ b {
     }
 
     .instruction-blue {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 190px;
         margin-left: 50px;
     }
@@ -587,7 +591,7 @@ b {
     }
 
     li {
-        font-size: 1.3rem;
+        font-size: 14px;
     }
 
     #mealcart {
@@ -608,7 +612,8 @@ b {
     /* cart page */
 
     .cart li {
-        font-size: 2rem;
+        font-size: 20px;
+        line-height: 40px;
     }
 
     /* Sign up page */
@@ -683,11 +688,12 @@ b {
     }
 
     #dessertcart {
-        padding-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     li {
-        font-size: 1.2rem;
+        font-size: 14px;
     }
 }
 
@@ -732,9 +738,10 @@ b {
     }
 
     .instruction-blue {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 140px;
         padding-right: 30px;
+        line-height: 30px;
     }
 
     .enjoy h3 {
@@ -762,7 +769,7 @@ b {
     }
 
     li {
-        font-size: 1.7rem;
+        font-size: 18px;
     }
 
     .order {
@@ -825,9 +832,10 @@ b {
     }
 
     .instruction-blue {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 140px;
         margin-left: 20px;
+        padding-right: 20px;
     }
 
     .enjoy h3 {
@@ -885,7 +893,7 @@ b {
     }
 
     .cart li {
-        font-size: 1.5rem;
+        font-size: 16px;
     }
 
     /* Sign up page */
@@ -949,9 +957,10 @@ b {
     }
 
     .instruction-blue {
+
         margin-top: 200px;
         padding-right: 10px;
-        font-size: 21px;
+        font-size: 1rem;
     }
 
     .enjoy h3 {
@@ -1003,7 +1012,7 @@ b {
     }
 
     li {
-        font-size: 1.2rem;
+        font-size: 14px;
     }
 
     #dessertcart {
@@ -1020,7 +1029,6 @@ b {
 
     .item-description {
         margin-top: 10px;
-        font-size: 1.5rem;
     }
 
     /* Cart page */
@@ -1035,8 +1043,9 @@ b {
     }
 
     .cart li {
-        font-size: 1.2rem;
+        font-size: 13px;
         padding-left: 10px;
+        line-height: 40px;
     }
 
     /* Signup-form */
