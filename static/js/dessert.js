@@ -3,7 +3,7 @@ var dessertotal = document.querySelector('#desserttotal');
 
 // Add desserts to order 
 
-function adddessert(dessertid) {
+function addDessert(dessertid) {
 
     // Get name of dessert
 
