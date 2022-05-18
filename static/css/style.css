@@ -21,7 +21,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002374/static/media/images/meals-background_isqaio.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -32,7 +32,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002269/static/media/images/dessert-background_dkdjbh.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
     background-size: cover;
     z-index: -1;
 }
@@ -658,13 +658,13 @@ b {
 
     .home-black-background {
         height: 140px;
-        width: 440px;
+        width: 480px;
         margin-left: 100px;
     }
 
     .red-circle {
         height: 130px;
-        width: 430px;
+        width: 470px;
     }
 
     .home-page h1 {
