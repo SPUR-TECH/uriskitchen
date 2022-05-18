@@ -126,7 +126,7 @@ body {
     margin-left: 100px;
 }
 
-.red-circle {
+.red-circle-home {
     background-color: transparent;
     border-style: solid;
     border-width: 1px;
@@ -193,16 +193,28 @@ body {
 /* Meal page */
 
 .black-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
-    height: 120px;
+    height: 130px;
     width: 500px;
     border-radius: 50%;
     margin-bottom: 100px;
 }
 
+.red-circle-meal {
+    height: 120px;
+    width: 490px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 14, 14);
+    border-radius: 50%;
+}
+
 .title {
     right: 200px;
-    padding-top: 10px;
+    padding-top: 0px;
     margin-top: 10px;
     font-family: 'Beau Rivage', cursive;
     font-size: 5rem;
@@ -325,6 +337,15 @@ h3 {
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
     font-size: 2rem;
+}
+
+.red-circle-dessert {
+    height: 120px;
+    width: 490px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 14, 14);
+    border-radius: 50%;
 }
 
 /* Cart  */
@@ -499,7 +520,7 @@ b {
         margin-left: 100px;
     }
 
-    .red-circle {
+    .red-circle-home {
         height: 160px;
         width: 550px;
     }
@@ -608,12 +629,17 @@ b {
     }
 
     .black-background {
+        height: 130px;
         width: 350px;
-        height: 100px;
+    }
+
+    .red-circle-meal {
+        height: 120px;
+        width: 340px;
     }
 
     .title {
-        margin-top: 30px;
+        padding-top: 10px;
         font-size: 4rem;
     }
 
@@ -632,6 +658,11 @@ b {
 
     .dessert-menu-background {
         height: 1650px;
+    }
+
+    .red-circle-dessert {
+        height: 120px;
+        width: 340px;
     }
 
     .order h3 {
@@ -657,13 +688,13 @@ b {
     /* home page */
 
     .home-black-background {
-        height: 140px;
+        height: 150px;
         width: 480px;
         margin-left: 100px;
     }
 
-    .red-circle {
-        height: 130px;
+    .red-circle-home {
+        height: 140px;
         width: 470px;
     }
 
@@ -746,7 +777,7 @@ b {
         margin-left: 10px;
     }
 
-    .red-circle {
+    .red-circle-home {
         height: 120px;
         width: 370px;
     }
@@ -807,12 +838,18 @@ b {
     /* Meal page */
 
     .black-background {
+        height: 100px;
         width: 300px;
-        height: 80px;
+    }
+
+    .red-circle-meal {
+        height: 90px;
+        width: 290px;
     }
 
     .title {
         font-size: 3rem;
+        padding-top: 5px;
     }
 
     .title2 {
@@ -828,6 +865,11 @@ b {
 
     .dessert-menu-background {
         height: 2350px;
+    }
+
+    .red-circle-dessert {
+        height: 90px;
+        width: 290px;
     }
 
     .orders {
@@ -861,7 +903,7 @@ b {
         margin-left: 0px;
     }
 
-    .red-circle {
+    .red-circle-home {
         height: 110px;
         width: 99%;
     }
@@ -913,8 +955,13 @@ b {
 
     .black-background {
         width: 250px;
-        height: 80px;
+        height: 100px;
         margin-left: -10px;
+    }
+
+    .red-circle-meal {
+        height: 90px;
+        width: 240px;
     }
 
     .title {
@@ -936,6 +983,11 @@ b {
     .dessert-menu-background {
         width: 90%;
         height: 2500px;
+    }
+
+    .red-circle-dessert {
+        height: 90px;
+        width: 240px;
     }
 
     .orders {
