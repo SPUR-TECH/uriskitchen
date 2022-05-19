@@ -170,7 +170,6 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: rgb(185, 14, 14);
-    border-spacing: 2px;
 }
 
 .enjoy {
@@ -304,7 +303,15 @@ body {
     text-align: left;
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 40px;
+    background: linear-gradient(rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 0.6));
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 14, 14);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h3 {
@@ -374,7 +381,7 @@ h3 {
 
 .cart {
     position: relative;
-    top: 200px;
+    top: 100px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
     height: 60rem;
@@ -389,7 +396,10 @@ li {
 }
 
 .cart li {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
 }
 
 .del {
@@ -503,7 +513,7 @@ b {
     }
 
     li {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     /* Cart */
@@ -514,7 +524,7 @@ b {
     }
 
     .del {
-        right: 20px;
+        right: 10px;
     }
 
     /* Sign up page */
@@ -910,8 +920,11 @@ b {
         margin-top: 100px;
     }
 
+    /* Cart page */
+
     .cart li {
         font-size: 16px;
+        line-height: 20px;
     }
 
     /* Sign up page */
@@ -1030,6 +1043,7 @@ b {
 
     li {
         font-size: 14px;
+        margin-left: 0px;
     }
 
     #dessertcart {
@@ -1062,7 +1076,7 @@ b {
     .cart li {
         font-size: 13px;
         padding-left: 10px;
-        line-height: 40px;
+        line-height: 15px;
     }
 
     /* Signup-form */
