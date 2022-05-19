@@ -158,10 +158,19 @@ body {
 .instruction-blue {
     font-family: 'Red Hat Display', sans-serif;
     color: rgb(0, 145, 145);
+    background: linear-gradient(rgba(51, 51, 51, 0.6), rgba(0, 0, 0, 0.6));
+    padding: 2%;
+    padding-bottom: 100px;
     font-size: 2rem;
     position: absolute;
     margin-top: 190px;
     margin-left: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(185, 14, 14);
+    border-spacing: 2px;
 }
 
 .enjoy {
@@ -169,9 +178,8 @@ body {
     font-family: 'Beau Rivage', cursive;
     font-size: 2.5rem;
     color: rgb(185, 14, 14);
-    position: absolute;
-    margin-top: 450px;
-    margin-left: 400px;
+    margin-top: 380px;
+    margin-left: 200px;
 }
 
 .order-list {
@@ -569,12 +577,13 @@ b {
         font-size: 1.5rem;
         margin-top: 190px;
         margin-left: 50px;
+        width: 60%;
     }
 
     .enjoy {
         font-size: 2rem;
-        margin-top: 430px;
-        margin-left: 300px;
+        margin-top: 310px;
+        margin-left: 200px;
     }
 
     /* Meal page */
@@ -628,6 +637,13 @@ b {
 }
 
 @media all and (max-width: 850px) {
+
+    /* Home page */
+
+    .enjoy h3 {
+        margin-top: 220px;
+        margin-left: 10px;
+    }
 
     /* Meal page */
 
@@ -733,19 +749,20 @@ b {
     }
 
     .slate-background {
-        height: 600px;
-        width: 400px;
+        height: 800px;
+        width: 600px;
     }
 
     .instruction-blue {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin-top: 140px;
         padding-right: 30px;
         line-height: 30px;
+        width: 50%;
     }
 
     .enjoy h3 {
-        margin-top: 70px;
+        margin-top: 270px;
         margin-left: -100px;
         font-size: 40px;
     }
@@ -826,8 +843,6 @@ b {
     }
 
     .slate-background {
-        height: 35rem;
-        width: 25rem;
         margin-top: 100px;
     }
 
@@ -836,10 +851,13 @@ b {
         margin-top: 140px;
         margin-left: 20px;
         padding-right: 20px;
+        padding-bottom: 150px;
+        width: 90%;
     }
 
     .enjoy h3 {
-        top: -70px;
+        top: 60px;
+        margin-left: -40px;
     }
 
     .slate-container h3 {
@@ -950,22 +968,21 @@ b {
     }
 
     .slate-background {
-        height: 40rem;
-        width: 25rem;
+        height: 50rem;
         border-radius: 0px;
         margin-top: 50px;
     }
 
     .instruction-blue {
-
+        width: 90%;
         margin-top: 200px;
         padding-right: 10px;
         font-size: 1rem;
     }
 
     .enjoy h3 {
-        margin-top: 150px;
-        left: -60px;
+        margin-top: 170px;
+        left: -40px;
     }
 
     /* Meal page */
