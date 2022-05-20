@@ -1,5 +1,7 @@
 // Shoppingcart
 
+// CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
+
 const loader = document.querySelector('.loader');
 const title1 = document.querySelector('.cart h1');
 const title2 = document.querySelector('.cart h2');
