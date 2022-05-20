@@ -1,5 +1,23 @@
 // Shoppingcart
 
+const loader = document.querySelector('.loader');
+const title1 = document.querySelector('.cart h1');
+const title2 = document.querySelector('.cart h2');
+
+function init() {
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+
+        title1.style.display = 'block';
+        title2.style.display = 'block';
+        setTimeout(() => (title1.style.opacity = 1), 50);
+        setTimeout(() => (title2.style.opacity = 1), 2000);
+    }, 4000);
+}
+
+init();
+
 function shoppingCart() {
     var orders = JSON.parse(localStorage.getItem('orders'));
     var total = localStorage.getItem('total');

@@ -467,12 +467,55 @@ b {
 
 /* success page */
 
+.loader {
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    animation: rotate 3s linear infinite;
+    height: 50px;
+    transform-origin: bottom center;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle {
+    animation: grow 1.5s linear infinite;
+    background-color: rgb(185, 14, 14);
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    margin: -7px;
+    height: 30px;
+    width: 30px;
+    transform: scale(0);
+}
+
+.circle:nth-of-type(2) {
+    animation-delay: .75s;
+    background-color: rgb(0, 145, 145);
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1);
+    }
+}
+
 .cart h1 {
     position: relative;
     font-family: 'Beau Rivage', cursive;
     color: rgb(185, 14, 14);
     top: 20px;
     padding-bottom: 10px;
+    display: none;
+    opacity: 0;
+    transition: opacity .75s ease-in;
 }
 
 .cart h2 {
@@ -481,6 +524,9 @@ b {
     color: rgb(0, 145, 145);
     top: 20px;
     padding-bottom: 100px;
+    display: none;
+    opacity: 0;
+    transition: opacity .75s ease-in;
 }
 
 /* logout page */
