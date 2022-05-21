@@ -32,7 +32,6 @@ function addMeal(mealid) {
     orders[cartSize] = [size, name, price];
     localStorage.setItem('orders', JSON.stringify(orders));
 
-    console.log(`MEALS ORDERS: ${orders}`);
 
     total = Number(total) + Number(price);
     localStorage.setItem('total', total);

@@ -6,6 +6,7 @@ const loader = document.querySelector('.loader');
 const title1 = document.querySelector('.cart h1');
 const title2 = document.querySelector('.cart h2');
 
+// Animation function
 function init() {
     setTimeout(() => {
         loader.style.opacity = 0;
@@ -20,6 +21,7 @@ function init() {
 
 init();
 
+// Add to cart function
 function shoppingCart() {
     var orders = JSON.parse(localStorage.getItem('orders'));
     var total = localStorage.getItem('total');
@@ -36,6 +38,7 @@ function shoppingCart() {
 
 shoppingCart();
 
+// Remove from cart function
 function removeMeal(n) {
     var orders = JSON.parse(localStorage.getItem('orders'));
     var total = localStorage.getItem('total');
@@ -45,19 +48,4 @@ function removeMeal(n) {
     localStorage.setItem('total', total);
 
     shoppingCart();
-}
-
-function order() {
-    var orders = localStorage.getItem('orders');
-    var ur = '/thai/cart'
-    var orderData = {};
-    orderData['orders'];
-    $.ajax({
-        url: ur,
-        type: "POST",
-        data: orderData,
-        success: function (data) {
-            console.log('The data was sent')
-        }
-    })
 }
