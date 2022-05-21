@@ -180,7 +180,6 @@ h3 {
 
     .meal-menu-background {
         height: 1500px;
-        margin-left: 0px;
     }
 
     .meal-images {
@@ -217,8 +216,18 @@ h3 {
 
 @media all and (max-width: 766px) {
 
+    .black-background {
+        height: 150px;
+        width: 360px;
+    }
+
+    .red-circle-meal {
+        height: 140px;
+        width: 350px;
+    }
+
     .meal-menu-background {
-        height: 2200px;
+        height: 1500px;
         width: 95%;
     }
 
