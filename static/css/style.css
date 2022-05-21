@@ -907,11 +907,6 @@ b {
         width: 90%;
     }
 
-    .enjoy h3 {
-        top: 60px;
-        margin-left: -40px;
-    }
-
     .slate-container h3 {
         margin-top: 110px;
         font-size: 40px;
@@ -1033,11 +1028,13 @@ b {
         margin-top: 200px;
         padding-right: 10px;
         font-size: 1rem;
+        padding-bottom: 150px;
     }
 
     .enjoy h3 {
-        margin-top: 170px;
-        left: -40px;
+        position: relative;
+        top: 120px;
+        left: 40px;
     }
 
     /* Meal page */
@@ -1142,5 +1139,13 @@ b {
     .copyright {
         padding: 10px;
         font-size: .7rem;
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    .enjoy h3 {
+        top: 160px;
+        left: 10px;
     }
 }
