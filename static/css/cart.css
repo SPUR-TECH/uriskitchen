@@ -1,0 +1,105 @@
+/* Cart page css */
+
+.orders {
+    position: relative;
+    top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 55rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.cart {
+    position: relative;
+    top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+li {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+}
+
+.cart li {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.del {
+    background-color: transparent;
+    color: rgb(228, 3, 3);
+    position: absolute;
+    right: 30px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.del:hover {
+    cursor: pointer;
+}
+
+@media all and (max-width: 1500px) {
+
+    .cart li {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .del {
+        right: 10px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+
+    .cart li {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    /* Sign up page */
+
+    small ul {
+        padding-left: 0px;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 580px) {
+
+    .cart li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .cart-slate-background {
+        padding: 0px;
+        top: -150px;
+    }
+
+    .order-list {
+        font-size: 40px;
+    }
+
+    .cart li {
+        font-size: 13px;
+        padding-left: 10px;
+        line-height: 15px;
+    }
+}

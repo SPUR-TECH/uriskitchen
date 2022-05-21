@@ -1,0 +1,283 @@
+/* Meal page css*/
+
+.black-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 130px;
+    width: 500px;
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+
+.red-circle-meal {
+    height: 120px;
+    width: 490px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(228, 3, 3);
+    border-radius: 50%;
+}
+
+.title {
+    right: 200px;
+    padding-top: 0px;
+    margin-top: 10px;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgb(228, 3, 3);
+
+}
+
+.title2 {
+    text-align: center;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 500;
+    color: rgb(1, 207, 207);
+    font-size: 3rem;
+    margin-top: -50px;
+    margin-left: 110px;
+}
+
+.meal-menu-background {
+    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
+    height: 1400px;
+    width: 60%;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item-title {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(228, 3, 3);
+    margin-top: 50px;
+}
+
+.meal-images {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.item-description {
+    margin-top: 50px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(1, 207, 207);
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.price {
+    color: rgb(86, 196, 36);
+    background-color: black;
+    width: 100px;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.orders {
+    right: 20px;
+}
+
+.order-list {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(228, 3, 3);
+    font-size: 3rem;
+}
+
+#mealtotal {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(1, 207, 207);
+    font-size: 2rem;
+}
+
+.sign-buttons {
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn-info {
+    background-color: rgb(16, 94, 94);
+}
+
+#mealcart {
+    position: relative;
+    text-align: left;
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(1, 207, 207);
+    font-size: 1.3rem;
+    line-height: 40px;
+    background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(228, 3, 3);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 3rem;
+    color: rgb(228, 3, 3);
+}
+
+@media all and (max-width: 1500px) {
+
+    .meal-images {
+        width: 250px;
+        height: 150px;
+    }
+
+    .meal-menu-background {
+        width: 63%;
+        height: 1300px;
+        margin-left: 0px;
+    }
+
+    #mealcart {
+        padding-left: 10px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+
+    .meal-menu-background {
+        margin-left: 0px;
+        height: 1300px;
+        width: 61%;
+    }
+
+    .meal-images {
+        width: 200px;
+        height: 100px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    #mealcart {
+        padding: 20px;
+    }
+}
+
+@media all and (max-width: 850px) {
+
+    .meal-menu-background {
+        height: 1500px;
+        margin-left: 0px;
+    }
+
+    .meal-images {
+        width: 150px;
+        height: 100px;
+    }
+
+    .black-background {
+        height: 130px;
+        width: 350px;
+    }
+
+    .red-circle-meal {
+        height: 120px;
+        width: 340px;
+    }
+
+    .title {
+        padding-top: 10px;
+        font-size: 4rem;
+    }
+
+    .title2 {
+        font-size: 2.5rem;
+        margin-top: -40px;
+    }
+
+    .item-title {
+
+        font-size: 2.5rem;
+        margin-top: 80px;
+    }
+}
+
+@media all and (max-width: 766px) {
+
+    .meal-menu-background {
+        height: 2200px;
+        width: 95%;
+    }
+
+    .orders {
+        right: 0px;
+    }
+}
+
+@media all and (max-width: 580px) {
+
+    .black-background {
+        height: 100px;
+        width: 300px;
+    }
+
+    .red-circle-meal {
+        height: 90px;
+        width: 290px;
+    }
+
+    .title {
+        font-size: 3rem;
+        padding-top: 5px;
+    }
+
+    .title2 {
+        font-size: 2rem;
+        margin-top: -35px;
+    }
+
+    .meal-menu-background {
+        height: 2300px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .black-background {
+        width: 250px;
+        height: 120px;
+        margin-left: -10px;
+    }
+
+    .red-circle-meal {
+        height: 110px;
+        width: 240px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .title2 {
+        font-size: 2rem;
+        margin-top: -30px;
+    }
+
+    .meal-menu-background {
+        height: 2300px;
+        width: 90%;
+    }
+}

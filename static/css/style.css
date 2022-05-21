@@ -1,3 +1,5 @@
+/* Home page css*/
+
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Playfair+Display:ital@1&family=Red+Hat+Display:wght@300&family=Square+Peg&family=Tapestry&family=Updock&display=swap');
 
 #overlay-home {
@@ -19,8 +21,6 @@
 .navbar-toggler-icon {
     color: transparent;
 }
-
-/* Home page */
 
 .call {
     position: relative;
@@ -156,248 +156,6 @@
     font-size: 2rem;
 }
 
-/* Meal page */
-
-.black-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 130px;
-    width: 500px;
-    border-radius: 50%;
-    margin-bottom: 100px;
-}
-
-.red-circle-meal {
-    height: 120px;
-    width: 490px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(228, 3, 3);
-    border-radius: 50%;
-}
-
-.title {
-    right: 200px;
-    padding-top: 0px;
-    margin-top: 10px;
-    font-family: 'Beau Rivage', cursive;
-    font-size: 5rem;
-    font-weight: 500;
-    color: rgb(228, 3, 3);
-
-}
-
-.title2 {
-    text-align: center;
-    font-family: 'Beau Rivage', cursive;
-    font-weight: 500;
-    color: rgb(1, 207, 207);
-    font-size: 3rem;
-    margin-top: -50px;
-    margin-left: 110px;
-}
-
-.meal-menu-background {
-    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1400px;
-    width: 60%;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 200px;
-    overflow: hidden;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.item-title {
-    font-family: 'Beau Rivage', cursive;
-    font-size: 3rem;
-    font-weight: 500;
-    color: rgb(228, 3, 3);
-    margin-top: 50px;
-}
-
-.meal-images {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.item-description {
-    margin-top: 50px;
-    font-family: 'Red Hat Display', sans-serif;
-    color: rgb(1, 207, 207);
-    font-size: 1rem;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 20px;
-}
-
-.price {
-    color: rgb(86, 196, 36);
-    background-color: black;
-    width: 100px;
-    border-radius: 50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.orders {
-    right: 20px;
-}
-
-.order-list {
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(228, 3, 3);
-    font-size: 3rem;
-}
-
-#mealtotal {
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(1, 207, 207);
-    font-size: 2rem;
-}
-
-.sign-buttons {
-    justify-content: center;
-    margin: 20px;
-}
-
-.btn-info {
-    background-color: rgb(16, 94, 94);
-}
-
-#mealcart {
-    position: relative;
-    text-align: left;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(1, 207, 207);
-    font-size: 1.3rem;
-    line-height: 40px;
-    background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(0, 0, 0, 0.7));
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(228, 3, 3);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
-}
-
-h3 {
-    font-family: 'Beau Rivage', cursive;
-    font-size: 3rem;
-    color: rgb(228, 3, 3);
-}
-
-/* Dessert page */
-
-.dessert-menu-background {
-    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1200px;
-    width: 60%;
-    position: absolute;
-    margin-left: 40px;
-    margin-top: 200px;
-    overflow: hidden;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.dessert-images {
-    width: 200px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-#dessertcart {
-    position: relative;
-    text-align: left;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(1, 207, 207);
-    font-size: 1.5rem;
-    line-height: 40px;
-    background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(0, 0, 0, 0.7));
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(228, 3, 3);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
-}
-
-#desserttotal {
-    text-align: left;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(1, 207, 207);
-    font-size: 2rem;
-}
-
-.red-circle-dessert {
-    height: 120px;
-    width: 490px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(228, 3, 3);
-    border-radius: 50%;
-}
-
-/* Cart  */
-
-.orders {
-    position: relative;
-    top: 200px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
-    background-repeat: no-repeat;
-    height: 55rem;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 0px;
-}
-
-.cart {
-    position: relative;
-    top: 100px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
-    background-repeat: no-repeat;
-    height: 60rem;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-li {
-    font-family: 'Red Hat Display', sans-serif;
-    display: flex;
-}
-
-.cart li {
-    font-size: 1.8rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 30px;
-}
-
-.del {
-    background-color: transparent;
-    color: rgb(228, 3, 3);
-    position: absolute;
-    right: 30px;
-    height: 30px;
-    font-weight: 600;
-}
-
-.del:hover {
-    cursor: pointer;
-}
-
 /* Footer styling */
 
 .footer {
@@ -421,153 +179,6 @@ b {
     color: rgb(160, 5, 5);
 }
 
-/* Signup page */
-
-.signup-title {
-    position: relative;
-    font-family: 'Beau Rivage', cursive;
-    font-size: 50px;
-    color: rgb(228, 3, 3);
-    background: linear-gradient(rgb(138, 138, 138), rgba(0, 0, 0));
-
-    top: -10px;
-    left: -10px;
-    margin-bottom: 0px;
-}
-
-.signup {
-    margin: 0px;
-}
-
-/* success page */
-
-/* CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION */
-
-/* CSS for animated bouncing loader. */
-.loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Loader circles */
-.loader>span {
-    background: rgb(228, 3, 3);
-    border-radius: 50%;
-    margin: 5rem 0.5rem;
-    animation: bouncingLoader 0.6s infinite alternate;
-}
-
-.loader>span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.loader>span:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-/* Define the animation called bouncingLoader. */
-
-@keyframes bouncingLoader {
-    from {
-        width: 0.1rem;
-        height: 0.1rem;
-        opacity: 1;
-        transform: translate3d(0);
-    }
-
-    to {
-        width: 1rem;
-        height: 1rem;
-        opacity: 0.1;
-        transform: translate3d(0, -1rem, 0);
-    }
-}
-
-.cart h1 {
-    position: relative;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(228, 3, 3);
-    top: 20px;
-    padding-bottom: 10px;
-    display: none;
-    opacity: 0;
-    transition: opacity .75s ease-in;
-}
-
-.cart h2 {
-    position: relative;
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(0, 145, 145);
-    top: 20px;
-    padding: 20px;
-    padding-bottom: 100px;
-    display: none;
-    opacity: 0;
-    transition: opacity .75s ease-in;
-}
-
-/* logout page */
-
-.logout-title {
-    font-family: 'Beau Rivage', cursive;
-    font-size: 3rem;
-    color: rgb(228, 3, 3);
-    background: linear-gradient(rgb(138, 138, 138), rgba(0, 0, 0));
-}
-
-@media all and (max-width: 1500px) {
-
-    /* Meal page */
-
-    .meal-images {
-        width: 250px;
-        height: 150px;
-    }
-
-    .meal-menu-background {
-        width: 63%;
-        height: 1300px;
-        margin-left: 0px;
-    }
-
-    #mealcart {
-        padding-left: 10px;
-    }
-
-    /* Dessert page */
-
-    .dessert-menu-background {
-        width: 60%;
-        height: 1400px;
-    }
-
-    #dessertcart {
-        padding-left: 10px;
-    }
-
-    li {
-        font-size: 16px;
-    }
-
-    /* Cart */
-
-    .cart li {
-        font-size: 30px;
-        padding-left: 20px;
-    }
-
-    .del {
-        right: 10px;
-    }
-
-    /* Sign up page */
-
-    small li {
-        font-size: .7rem;
-    }
-}
-
 @media all and (max-width: 1000px) {
 
     /* nav */
@@ -575,8 +186,6 @@ b {
     .nav-link {
         font-size: 19px;
     }
-
-    /* home page */
 
     .home-black-background {
         height: 170px;
@@ -629,142 +238,17 @@ b {
         margin-top: 310px;
         margin-left: 200px;
     }
-
-    /* Meal page */
-
-    .meal-menu-background {
-        margin-left: 0px;
-        height: 1300px;
-        width: 61%;
-    }
-
-    .meal-images {
-        width: 200px;
-        height: 100px;
-    }
-
-    li {
-        font-size: 14px;
-    }
-
-    #mealcart {
-        padding: 20px;
-    }
-
-    /* Dessert page */
-
-    .dessert-menu-background {
-        margin-left: 0px;
-        height: 1300px;
-    }
-
-    #dessertname1 {
-        padding-right: 20px;
-    }
-
-    .dessert-images {
-        width: 150px;
-        height: 100px;
-    }
-
-    /* cart page */
-
-    .cart li {
-        font-size: 20px;
-        line-height: 20px;
-    }
-
-    /* Sign up page */
-
-    small ul {
-        padding-left: 0px;
-    }
-
-    input {
-        width: 80%;
-    }
 }
 
 @media all and (max-width: 850px) {
-
-    /* Home page */
 
     .enjoy h3 {
         margin-top: 220px;
         margin-left: 10px;
     }
-
-    /* Meal page */
-
-    .meal-menu-background {
-        height: 1500px;
-        margin-left: 0px;
-    }
-
-    .meal-images {
-        width: 150px;
-        height: 100px;
-    }
-
-    .black-background {
-        height: 130px;
-        width: 350px;
-    }
-
-    .red-circle-meal {
-        height: 120px;
-        width: 340px;
-    }
-
-    .title {
-        padding-top: 10px;
-        font-size: 4rem;
-    }
-
-    .title2 {
-        font-size: 2.5rem;
-        margin-top: -40px;
-    }
-
-    .item-title {
-
-        font-size: 2.5rem;
-        margin-top: 80px;
-    }
-
-    /* Dessert page */
-
-    .dessert-menu-background {
-        height: 1450px;
-    }
-
-    .red-circle-dessert {
-        height: 120px;
-        width: 340px;
-    }
-
-    .order h3 {
-        font-size: 2.5rem;
-    }
-
-    .order h4 {
-        font-size: 1.5rem;
-        margin-right: 20px;
-    }
-
-    #dessertcart {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    li {
-        font-size: 14px;
-    }
 }
 
 @media all and (max-width: 766px) {
-
-    /* home page */
 
     .home-black-background {
         height: 150px;
@@ -816,45 +300,9 @@ b {
         margin-left: -100px;
         font-size: 40px;
     }
-
-    /* Meal page */
-
-    .meal-menu-background {
-        height: 2200px;
-        width: 95%;
-    }
-
-    .orders {
-        right: 0px;
-    }
-
-    /* Dessert page */
-
-    .dessert-menu-background {
-        width: 95%;
-        height: 2100px;
-    }
-
-    #dessertcart {
-        padding-left: 30px;
-    }
-
-    li {
-        font-size: 18px;
-    }
-
-    .order {
-        display: none;
-    }
-
-    .orders-slate-background {
-        width: 90%;
-    }
 }
 
 @media all and (max-width: 580px) {
-
-    /* home page */
 
     .home-black-background {
         height: 130px;
@@ -917,69 +365,9 @@ b {
     .slate-container h4 {
         margin-top: 160px;
     }
-
-    /* Meal page */
-
-    .black-background {
-        height: 100px;
-        width: 300px;
-    }
-
-    .red-circle-meal {
-        height: 90px;
-        width: 290px;
-    }
-
-    .title {
-        font-size: 3rem;
-        padding-top: 5px;
-    }
-
-    .title2 {
-        font-size: 2rem;
-        margin-top: -35px;
-    }
-
-    .meal-menu-background {
-        height: 2300px;
-    }
-
-    /* Dessert page */
-
-    .dessert-menu-background {
-        height: 2150px;
-    }
-
-    .red-circle-dessert {
-        height: 90px;
-        width: 290px;
-    }
-
-    .orders {
-        margin-top: 100px;
-    }
-
-    /* Cart page */
-
-    .cart li {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    /* Sign up page */
-
-    small {
-        font-size: 1rem;
-    }
-
-    .signup-title h1 {
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 400px) {
-
-    /* Home page */
 
     .home-black-background {
         height: 120px;
@@ -1037,97 +425,6 @@ b {
         position: relative;
         top: 120px;
         left: 40px;
-    }
-
-    /* Meal page */
-
-    .black-background {
-        width: 250px;
-        height: 120px;
-        margin-left: -10px;
-    }
-
-    .red-circle-meal {
-        height: 110px;
-        width: 240px;
-    }
-
-    .title {
-        font-size: 2.5rem;
-    }
-
-    .title2 {
-        font-size: 2rem;
-        margin-top: -30px;
-    }
-
-    .meal-menu-background {
-        height: 2300px;
-        width: 90%;
-    }
-
-    /* Dessert page */
-
-    .dessert-menu-background {
-        width: 90%;
-        height: 2300px;
-    }
-
-    .red-circle-dessert {
-        height: 110px;
-        width: 240px;
-    }
-
-    .orders {
-        margin-top: 150px;
-    }
-
-    li {
-        font-size: 14px;
-        margin-left: 0px;
-    }
-
-    #dessertcart {
-        padding-left: 10px;
-    }
-
-    .del {
-        right: 15px;
-    }
-
-    .item-title {
-        margin-bottom: 10px;
-    }
-
-    .item-description {
-        margin-top: 10px;
-    }
-
-    /* Cart page */
-
-    .cart-slate-background {
-        padding: 0px;
-        top: -150px;
-    }
-
-    .order-list {
-        font-size: 40px;
-    }
-
-    .cart li {
-        font-size: 13px;
-        padding-left: 10px;
-        line-height: 15px;
-    }
-
-    /* Signup-form */
-
-    .signup-title {
-        font-size: 50px;
-    }
-
-    #delvery-address {
-        width: 80%;
     }
 
     /* Footer */
