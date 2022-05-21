@@ -1,0 +1,51 @@
+/* Signup page css*/
+
+.signup-title {
+    position: relative;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 50px;
+    color: rgb(228, 3, 3);
+    background: linear-gradient(rgb(138, 138, 138), rgba(0, 0, 0));
+    top: -10px;
+    /* left: -20px; */
+    margin-bottom: 0px;
+}
+
+.signup {
+    margin: 0px;
+}
+
+@media all and (max-width: 1500px) {
+
+    small li {
+        font-size: .7rem;
+    }
+}
+
+@media all and (max-width: 580px) {
+    /* Sign up page */
+
+    small {
+        font-size: 1rem;
+    }
+
+
+    .signup {
+        padding: 0px;
+    }
+
+    .signup-title h1 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .signup-title {
+        font-size: 50px;
+    }
+
+    #delvery-address {
+        width: 90%;
+    }
+}
