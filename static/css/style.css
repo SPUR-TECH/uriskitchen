@@ -201,7 +201,7 @@
 
 .meal-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1300px;
+    height: 1400px;
     width: 60%;
     position: absolute;
     margin-left: 40px;
@@ -298,7 +298,7 @@ h3 {
 
 .dessert-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1100px;
+    height: 1200px;
     width: 60%;
     position: absolute;
     margin-left: 40px;
@@ -525,7 +525,7 @@ b {
 
     .meal-menu-background {
         width: 63%;
-        height: 1200px;
+        height: 1300px;
         margin-left: 0px;
     }
 
@@ -632,7 +632,7 @@ b {
 
     .meal-menu-background {
         margin-left: 0px;
-        height: 1600px;
+        height: 1300px;
         width: 61%;
     }
 
@@ -653,6 +653,11 @@ b {
 
     .dessert-menu-background {
         margin-left: 0px;
+        height: 1300px;
+    }
+
+    #dessertname1 {
+        padding-right: 20px;
     }
 
     .dessert-images {
@@ -690,7 +695,7 @@ b {
     /* Meal page */
 
     .meal-menu-background {
-        height: 1700px;
+        height: 1500px;
         margin-left: 0px;
     }
 
@@ -728,7 +733,7 @@ b {
     /* Dessert page */
 
     .dessert-menu-background {
-        height: 1650px;
+        height: 1450px;
     }
 
     .red-circle-dessert {
@@ -939,13 +944,13 @@ b {
     }
 
     .meal-menu-background {
-        height: 2400px;
+        height: 2300px;
     }
 
     /* Dessert page */
 
     .dessert-menu-background {
-        height: 2350px;
+        height: 2150px;
     }
 
     .red-circle-dessert {
@@ -1058,7 +1063,7 @@ b {
     }
 
     .meal-menu-background {
-        height: 2500px;
+        height: 2300px;
         width: 90%;
     }
 
@@ -1066,7 +1071,7 @@ b {
 
     .dessert-menu-background {
         width: 90%;
-        height: 2400px;
+        height: 2200px;
     }
 
     .red-circle-dessert {
