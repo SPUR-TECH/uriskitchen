@@ -17,32 +17,6 @@ body {
     z-index: -1;
 }
 
-#overlay-meal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
-    background-size: cover;
-    z-index: -1;
-}
-
-#overlay-dessert {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651002232/static/media/images/uris-kitchen-home_mc2gvh.jpg");
-    background-size: cover;
-    z-index: -1;
-}
-
-.row {
-    margin: 0px;
-}
-
 .navbar {
     background-color: black;
     margin-bottom: 100px;
@@ -94,7 +68,7 @@ body {
     margin-top: 180px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
-    height: 50rem;
+    height: 55rem;
     width: 50rem;
     overflow: hidden;
     border-radius: 10px;
@@ -174,9 +148,8 @@ body {
 .enjoy {
     position: relative;
     font-family: 'Beau Rivage', cursive;
-    font-size: 2.5rem;
     color: rgb(228, 3, 3);
-    margin-top: 380px;
+    margin-top: 400px;
     margin-left: 200px;
 }
 
@@ -243,7 +216,7 @@ body {
 
 .meal-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1400px;
+    height: 1300px;
     width: 62%;
     position: absolute;
     margin-left: 40px;
@@ -269,12 +242,6 @@ body {
     border-radius: 50%;
 }
 
-#mealtotal {
-    font-family: 'Beau Rivage', cursive;
-    color: rgb(1, 207, 207);
-    font-size: 2rem;
-}
-
 .item-description {
     margin-top: 50px;
     font-family: 'Red Hat Display', sans-serif;
@@ -291,6 +258,17 @@ body {
     border-radius: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+#mealtotal {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(1, 207, 207);
+    font-size: 2rem;
+}
+
+.sign-buttons {
+    justify-content: center;
+    margin: 20px;
 }
 
 .btn-info {
@@ -324,7 +302,7 @@ h3 {
 
 .dessert-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1200px;
+    height: 1100px;
     width: 62%;
     position: absolute;
     margin-left: 40px;
@@ -381,7 +359,7 @@ h3 {
     top: 200px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
-    height: 45rem;
+    height: 55rem;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
@@ -1079,7 +1057,7 @@ b {
     }
 
     .meal-menu-background {
-        height: 2600px;
+        height: 2500px;
         width: 90%;
     }
 
@@ -1087,7 +1065,7 @@ b {
 
     .dessert-menu-background {
         width: 90%;
-        height: 2500px;
+        height: 2400px;
     }
 
     .red-circle-dessert {
@@ -1157,6 +1135,6 @@ b {
 
     .copyright {
         padding: 10px;
-        font-size: .8rem;
+        font-size: .7rem;
     }
 }

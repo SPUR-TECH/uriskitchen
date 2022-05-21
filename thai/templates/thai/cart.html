@@ -21,13 +21,11 @@
                             Order</button></a>
                 </div>
                 {% else %}
-                <div>
-                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info pb-1">Log
+                <div class="row sign-buttons">
+                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mr-4 mt-3">Log
                             in</button></a>
-                </div>
-                <h3>or</h3>
-                <div>
-                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info pb-1">Sign
+                    <h3>or</h3>
+                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info ml-4 mt-3">Sign
                             up</button></a>
                 </div>
                 {% endif %}
