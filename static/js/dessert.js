@@ -26,7 +26,7 @@ function addDessert(dessertid) {
     var total = localStorage.getItem('total');
     var cartSize = orders.length;
 
-    // Save items in local storage so it will delete when user leaves the site
+    // Save items in local storage
 
     orders[cartSize] = [size, name, price];
     localStorage.setItem('orders', JSON.stringify(orders));
