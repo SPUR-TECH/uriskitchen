@@ -22,24 +22,6 @@
     color: transparent;
 }
 
-.call {
-    position: relative;
-    top: 180px;
-    left: 100px;
-    width: 300px;
-    height: 210px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: black;
-}
-
-.phone {
-    position: relative;
-    left: 120px;
-    width: 60%;
-    top: 40px;
-}
-
 .container {
     height: 100%;
     width: 100%;
@@ -121,6 +103,25 @@
     margin-left: 240px;
     color: rgb(1, 207, 207);
     font-size: 3rem;
+}
+
+.call {
+    position: relative;
+    font-weight: 600;
+    top: 180px;
+    left: 100px;
+    width: 300px;
+    height: 210px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.phone {
+    position: relative;
+    left: 120px;
+    width: 60%;
+    top: 40px;
 }
 
 .instruction-blue {
@@ -379,7 +380,7 @@ b {
 
     .red-circle-home {
         height: 110px;
-        width: 99%;
+        width: 98%;
     }
 
     .home-page h1 {
