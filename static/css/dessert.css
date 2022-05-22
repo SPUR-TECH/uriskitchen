@@ -33,7 +33,6 @@
     border-color: rgb(228, 3, 3);
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 40px;
 }
 
 #desserttotal {
@@ -77,7 +76,7 @@
 
     .dessert-menu-background {
         height: 1450px;
-        width: 60%;
+        width: 61%;
         margin-left: 0px;
         height: 1300px;
     }
