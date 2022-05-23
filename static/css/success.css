@@ -86,6 +86,21 @@
     }
 }
 
+@media all and (max-width: 580px) {
+
+    .success-cart h1 {
+        font-size: 40px;
+    }
+
+    .success-cart h2 {
+        font-size: 30px;
+    }
+
+    .success-cart h2 {
+        padding-top: 0px;
+    }
+}
+
 @media all and (max-width: 400px) {
 
     .success-cart {
