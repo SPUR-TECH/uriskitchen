@@ -386,7 +386,7 @@ b {
     .call-background {
         left: 20px;
         width: 270px;
-        height: 190px;
+        height: 210px;
     }
 
     .call {
@@ -413,7 +413,7 @@ b {
 
     .enjoy h3 {
         position: relative;
-        margin-top: 60px;
+        margin-top: 100px;
         margin-left: -40px;
     }
 
