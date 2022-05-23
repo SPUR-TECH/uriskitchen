@@ -427,7 +427,7 @@ b {
 @media all and (max-width: 320px) {
 
     .enjoy h3 {
-        top: 160px;
+        top: 200px;
         left: 10px;
     }
 
@@ -437,6 +437,6 @@ b {
     }
 
     .phone {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
