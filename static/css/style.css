@@ -320,23 +320,22 @@ b {
         margin-left: 110px;
     }
 
-    .call {
-        font-size: 1.3rem;
-        top: 0px;
-        left: 30px;
+    .call-background {
+        top: -50px;
+        left: 100px;
         height: 160px;
         width: 250px;
-        padding-top: 10px;
+    }
+
+    .call {
+        font-size: 1.3rem;
     }
 
     .phone {
-        top: -120px;
-        left: 60px;
-        width: 200px;
-        font-size: large;
+        font-size: 1.5rem;
     }
 
-    .slate-background {
+    .home-slate-background {
         margin-top: 100px;
     }
 
@@ -388,19 +387,12 @@ b {
         margin-left: 60px;
     }
 
-    .call {
-        font-size: 1.3rem;
-        top: 0px;
-        left: 30px;
-        height: 160px;
-        width: 250px;
-        padding-top: 10px;
+    .call-background {
+        left: 20px;
     }
 
-    .phone {
-        top: -120px;
-        left: 60px;
-        font-size: large;
+    .call {
+        width: 200px;
     }
 
     .slate-background {
