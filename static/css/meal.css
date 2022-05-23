@@ -41,6 +41,28 @@
     margin-left: 110px;
 }
 
+.meal-orders {
+    position: relative;
+    top: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 75rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.meal-slate-cart {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 80rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .meal-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
     height: 1400px;
