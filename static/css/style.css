@@ -326,10 +326,6 @@ b {
         width: 250px;
     }
 
-    .call {
-        font-size: 1.3rem;
-    }
-
     .phone {
         font-size: 1.5rem;
     }
@@ -388,7 +384,6 @@ b {
 
     .call-background {
         left: 20px;
-        width: 250px;
     }
 
     .call {
@@ -434,6 +429,10 @@ b {
     .enjoy h3 {
         top: 160px;
         left: 10px;
+    }
+
+    .call-background {
+        width: 90%;
     }
 
     .phone {
