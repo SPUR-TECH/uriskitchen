@@ -118,8 +118,9 @@
 .phone {
     position: relative;
     left: 120px;
-    width: 60%;
+    width: 280px;
     top: 40px;
+    background-color: black;
 }
 
 .instruction-blue {
@@ -278,7 +279,6 @@ b {
 
     .phone {
         font-size: x-large;
-        background-color: black;
     }
 
     .slate-background {
@@ -341,6 +341,7 @@ b {
     .phone {
         top: -120px;
         left: 60px;
+        width: 200px;
         font-size: large;
     }
 
