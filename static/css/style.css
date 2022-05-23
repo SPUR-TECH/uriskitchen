@@ -1,4 +1,7 @@
 /* Home page css*/
+body {
+    background-color: black;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Playfair+Display:ital@1&family=Red+Hat+Display:wght@300&family=Square+Peg&family=Tapestry&family=Updock&display=swap');
 
@@ -268,10 +271,6 @@ b {
         width: 300px;
     }
 
-    .phone {
-        font-size: x-large;
-    }
-
     .slate-background {
         height: 800px;
         width: 600px;
@@ -389,6 +388,7 @@ b {
 
     .call-background {
         left: 20px;
+        width: 250px;
     }
 
     .call {
@@ -434,5 +434,9 @@ b {
     .enjoy h3 {
         top: 160px;
         left: 10px;
+    }
+
+    .phone {
+        font-size: 1.3rem;
     }
 }
