@@ -432,7 +432,8 @@ b {
     }
 
     .call-background {
-        width: 90%;
+        width: 260px;
+        height: 170px;
     }
 
     .phone {
