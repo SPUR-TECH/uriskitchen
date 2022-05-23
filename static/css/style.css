@@ -425,7 +425,7 @@ b {
 @media all and (max-width: 360px) {
 
     .enjoy h3 {
-        margin-top: -20px;
+        margin-top: 0px;
         margin-left: -60px;
     }
 }
