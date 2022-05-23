@@ -281,7 +281,7 @@ b {
     }
 
     .instruction-blue {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-top: 140px;
         margin-left: 10px;
         padding-right: 30px;
@@ -291,7 +291,7 @@ b {
 
     .enjoy h3 {
         margin-top: -80px;
-        margin-left: -100px;
+        margin-left: 0px;
         font-size: 40px;
     }
 }
@@ -354,6 +354,7 @@ b {
 
     .enjoy h3 {
         margin-top: -80px;
+        margin-left: -20px;
     }
 }
 
@@ -412,8 +413,8 @@ b {
 
     .enjoy h3 {
         position: relative;
-        top: 120px;
-        left: 40px;
+        margin-top: 20px;
+        margin-left: -40px;
     }
 
     /* Footer */
@@ -433,7 +434,7 @@ b {
 @media all and (max-width: 320px) {
 
     .enjoy h3 {
-        top: 200px;
-        left: 10px;
+        margin-top: 100px;
+        margin-left: -60px;
     }
 }
