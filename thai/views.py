@@ -31,18 +31,18 @@ def cart_view(request):
 
 
 def signup_view(request):
-    template = "signup.html"
-    context = {'active_link': 'cart'}
+    template = "account_signup.html"
+    context = {'active_link': 'signup'}
     return render(request, template, context)
 
 
 def login_view(request):
-    template = "login.html"
-    context = {'active_link': 'cart'}
+    template = "account_login.html"
+    context = {'active_link': 'login'}
     return render(request, template, context)
 
 
 def success_view(request):
     template = "thai/success.html"
-    context = {'active_link': 'cart'}
+    context = {'active_link': 'success'}
     return render(request, template, context)
