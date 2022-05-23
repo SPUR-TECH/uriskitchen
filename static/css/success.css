@@ -43,10 +43,22 @@
     }
 }
 
-.cart h1 {
+.success-cart {
+    position: relative;
+    top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
+    background-repeat: no-repeat;
+    height: 75rem;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.success-cart h1 {
     position: relative;
     font-family: 'Beau Rivage', cursive;
     color: rgb(228, 3, 3);
+    font-size: 50px;
     top: 20px;
     padding-bottom: 10px;
     display: none;
@@ -54,14 +66,29 @@
     transition: opacity .75s ease-in;
 }
 
-.cart h2 {
+.success-cart h2 {
     position: relative;
     font-family: 'Beau Rivage', cursive;
     color: rgb(0, 145, 145);
+    font-size: 40px;
     top: 20px;
     padding: 20px;
     padding-bottom: 100px;
     display: none;
     opacity: 0;
     transition: opacity .75s ease-in;
+}
+
+@media all and (max-width: 1000px) {
+
+    .success-cart h2 {
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .success-cart {
+        height: 1200px;
+    }
 }

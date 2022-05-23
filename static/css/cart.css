@@ -17,7 +17,7 @@
     top: 100px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
-    height: 60rem;
+    height: 75rem;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
@@ -29,7 +29,7 @@ li {
 }
 
 .cart li {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 30px;
@@ -90,7 +90,6 @@ li {
 
     .cart-slate-background {
         padding: 0px;
-        top: -150px;
     }
 
     .order-list {

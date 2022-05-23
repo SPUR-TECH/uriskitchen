@@ -3,8 +3,8 @@
 // CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
 
 const loader = document.querySelector('.loader');
-const title1 = document.querySelector('.cart h1');
-const title2 = document.querySelector('.cart h2');
+const success_title = document.querySelector('.success-cart h1');
+const success_title2 = document.querySelector('.success-cart h2');
 
 // Animation function
 function init() {
@@ -12,10 +12,10 @@ function init() {
         loader.style.opacity = 0;
         loader.style.display = 'none';
 
-        title1.style.display = 'block';
-        title2.style.display = 'block';
-        setTimeout(() => (title1.style.opacity = 1), 50);
-        setTimeout(() => (title2.style.opacity = 1), 2000);
+        success_title.style.display = 'block';
+        success_title2.style.display = 'block';
+        setTimeout(() => (success_title.style.opacity = 1), 50);
+        setTimeout(() => (success_title2.style.opacity = 1), 2000);
     }, 4000);
 }
 
