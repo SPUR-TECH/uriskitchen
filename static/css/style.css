@@ -227,18 +227,10 @@ b {
         width: 60%;
     }
 
-    .enjoy {
-        font-size: 2rem;
-        margin-top: 510px;
-        margin-left: 200px;
-    }
-}
-
-@media all and (max-width: 850px) {
-
     .enjoy h3 {
-        margin-top: 20px;
-        margin-left: 10px;
+        font-size: 3rem;
+        margin-top: -50px;
+        margin-left: 20px;
     }
 }
 
@@ -290,7 +282,7 @@ b {
     }
 
     .enjoy h3 {
-        margin-top: -80px;
+        margin-top: -180px;
         margin-left: 0px;
         font-size: 40px;
     }
@@ -412,8 +404,7 @@ b {
     }
 
     .enjoy h3 {
-        position: relative;
-        margin-top: 100px;
+        margin-top: -10px;
         margin-left: -40px;
     }
 
@@ -431,10 +422,10 @@ b {
     }
 }
 
-@media all and (max-width: 340px) {
+@media all and (max-width: 360px) {
 
     .enjoy h3 {
-        margin-top: 120px;
+        margin-top: -20px;
         margin-left: -60px;
     }
 }
