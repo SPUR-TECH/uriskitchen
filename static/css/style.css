@@ -384,10 +384,16 @@ b {
 
     .call-background {
         left: 20px;
+        width: 270px;
+        height: 170px;
     }
 
     .call {
         width: 250px;
+    }
+
+    .phone {
+        font-size: 1.1rem;
     }
 
     .slate-background {
@@ -429,14 +435,5 @@ b {
     .enjoy h3 {
         top: 200px;
         left: 10px;
-    }
-
-    .call-background {
-        width: 300px;
-        height: 170px;
-    }
-
-    .phone {
-        font-size: 5.1rem;
     }
 }
