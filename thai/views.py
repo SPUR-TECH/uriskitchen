@@ -50,6 +50,8 @@ def login_view(request):
 
 
 def success_view(request):
+    order = request.session['order']
     template = "thai/success.html"
-    context = {'active_link': 'success'}
+    total = request.session.get('total')
+    context = {'order': order, 'total': total}
     return render(request, template, context)
