@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import Meal, Home, Dessert
+from django.views.decorators.csrf import csrf_exempt
 
 
 def home_view(request):
@@ -9,6 +10,7 @@ def home_view(request):
 
 
 def meal_view(request):
+    request.session.set_expiry(0)
     template = "thai/meal.html"
     meal_objects = Meal.objects.all()
     context = {
@@ -17,6 +19,7 @@ def meal_view(request):
 
 
 def dessert_view(request):
+    request.session.set_expiry(0)
     template = "thai/dessert.html"
     dessert_objects = Dessert.objects.all()
     context = {
@@ -24,7 +27,11 @@ def dessert_view(request):
     return render(request, template, context)
 
 
+@csrf_exempt
 def cart_view(request):
+    request.session.set_expiry(0)
+    if request.is_ajax():
+        request.session['order'] = request.POST.get('orders')
     template = "thai/cart.html"
     context = {'active_link': 'cart'}
     return render(request, template, context)
