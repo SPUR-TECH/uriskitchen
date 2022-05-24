@@ -28,7 +28,7 @@ function shoppingCart() {
     var cartSize = orders.length;
     mealcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        remove = '<div class="del" onclick="removeMeal(' + i + ')">X</div>';
+        remove = '<div <button class="del btn-danger" onclick="removeMeal(' + i + ')">X</button></div>';
         mealcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
@@ -48,4 +48,20 @@ function removeMeal(n) {
     localStorage.setItem('total', total);
 
     shoppingCart();
+}
+
+
+function order() {
+    var orders = localStorage.getItem('orders');
+    var ur = '/cart/';
+    var orderData = {};
+    orderData['orders'] = orders;
+    $.post({
+        url: ur,
+        type: "POST",
+        data: orderData,
+        success: function (data) {
+            window.location.replace('/success')
+        }
+    })
 }

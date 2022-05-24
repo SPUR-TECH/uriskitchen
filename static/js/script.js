@@ -16,8 +16,6 @@ if ('stepTime == null') {
 var orders = JSON.parse(localStorage.getItem('orders'));
 var total = localStorage.getItem('total');
 
-console.log(`ORDERS: ${orders}`);
-console.log(`TOTAL: ${total}`);
 
 if (orders === null || orders === undefined) {
     localStorage.setItem('orders', JSON.stringify([]));
