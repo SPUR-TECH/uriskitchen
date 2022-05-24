@@ -7,12 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Thai food delivery website to make ordering Thai food easier">
+    <meta name="keywords" content="Thai food, login, Signup, Order, Delivery">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="{% static 'media/images/hot_chilli.jpg' %}" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <link rel="preconnect" hre f="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Updock&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -44,8 +48,8 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a class="nav-link mt-3"
-                    href="{% url 'account_signup' %}{% if active_link == 'signup' %}active{% endif %}">Sign Up</a>
+                <a href="{% url 'account_signup' %}"
+                    class=" nav-link mt-3{% if active_link == 'signup' %}active{% endif %}">Sign Up</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link mt-3"
@@ -54,7 +58,7 @@
             {% endif %}
             <li class="nav-item mt-3 mr-4">
                 <a href="{% url 'cart_view' %}" name="cart"
-                    class="nav-link {% if active_link == 'order' %}active{% endif %}">
+                    class="nav-link {% if active_link == 'cart' %}active{% endif %}">
                     <img src="https://res.cloudinary.com/dnczeth0j/image/upload/c_scale,w_30/v1651084569/static/images/icons8-shopping-cart-48_1_uxuqae.png"
                         alt="shopping cart"> <span id="cart"></span></a>
             </li>
