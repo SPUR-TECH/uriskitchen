@@ -16,10 +16,10 @@
                 <ul id="desertcart"></ul>
                 {% if user.is_authenticated %}
                 <div class="complete-order">
-                    <!-- <a href="{% url 'success_view' %}"> -->
+
                     <button type="submit" class="submit btn-info" onclick="order()">Complete
                         Order</button>
-                    <!--</a> -->
+
                 </div>
                 {% else %}
                 <div class="row sign-buttons">

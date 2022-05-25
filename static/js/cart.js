@@ -1,6 +1,6 @@
 // Shoppingcart
 
-// CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
+// // CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
 
 const loader = document.querySelector('.loader');
 const success_title = document.querySelector('.success-cart h1');
@@ -62,8 +62,9 @@ function order() {
         data: orderData,
         success: function (data) {
             window.location.replace('/success')
-            localStorage.setItem('orders', JSON.stringify([]));
-            localStorage.setItem('total', 0);
+            // localStorage.setItem('orders', JSON.stringify([]));
+            // localStorage.setItem('total', 0);
+            print('the data was sent')
         }
     })
 }
