@@ -79,10 +79,13 @@
     transition: opacity .75s ease-in;
 }
 
-.order {
+#success-cart {
+    position: relative;
+    text-align: left;
     font-family: 'Red Hat Display', sans-serif;
     color: rgb(1, 207, 207);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 40px;
     background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(0, 0, 0, 0.7));
     border-radius: 10px;
     border-style: solid;
