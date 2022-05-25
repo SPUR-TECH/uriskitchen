@@ -62,6 +62,8 @@ function order() {
         data: orderData,
         success: function (data) {
             window.location.replace('/success')
+            localStorage.setItem('orders', JSON.stringify([]));
+            localStorage.setItem('total', 0);
         }
     })
 }
