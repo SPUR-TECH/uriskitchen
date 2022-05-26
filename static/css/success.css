@@ -43,6 +43,14 @@
     }
 }
 
+.successcart {
+    visibility: hidden;
+}
+
+.del {
+    visibility: hidden;
+}
+
 .success-cart {
     position: relative;
     top: 100px;
