@@ -28,11 +28,7 @@ function shoppingCart() {
     var cartSize = orders.length;
     mealcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-<<<<<<< HEAD
         remove = '<div <button class="del" onclick="removeMeal(' + i + ')">X</button></div>';
-=======
-        remove = '<div <button class="del btn-danger" onclick="removeMeal(' + i + ')">X</button></div>';
->>>>>>> 429b5bcd27550dad57a4ee7b37fc3a0317656476
         mealcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     mealtotal.innerHTML = 'Total:  £' + total + ' ';
@@ -60,11 +56,7 @@ function order() {
     var ur = '/cart/';
     var orderData = {};
     orderData['orders'] = orders;
-<<<<<<< HEAD
     $.ajax({
-=======
-    $.post({
->>>>>>> 429b5bcd27550dad57a4ee7b37fc3a0317656476
         url: ur,
         type: "POST",
         data: orderData,
