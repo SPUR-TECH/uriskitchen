@@ -28,7 +28,7 @@ function shoppingCart() {
     var cartSize = orders.length;
     mealcart.innerHTML = '';
     for (let i = 0; i < cartSize; i++) {
-        remove = '<div <button class="del btn-danger" onclick="removeMeal(' + i + ')">X</button></div>';
+        remove = '<div <button class="del" onclick="removeMeal(' + i + ')">X</button></div>';
         mealcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
     mealtotal.innerHTML = 'Total:  £' + total + ' ';

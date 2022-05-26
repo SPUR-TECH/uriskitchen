@@ -1,126 +1,46 @@
-<!DOCTYPE html>
+{% extends "account/base.html" %}
+
+{% block title %}Success{% endblock %}
+
+{% block content %}
+
 {% load static %}
-<html lang="en">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Thai food delivery website to make ordering Thai food easier">
-    <meta name="keywords" content="Thai food, login, Signup, Order, Delivery">
+        <div class="col-md-8 cart-slate-background text-center">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="{% static 'media/images/hot_chilli.jpg' %}" type="image/x-icon">
-    <link rel="preconnect" hre f="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Updock&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/meal.css' %}">
-    <link rel="stylesheet" href="{% static 'css/dessert.css' %}">
-    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
-    <link rel="stylesheet" href="{% static 'css/success.css' %}">
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
-    <link rel="stylesheet" href="{% static 'css/logout.css' %}">
-
-    <title>{% block title %}{% endblock %}</title>
-</head>
-
-<body>
-
-    <div id="overlay-home"></div>
-    <nav class="navbar navbar-expand-sm navbar-dark">
-        <!-- Brand/logo -->
-        <a class="navbar-brand mr-4" href="{% url 'home_view' %}">
-            <img src="{% static 'media/images/hot_chilli.jpg' %}" name="nav-toggler" alt="chilli logo"
-                style="width:40px;">
-        </a>
-
-        <ul class="navbar-nav text-center">
-            {% if user.is_authenticated %}
-            <li class="nav-item mt-3">
-                <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-            </li>
-            {% else %}
-            <li class="nav-item">
-                <a href="{% url 'account_signup' %}"
-                    class=" nav-link mt-3{% if active_link == 'signup' %}active{% endif %}">Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mt-3"
-                    href="{% url 'account_login' %}{% if active_link == 'login' %}active{% endif %}">Login</a>
-            </li>
-            {% endif %}
-            <li class="nav-item ml-3 mt-3 mr-4">
-                <a href="{% url 'cart_view' %}" name="cart"
-                    class="nav-link {% if active_link == 'cart' %}active{% endif %}">
-                    <img src="https://res.cloudinary.com/dnczeth0j/image/upload/c_scale,w_30/v1651084569/static/images/icons8-shopping-cart-48_1_uxuqae.png"
-                        alt="shopping cart"> <span id="cart" class="successcart"></span></a>
-            </li>
-        </ul>
-
-        <button class="navbar-toggler" type="button" aria="collapse" input="collapse" value="collapse"
-            data-toggle="collapse" data-target="#mynav" aria-controls="mynav">
-            <span class="navbar-toggler-icon">menu</span>
-        </button>
-        <div class="collapse navbar-collapse text-right" id="mynav">
-            <!-- Links -->
-            <ul class="navbar-nav" class="col-sm-12">
-                <li class="nav-item mt-1">
-                    <a class="nav-link {% if active_link == 'index' %}active{% endif %}" aria-current="page"
-                        href="{% url 'home_view' %}">HOME</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a class="nav-link {% if active_link == 'meal' %}active{% endif %}"
-                        href="{% url 'meal_view' %}">MEALS</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a class="nav-link {% if active_link == 'dessert' %}active{% endif %}"
-                        href="{% url 'dessert_view' %}">DESSERTS</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2"></div>
-
-            <div class="col-md-8 cart-slate-background text-center">
-
-                <div class="success-cart">
-                    <h1 class="success-title">Your order has been successful</h1>
-                    <h2 class="success-title2">Average delivery time: 45mins</h2>
-                    <div class="loader">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <h3 class="text-center pt-3">Order List</h3>
-
-                    <ul id="mealcart"></ul>
-                    <!-- <h4 class="order">{{ order }}</h4> -->
-
-                    <h4 class="text-center mt-5" id="mealtotal" id="deserttotal">Total: £ 0 </h4>
+            <div class="success-cart">
+                <h1 class="success-title">Your order has been successful</h1>
+                <h2 class="success-title2">Average delivery time: 45mins</h2>
+                <div class="loader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                <h3 class="text-center pt-3">Order List</h3>
+
+                <ul id="mealcart"></ul>
+                <!-- <h4 class="order">{{ order }}</h4> -->
+
+                <h4 class="text-center mt-5" id="mealtotal" id="deserttotal">Total: £ 0 </h4>
             </div>
         </div>
-        <div class="col-md-3"></div>
+    </div>
+    <div class="col-md-3"></div>
 
 
-        <script src="{% static 'js/cart.js' %}"></script>
+    <script src="{% static 'js/cart.js' %}"></script>
 
-        <!-- Footer section -->
+    <!-- Footer section -->
 
-        <footer>
-            <div class="footer">
-                <p class="copyright">
-                    &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
-                </p>
-            </div>
-        </footer>
+    <footer>
+        <div class="footer">
+            <p class="copyright">
+                &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
+            </p>
+        </div>
+    </footer>
+
+    {% endblock %}
