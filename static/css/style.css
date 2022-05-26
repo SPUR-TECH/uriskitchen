@@ -1,6 +1,7 @@
 /* Home page css*/
 body {
     background-color: black;
+    margin-right: 20px
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Lobster&family=Playfair+Display:ital@1&family=Red+Hat+Display:wght@300&family=Square+Peg&family=Tapestry&family=Updock&display=swap');
@@ -234,6 +235,10 @@ b {
 }
 
 @media all and (max-width: 766px) {
+
+    body {
+        margin-right: 0px;
+    }
 
     .home-black-background {
         height: 150px;
