@@ -79,7 +79,11 @@
     transition: opacity .75s ease-in;
 }
 
+<<<<<<< HEAD
 .order {
+=======
+/* .order {
+>>>>>>> 429b5bcd27550dad57a4ee7b37fc3a0317656476
     position: relative;
     text-align: left;
     font-family: 'Red Hat Display', sans-serif;
@@ -94,7 +98,11 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 40px;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> 429b5bcd27550dad57a4ee7b37fc3a0317656476
 
 @media all and (max-width: 1000px) {
 
