@@ -56,14 +56,15 @@ function order() {
     var ur = '/cart/';
     var orderData = {};
     orderData['orders'] = orders;
-    $.ajax({
+    $.post({
         url: ur,
         type: "POST",
         data: orderData,
         success: function (data) {
+
+            document.querySelector('#cart').innerHTML = '0';
+
             window.location.replace('/success')
-            // localStorage.setItem('orders', JSON.stringify([]));
-            // localStorage.setItem('total', 0);
         }
     })
 }

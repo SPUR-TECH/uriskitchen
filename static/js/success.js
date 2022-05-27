@@ -33,7 +33,16 @@ function successCart() {
     }
     successtotal.innerHTML = 'Total:  £' + total + ' ';
     var cart = document.querySelector("#cart");
-    cart.innerHTML = orders.length;
+    // cart.innerHTML = orders.length;
+    // document.querySelector('#cart').innerHTML = '0';
 }
 
 successCart();
+
+function clearOrder() {
+    localStorage.setItem('orders', JSON.stringify([]));
+    localStorage.setItem('total', 0);
+    document.querySelector('#cart').innerHTML = '0';
+}
+
+const emptyBasket = setTimeout(clearOrder, 50)
