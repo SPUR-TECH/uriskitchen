@@ -1,25 +1,25 @@
 // Shoppingcart
 
-// // CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
+// // // CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
 
-const loader = document.querySelector('.loader');
-const success_title = document.querySelector('.success-cart h1');
-const success_title2 = document.querySelector('.success-cart h2');
+// const loader = document.querySelector('.loader');
+// const success_title = document.querySelector('.success-cart h1');
+// const success_title2 = document.querySelector('.success-cart h2');
 
-// Animation function
-function init() {
-    setTimeout(() => {
-        loader.style.opacity = 0;
-        loader.style.display = 'none';
+// // Animation function
+// function init() {
+//     setTimeout(() => {
+//         loader.style.opacity = 0;
+//         loader.style.display = 'none';
 
-        success_title.style.display = 'block';
-        success_title2.style.display = 'block';
-        setTimeout(() => (success_title.style.opacity = 1), 50);
-        setTimeout(() => (success_title2.style.opacity = 1), 2000);
-    }, 4000);
-}
+//         success_title.style.display = 'block';
+//         success_title2.style.display = 'block';
+//         setTimeout(() => (success_title.style.opacity = 1), 50);
+//         setTimeout(() => (success_title2.style.opacity = 1), 2000);
+//     }, 4000);
+// }
 
-init();
+// init();
 
 // Add to cart function
 function shoppingCart() {
@@ -64,7 +64,6 @@ function order() {
             window.location.replace('/success')
             // localStorage.setItem('orders', JSON.stringify([]));
             // localStorage.setItem('total', 0);
-            print('the data was sent')
         }
     })
 }

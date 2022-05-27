@@ -80,9 +80,8 @@
 }
 
 
-.order {
+#successcart {
     position: relative;
-    text-align: left;
     font-family: 'Red Hat Display', sans-serif;
     color: rgb(1, 207, 207);
     font-size: 1.3rem;
@@ -95,6 +94,16 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 40px;
+}
+
+.success-del {
+    display: none;
+}
+
+#successtotal {
+    font-family: 'Beau Rivage', cursive;
+    color: rgb(1, 207, 207);
+    font-size: 2rem;
 }
 
 @media all and (max-width: 1000px) {
