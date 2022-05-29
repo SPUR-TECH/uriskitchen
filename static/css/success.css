@@ -13,6 +13,7 @@
     border-color: rgb(228, 3, 3);
     margin-left: 10px;
     margin-right: 10px;
+
     display: none;
     opacity: 0;
     transition: opacity .75s ease-in;
@@ -63,7 +64,7 @@
 
 .success-cart {
     position: relative;
-    top: 50px;
+    top: 100px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
     height: 75rem;
@@ -150,5 +151,6 @@
 
     .success-cart {
         height: 1200px;
+        top: 50px;
     }
 }

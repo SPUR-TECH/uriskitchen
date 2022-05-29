@@ -353,6 +353,11 @@ b {
 
 @media all and (max-width: 400px) {
 
+    .navbar {
+        background-color: black;
+        margin-bottom: 50px;
+    }
+
     .home-black-background {
         height: 120px;
         width: 100%;
