@@ -5,6 +5,7 @@
 const loader = document.querySelector('.loader');
 const success_title = document.querySelector('.success-cart h1');
 const success_title2 = document.querySelector('.success-cart h2');
+const success_email = document.querySelector('.success-email');
 
 // Animation function
 function init() {
@@ -14,6 +15,8 @@ function init() {
 
         success_title.style.display = 'block';
         success_title2.style.display = 'block';
+        success_email.style.display = 'block';
+        setTimeout(() => (success_email.style.opacity = 1), 2000);
         setTimeout(() => (success_title.style.opacity = 1), 50);
         setTimeout(() => (success_title2.style.opacity = 1), 2000);
     }, 4000);
