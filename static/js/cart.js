@@ -56,7 +56,7 @@ function order() {
     var ur = '/cart/';
     var orderData = {};
     orderData['orders'] = orders;
-    $.post({
+    $.ajax({
         url: ur,
         type: "POST",
         data: orderData,
