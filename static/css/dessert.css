@@ -10,6 +10,7 @@
     overflow: hidden;
     border-radius: 10px;
     padding: 0px;
+    right: 20px;
 }
 
 .dessert-menu-background {
@@ -23,6 +24,12 @@
     border-radius: 15px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.item-title {
+    font-size: 3.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .dessert-images {
@@ -87,14 +94,14 @@
 @media all and (max-width: 1000px) {
 
     .dessert-menu-background {
-        height: 1450px;
+        height: 1550px;
         width: 61%;
         margin-left: 0px;
         height: 1300px;
     }
 
-    #dessertname1 {
-        padding-right: 20px;
+    .item-title {
+        font-size: 2.5rem;
     }
 
     .dessert-images {
@@ -102,13 +109,8 @@
         height: 100px;
     }
 
-    .order h3 {
-        font-size: 2.3rem;
-    }
-
-    .order h4 {
-        font-size: 1.5rem;
-        margin-right: 20px;
+    .item-description {
+        margin-top: 0px;
     }
 
     #dessertcart {
@@ -124,7 +126,7 @@
 @media all and (max-width: 850px) {
 
     .dessert-menu-background {
-        height: 1450px;
+        height: 1500px;
     }
 
     .red-circle-dessert {
@@ -155,7 +157,7 @@
 
     .dessert-menu-background {
         width: 95%;
-        height: 2100px;
+        height: 1850px;
     }
 
     #dessertcart {
@@ -166,19 +168,19 @@
         font-size: 18px;
     }
 
-    .order {
-        display: none;
-    }
-
     .orders-slate-background {
         width: 90%;
+    }
+
+    .dessert-orders {
+        right: 0px;
     }
 }
 
 @media all and (max-width: 580px) {
 
     .dessert-menu-background {
-        height: 2150px;
+        height: 1900px;
     }
 
     .red-circle-dessert {
@@ -195,7 +197,7 @@
 
     .dessert-menu-background {
         width: 90%;
-        height: 2300px;
+        height: 2250px;
     }
 
     .red-circle-dessert {

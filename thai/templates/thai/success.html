@@ -36,22 +36,22 @@
         </div>
     </div>
     <div class="col-md-3"></div>
+</div>
 
+<script src="{% static 'js/success.js' %}"></script>
 
-    <script src="{% static 'js/success.js' %}"></script>
+<script>
+    document.querySelector('#cart').innerHTML = '0';
+</script>
 
-    <script>
-        document.querySelector('#cart').innerHTML = '0';
-    </script>
+<!-- Footer section -->
 
-    <!-- Footer section -->
+<footer>
+    <div class="footer">
+        <p class="copyright">
+            &copy; Copyright SPUR-<b>TECH </b> Web Designs @ 2021
+        </p>
+    </div>
+</footer>
 
-    <footer>
-        <div class="footer">
-            <p class="copyright">
-                &copy; Copyright SPUR-<b>TECH </b> Web Designs @ 2021
-            </p>
-        </div>
-    </footer>
-
-    {% endblock %}
+{% endblock %}

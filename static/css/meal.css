@@ -47,10 +47,10 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
     height: 75rem;
-    width: 100%;
     overflow: hidden;
     border-radius: 10px;
     padding: 0px;
+    right: 20px;
 }
 
 .meal-slate-cart {
@@ -66,7 +66,7 @@
 .meal-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
     height: 1400px;
-    width: 62%;
+    width: 60%;
     position: absolute;
     margin-left: 40px;
     margin-top: 200px;
@@ -77,11 +77,8 @@
 }
 
 .item-title {
-    font-family: 'Beau Rivage', cursive;
-    font-size: 3rem;
-    font-weight: 500;
-    color: rgb(228, 3, 3);
     margin-top: 50px;
+    margin-right: 20px;
 }
 
 .meal-images {
@@ -167,8 +164,14 @@ h3 {
 
     .meal-menu-background {
         width: 63%;
-        height: 1300px;
+        height: 1400px;
         margin-left: 0px;
+    }
+
+    .item-title {
+        font-size: 2.5rem;
+        padding-left: 20px;
+        padding-right: 40px;
     }
 
     #mealcart {
@@ -201,7 +204,7 @@ h3 {
 @media all and (max-width: 850px) {
 
     .meal-menu-background {
-        height: 1500px;
+        height: 1450px;
     }
 
     .meal-images {
@@ -249,12 +252,17 @@ h3 {
     }
 
     .meal-menu-background {
-        height: 2100px;
+        height: 1950px;
         width: 95%;
     }
 
-    .orders {
+    .meal-orders {
         right: 0px;
+    }
+
+    .footer {
+
+        width: 100%;
     }
 }
 
@@ -281,7 +289,7 @@ h3 {
     }
 
     .meal-menu-background {
-        height: 2300px;
+        height: 1950px;
     }
 }
 
@@ -308,7 +316,7 @@ h3 {
     }
 
     .meal-menu-background {
-        height: 2400px;
+        height: 2350px;
         width: 90%;
     }
 }
