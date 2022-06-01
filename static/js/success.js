@@ -36,8 +36,6 @@ function successCart() {
     }
     successtotal.innerHTML = 'Total:  £' + total + ' ';
     var cart = document.querySelector("#cart");
-    // cart.innerHTML = orders.length;
-    // document.querySelector('#cart').innerHTML = '0';
 }
 
 successCart();
