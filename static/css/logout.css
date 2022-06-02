@@ -1,8 +1,16 @@
 /* logout page css*/
 
+.logout {
+    margin-top: 30px;
+}
+
 .logout-title {
     font-family: 'Beau Rivage', cursive;
     font-size: 3rem;
     color: rgb(228, 3, 3);
     background: linear-gradient(rgb(138, 138, 138), rgba(0, 0, 0));
+}
+
+.footer {
+    margin-bottom: 0px;
 }
