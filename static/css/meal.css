@@ -21,7 +21,7 @@
 }
 
 .title {
-    right: 200px;
+    margin-left: 80px;
     padding-top: 0px;
     margin-top: 10px;
     font-family: 'Beau Rivage', cursive;
@@ -38,26 +38,21 @@
     color: rgb(1, 207, 207);
     font-size: 3rem;
     margin-top: -50px;
-    margin-left: 110px;
+    margin-left: 140px;
 }
 
 .meal-orders {
     position: relative;
-    top: 200px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
-    background-repeat: no-repeat;
-    height: 75rem;
-    overflow: hidden;
-    border-radius: 10px;
+    height: 80rem;
+    margin-left: 20px;
     padding: 0px;
-    right: 20px;
 }
 
 .meal-slate-cart {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://res.cloudinary.com/dnczeth0j/image/upload/v1651081192/static/images/slate-background_nfxmpb.jpg");
     background-repeat: no-repeat;
-    height: 80rem;
+    height: 75rem;
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
@@ -65,15 +60,13 @@
 
 .meal-menu-background {
     background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(0, 0, 0, 0.9));
-    height: 1400px;
-    width: 60%;
-    position: absolute;
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    padding-bottom: 50px;
     margin-left: 40px;
-    margin-top: 200px;
-    overflow: hidden;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-right: 40px;
+    margin-bottom: 100px;
 }
 
 .item-title {
@@ -105,10 +98,6 @@
     border-radius: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.orders {
-    right: 20px;
 }
 
 .order-list {
@@ -157,15 +146,13 @@ h3 {
 
 @media all and (max-width: 1500px) {
 
+    .meal-menu-background {
+        margin-right: 20px;
+    }
+
     .meal-images {
         width: 250px;
         height: 150px;
-    }
-
-    .meal-menu-background {
-        width: 63%;
-        height: 1400px;
-        margin-left: 0px;
     }
 
     .item-title {
@@ -182,14 +169,19 @@ h3 {
 @media all and (max-width: 1000px) {
 
     .meal-menu-background {
-        margin-left: 0px;
-        height: 1300px;
-        width: 61%;
+        margin-left: 20px;
+        margin-right: 20px;
+
     }
 
     .meal-images {
-        width: 200px;
+        width: 150px;
         height: 100px;
+    }
+
+    .meal-orders {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     li {
@@ -202,10 +194,6 @@ h3 {
 }
 
 @media all and (max-width: 850px) {
-
-    .meal-menu-background {
-        height: 1450px;
-    }
 
     .meal-images {
         width: 150px;
@@ -225,6 +213,7 @@ h3 {
     .title {
         padding-top: 10px;
         font-size: 4rem;
+        margin-left: 30px;
     }
 
     .title2 {
@@ -242,22 +231,21 @@ h3 {
 @media all and (max-width: 766px) {
 
     .black-background {
-        height: 150px;
+        height: 130px;
         width: 360px;
     }
 
     .red-circle-meal {
-        height: 140px;
+        height: 120px;
         width: 350px;
     }
 
-    .meal-menu-background {
-        height: 1950px;
-        width: 95%;
+    .title {
+        margin-left: 60px;
     }
 
-    .meal-orders {
-        right: 0px;
+    .meal-menu-background {
+        width: 100%;
     }
 
     .footer {
@@ -280,43 +268,38 @@ h3 {
 
     .title {
         font-size: 3rem;
-        padding-top: 5px;
+        margin-top: 0px;
+        margin-left: 40px;
     }
 
     .title2 {
         font-size: 2rem;
-        margin-top: -35px;
-    }
-
-    .meal-menu-background {
-        height: 1950px;
+        margin-top: -30px;
+        margin-left: 90px;
     }
 }
 
 @media all and (max-width: 400px) {
 
     .black-background {
-        width: 250px;
-        height: 120px;
+        width: 230px;
+        height: 90px;
         margin-left: -10px;
     }
 
     .red-circle-meal {
-        height: 110px;
-        width: 240px;
+        height: 80px;
+        width: 220px;
     }
 
     .title {
         font-size: 2.5rem;
+        margin-left: 30px;
     }
 
     .title2 {
-        font-size: 2rem;
-        margin-top: -30px;
-    }
-
-    .meal-menu-background {
-        height: 2350px;
-        width: 90%;
+        font-size: 1.8rem;
+        margin-top: -25px;
+        margin-left: 80px;
     }
 }

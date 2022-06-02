@@ -8,15 +8,16 @@
 
 
 <div class="container-fluid">
-    <div class="meal-menu-background"></div>
+    <div class="black-background">
+        <div class="red-circle-meal">
+            <h1 class="title">Thai Meals</h1>
+            <h2 class="title2">Menu</h2>
+        </div>
+    </div>
     <div class="row text-center">
-        <div class="col-md-8 text-center">
-            <div class="black-background">
-                <div class="red-circle-meal">
-                    <h1 class="title">Thai Meals</h1>
-                    <h2 class="title2">Menu</h2>
-                </div>
-            </div>
+
+        <div class="col-md-7 text-center meal-menu-background">
+
             <div class="row">
                 {% for meal in meal_objects %}
                 <div class="col-md-6">
