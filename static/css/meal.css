@@ -223,7 +223,7 @@ h3 {
     .item-title {
 
         font-size: 2.5rem;
-        margin-top: 80px;
+        margin-top: 40px;
     }
 }
 
@@ -306,5 +306,9 @@ h3 {
         font-size: 1.6rem;
         margin-top: -25px;
         margin-left: 80px;
+    }
+
+    .item-description {
+        margin: 0px;
     }
 }
