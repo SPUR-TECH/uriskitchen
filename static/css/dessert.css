@@ -1,5 +1,25 @@
 /* Dessert page css*/
 
+.dessert-title {
+    margin-left: 80px;
+    padding-top: 0px;
+    margin-top: 10px;
+    font-family: 'Beau Rivage', cursive;
+    font-size: 5rem;
+    font-weight: 500;
+    color: rgb(228, 3, 3);
+}
+
+.dessert-title2 {
+    text-align: center;
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 500;
+    color: rgb(1, 207, 207);
+    font-size: 3rem;
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
 .dessert-orders {
     position: relative;
     top: 200px;
@@ -19,7 +39,14 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 50px;
+    margin-bottom: 100px;
     width: 50%;
+    padding-bottom: 100px;
+}
+
+.dessert-orders {
+    top: 50px;
+    margin-left: 40px;
 }
 
 .item-title {
@@ -68,14 +95,17 @@
 
 @media all and (max-width: 1500px) {
 
-    .dessert-menu-background {
-        width: 63%;
-        height: 1300px;
+    .dessert-orders {
         margin-left: 0px;
+        margin-right: 0px;
     }
 
-    #dessertname1 {
-        padding-right: 50px;
+    .item-title {
+        font-size: 3rem;
+    }
+
+    .dessert-orders {
+        margin-right: 0px;
     }
 
     #dessertcart {
@@ -90,10 +120,7 @@
 @media all and (max-width: 1000px) {
 
     .dessert-menu-background {
-        height: 1550px;
-        width: 61%;
-        margin-left: 0px;
-        height: 1300px;
+        margin-left: 10px;
     }
 
     .item-title {
@@ -109,6 +136,10 @@
         margin-top: 0px;
     }
 
+    .dessert-orders {
+        margin-right: 0px;
+    }
+
     #dessertcart {
         padding-left: 10px;
         padding-right: 10px;
@@ -121,22 +152,24 @@
 
 @media all and (max-width: 850px) {
 
+    .dessert-title {
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 3.8rem;
+    }
+
+    .dessert-title2 {
+        font-size: 2.8rem;
+        margin-top: -40px;
+        margin-left: 140px;
+    }
+
     .dessert-menu-background {
-        height: 1500px;
+        margin-right: 30px;
     }
 
-    .red-circle-dessert {
-        height: 120px;
-        width: 340px;
-    }
-
-    .order h3 {
-        font-size: 2.5rem;
-    }
-
-    .order h4 {
-        font-size: 1.5rem;
-        margin-right: 20px;
+    .dessert-orders {
+        right: 0px;
     }
 
     #dessertcart {
@@ -152,8 +185,8 @@
 @media all and (max-width: 766px) {
 
     .dessert-menu-background {
-        width: 95%;
-        height: 1850px;
+        width: 100%;
+        margin-right: 10px;
     }
 
     #dessertcart {
@@ -164,10 +197,6 @@
         font-size: 18px;
     }
 
-    .orders-slate-background {
-        width: 90%;
-    }
-
     .dessert-orders {
         right: 0px;
     }
@@ -175,13 +204,18 @@
 
 @media all and (max-width: 580px) {
 
-    .dessert-menu-background {
-        height: 1900px;
-    }
-
     .red-circle-dessert {
         height: 90px;
         width: 290px;
+    }
+
+    .dessert-title {
+        font-size: 2.8rem;
+    }
+
+    .dessert-title2 {
+        font-size: 2rem;
+        margin-top: -30px;
     }
 
     .orders {
@@ -191,14 +225,20 @@
 
 @media all and (max-width: 400px) {
 
-    .dessert-menu-background {
-        width: 90%;
-        height: 2250px;
+    .red-circle-dessert {
+        height: 80px;
+        width: 220px;
     }
 
-    .red-circle-dessert {
-        height: 110px;
-        width: 240px;
+    .dessert-title {
+        font-size: 2.3rem;
+        margin-left: 30px;
+    }
+
+    .dessert-title2 {
+        font-size: 1.6rem;
+        margin-top: -25px;
+        margin-left: 90px;
     }
 
     .orders {
