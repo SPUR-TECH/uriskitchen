@@ -1,5 +1,25 @@
 /* Dessert page css*/
 
+.black-background-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 130px;
+    width: 500px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.red-circle-dessert {
+    height: 120px;
+    width: 490px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(228, 3, 3);
+    border-radius: 50%;
+}
+
 .dessert-title {
     margin-left: 80px;
     padding-top: 0px;
@@ -84,15 +104,6 @@
     font-size: 2rem;
 }
 
-.red-circle-dessert {
-    height: 120px;
-    width: 490px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(228, 3, 3);
-    border-radius: 50%;
-}
-
 @media all and (max-width: 1500px) {
 
     .dessert-orders {
@@ -152,6 +163,16 @@
 
 @media all and (max-width: 850px) {
 
+    .black-background-dessert {
+        height: 120px;
+        width: 400px;
+    }
+
+    .red-circle-dessert {
+        height: 110px;
+        width: 390px;
+    }
+
     .dessert-title {
         margin-left: 50px;
         margin-top: 10px;
@@ -184,6 +205,25 @@
 
 @media all and (max-width: 766px) {
 
+    .black-background-dessert {
+        height: 110px;
+        width: 360px;
+    }
+
+    .red-circle-dessert {
+        height: 100px;
+        width: 350px;
+    }
+
+    .dessert-title {
+        font-size: 3rem;
+    }
+
+    .dessert-title2 {
+        font-size: 2rem;
+        margin-top: -30px;
+    }
+
     .dessert-menu-background {
         width: 100%;
         margin-right: 10px;
@@ -203,6 +243,11 @@
 }
 
 @media all and (max-width: 580px) {
+
+    .black-background-dessert {
+        height: 100px;
+        width: 300px;
+    }
 
     .red-circle-dessert {
         height: 90px;
@@ -225,19 +270,25 @@
 
 @media all and (max-width: 400px) {
 
+    .black-background-dessert {
+        height: 90px;
+        width: 240px;
+    }
+
     .red-circle-dessert {
         height: 80px;
-        width: 220px;
+        width: 230px;
     }
 
     .dessert-title {
-        font-size: 2.3rem;
+        font-size: 2rem;
         margin-left: 30px;
+        margin-top: 15px;
     }
 
     .dessert-title2 {
-        font-size: 1.6rem;
-        margin-top: -25px;
+        font-size: 1.3rem;
+        margin-top: -20px;
         margin-left: 90px;
     }
 
