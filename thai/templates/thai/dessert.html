@@ -6,19 +6,17 @@
 
 {% load static %}
 
-
-<div id="overlay-dessert"></div>
 <div class="container-fluid">
-    <div class="dessert-menu-background"></div>
+    <div class="black-background">
+        <div class="red-circle-dessert">
+            <h1 class="title">Thai Desserts</h1>
+            <h2 class="title2">Menu</h2>
+        </div>
+    </div>
 
     <div class="row text-center">
-        <div class="col-md-8">
-            <div class="black-background">
-                <div class="red-circle-dessert">
-                    <h1 class="title">Thai Desserts</h1>
-                    <h2 class="title2">Menu</h2>
-                </div>
-            </div>
+        <div class="col-md-7 dessert-menu-background">
+
             <div class="row">
                 {% for dessert in dessert_objects %}
                 <div class="col-md-6">
