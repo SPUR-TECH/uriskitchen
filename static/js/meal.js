@@ -1,3 +1,5 @@
+// meal cart
+
 var mealcart = document.querySelector('#mealcart');
 var mealtotal = document.querySelector('#mealtotal');
 

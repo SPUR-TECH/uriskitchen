@@ -61,6 +61,8 @@ function dessertshoppingCart() {
     cart.innerHTML = orders.length;
 }
 
+// Remove items from cart
+
 dessertshoppingCart();
 
 function removedessert(n) {

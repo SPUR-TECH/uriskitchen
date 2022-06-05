@@ -1,20 +1,26 @@
-![A banner of site to add colour to readme.md](static/media/images/urais-kitchen-banner.jpg)
+![A banner of the site to add flare to the readme.md](static/media/images/urais-kitchen-banner.jpg)
 
 # Urai's Thai Kitchen
+
+### Live site:
+
 https://uriskitchen.herokuapp.com/
+
+---
 
 ## Welcome Reader,
 
-This is a description of this website and all I'ts workings.
+This is a description of this website and all It's workings which covers the main features and functions right through to bug fixes and deployment.
+
+---
 
 ## Project target:
----
 
 Urai,s Thai Kitchen is a thai food delivery service for the hungry folk that like Thai food and of course an easy to use eye catching website to obtain such joys.
 In this site the user can create an account so the next order will be easier with a simple login.
-It,s also part of the Code Institute Fullstack Diploma Course and in this particular project using an Agile methodology I demonstrate the use of a database in two ways. Adding the menus via the admin section and summoning them back to the allocated pages with javascript. Saving the order in local storage and retrieving the order back to show my understanding of database usage.
+It's also part of the Code Institute Fullstack Diploma Course and in this particular project using an Agile methodology I demonstrate the use of a database in two ways. Adding the menus via the admin section and summoning them back to the allocated pages with javascript. Saving the order in local storage and retrieving the order back to show my understanding of database usage.
 
-I've given the user the ability to C.R.U.D. authentication to Create an order, Read back they,re order, Update it at any point until final purchase and of course Delete any items from that order until final purchase.
+I've given the user the ability to C.R.U.D. Create an order, Read back they,re order, Update it at any point until final purchase and of course Delete any items from that order until final purchase.
 
 I've also added special role based authentication to a staff user to gain full access the admin section which again brings in the C.R.U.D.
 
@@ -23,9 +29,9 @@ I've also added special role based authentication to a staff user to gain full a
 ##  Screen shots of the site and it's responsive abilities:
 
 
-I used http://ami.responsivedesign.is/ to check what it would look like on all devices but the live heroku site refused to work so I used my workspace url which did work this is the work space url https://8000-spurtech-uriskitchen-pe75eqmz4aa.ws-eu46.gitpod.io/.
+I used http://ami.responsivedesign.is/ to check what it would look like on all devices.
 As you can see it's fully responsive right across all devices and adapts to any screen sizes.
-![An image of the site on mulitple screen sizes](static/media/images/urais-kitchen-responsive.jpg)
+![An image of the site on multiple screen sizes](static/media/images/urais-kitchen-responsive.jpg)
 
 ---
 
@@ -48,6 +54,8 @@ As you can see it's fully responsive right across all devices and adapts to any 
 
  - As a first time user I would like instructions to order food.
 
+ - As a first time user 0r existing I would like know that my details will secure.
+
  - As a returning user I would like to login with my username and password so I don't need to keep putting in my details.
 
  - As a site user I would like complete control of my order if I need to remove or add any items.
@@ -56,17 +64,33 @@ As you can see it's fully responsive right across all devices and adapts to any 
 
  - As a site user I would like a confirmation email of my order.
 
- - As a first time user I would like know that my details will secure.
-
  - As the site owner I would like like to add or delete items in the menus and update anything that requires it.
 
- - As a staff member I would like special access to the admin page.
+ - As a staff member I would like special access to the admin page so I can Create, Read, Update and Delete menu items and/or user details.
 
- ### all of the above user stories were met 
+ ### All of the above user stories were met except receiving an email as we have only learnt how to attach our own email address not users. As my skills build this will surly be added in the future.
 
  ---
 
-## Wireframes:
+ # Content Requirements:
+    
+- The UI/UX **must** address these:
+
+    - Easy site navigation.
+    - An easy to read menu of both meals and desserts.
+    - A clear description of each meal or dessert.
+    - Easy food ordering process.
+    - Easy sign up, Log in and Log out system
+
+- The UI/UX **should** address these:
+    
+    - Instructions on how to order if user is new to the page.
+    - Send an email of order confirmation
+    - Clear order info for next order
+
+---
+
+## Wireframes, Created using https://balsamiq.com/wireframes/
 
 The wire frames for the pages showcasing the bare structure of the site.
 
@@ -91,7 +115,7 @@ Each page has its own css and javascript for ease of maintenance.
 
 ![](static/media/images/urais-kitchen-home.jpg)
 
-I've gone for a posh restaurant look to stand out from the basic white background and black writing for a better User Experience.
+I've gone for a posh restaurant look to stand out from the basic white background and black writing for a better User Experience with a nice background that flows thro8gh all pages.
 
 The Title is to represent the sign that would be on the front of the building and the instructions how to order is on a slate place mat written in bright bold colors that compliment each other well and stand out clearly.
 
@@ -171,3 +195,25 @@ The desserts page is much the same as the meals page in layout and responsivenes
 
 - Just asks if the user is sure they want to sign out
 
+---
+
+## Exisiting Features:
+
+- consistent NAVBAR on all pages for ease of use
+- flowing background image and styling
+- flowing typography on all pages
+- Clear instructions to ordering
+- consistent footer on all pages
+- Authentication system to complete order
+    - Sign up page to insert personal details
+    - Log in page for quick access on returning users 
+    - Log out page to exit from site
+- Authentication system to gain access to admin panel
+    - Log in as admin or staff member to gain access to Admin panel
+
+## Features to be added in the future:
+
+- Email confirmation to user
+- Save order details if user wants to access an existing order
+- Add nutritional values to description details
+- Genuine payment method for real functioning site 
