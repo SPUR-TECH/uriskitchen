@@ -29,7 +29,7 @@ function removeMeal(n) {
     shoppingCart();
 }
 
-
+// code from Stack overflow
 function order() {
     var orders = localStorage.getItem('orders');
     var ur = '/cart/';
