@@ -8,6 +8,43 @@ https://uriskitchen.herokuapp.com/
 
 ---
 
+# Table of content:
+
+- [Urai's Thai Kitchen](#urais-thai-kitchen)
+    - [Welcome Reader,](#welcome-reader)
+        - [Project target:](#project-target)
+    - [Screen shots of the site and it's responsive abilities:](#screen-shots-of-the-site-and-its-responsive-abilities)
+    - [User stories in an Agile methodology:](#user-stories-in-an-agile-methodology)
+        - [This shows the structure of what went into the project:](#this-shows-the-structure-of-what-went-into-the-project)
+- [UI/UX](#uiux)
+- [Content Requirements:](#content-requirements)
+    - [Wireframes, Created using https://balsamiq.com/wireframes/](#wireframes-created-using-httpsbalsamiqcomwireframes)
+        - [Links to the other pages:](#links-to-the-other-pages)
+    - [Organization:](#organization)
+    - [features:](#features)
+- [The landing page:](#the-landing-page)
+- [The Meals page:](#the-meals-page)
+- [The Desserts page:](#the-desserts-page)
+- [The footer:](#the-footer)
+- [The Account pages:](#the-account-pages)
+- [Sign up page:](#sign-up-page)
+- [Log in page:](#log-in-page)
+- [Log out page:](#log-out-page)
+    - [Existing features:](#existing-features)
+    - [Features to be added in the future:](#features-to-be-added-in-the-future)
+- [Testing:](#testing)
+    - [Technologies stack:](#technologies-stack)
+        - [Languages:](#languages)
+        - [Additional Languages:](#additional-languages)
+        - [Frameworks and Libraries:](#frameworks-and-libraries)
+    - [See results below:](#see-results-below)
+- [Bugs and fixes:](#bugs-and-fixes)
+- [CREDITS:](#credits)
+- [Deployment:](#deployment)
+    - [Deploying on Heroku:](#deploying-on-heroku)
+
+<!-- /TOC -->
+
 ## Welcome Reader,
 
 This is a description of this website and all It's workings which covers the main features and functions right through to bug fixes and deployment.
@@ -144,16 +181,6 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
  
  ---
 
- # The footer:
-
-![Footer](static/media/images/urais-kitchen-footer.jpg)
-
-1. The footer is shown in all pages for a nice flow.
-2. My copyright tag is shown at the bottom with a bold pop to stand out.
-3. All fully responsive.
-
----
-
 # The Meals page:
 
 ![Meal page](static/media/images/urais-kitchen-meal.jpg)
@@ -173,6 +200,17 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 The desserts page is much the same as the meals page in layout and responsiveness. Here you can see the authentication buttons in the orders section that take the user to the relevant account page.
 
 ---
+
+# The footer:
+
+![Footer](static/media/images/urais-kitchen-footer.jpg)
+
+1. The footer is shown in all pages for a nice flow.
+2. My copyright tag is shown at the bottom with a bold pop to stand out.
+3. All fully responsive.
+
+---
+
 
 # The Account pages:
 
@@ -362,7 +400,11 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - Update the settings.py file to import the env file and add the SECRETKEY and DATABASE_URL file paths.
     - Update the Config Vars with the Cloudinary url, adding into the settings.py file also.
     - In settings.py add the following sections:
-        - Cloudinary to the INSTALLED_APPS list
+        - Cloudinary
+        - cloudinary_storage
+        - allauth
+        - allauth.account
+        - allauth.socialaccount
         - STATICFILE_STORAGE
         - STATICFILES_DIRS
         - STATIC_ROOT
