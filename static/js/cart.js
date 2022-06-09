@@ -43,7 +43,7 @@ function order() {
 
             document.querySelector('#cart').innerHTML = '0';
 
-            window.location.replace('/success')
+            window.location.replace('/success');
         }
-    })
+    });
 }

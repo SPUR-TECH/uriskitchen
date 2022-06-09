@@ -21,7 +21,7 @@ function addMeal(mealid) {
         size = 'M';
     } else {
         price = pri[1].value;
-        size = 'L'
+        size = 'L';
     }
 
     // Save items in local storage
@@ -40,7 +40,7 @@ function addMeal(mealid) {
 
     // Update items in cart
 
-    var cart = document.querySelector("#cart")
+    var cart = document.querySelector("#cart");
     cart.innerHTML = orders.length;
 
     remove = '<div class="del" onclick="removeMeal(' + cartSize + ')">X</div>';

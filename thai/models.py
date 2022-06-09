@@ -32,13 +32,3 @@ class Dessert(models.Model):
 
     def __str__(self):
         return self.title
-
-
-class Success(models.Model):
-    title = models.CharField(max_length=120)
-    price_Medium = models.DecimalField(max_digits=5, decimal_places=2)
-    price_Large = models.DecimalField(max_digits=5, decimal_places=2)
-
-    def __str__(self):
-        return self.title
-    

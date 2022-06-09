@@ -43,11 +43,10 @@ https://uriskitchen.herokuapp.com/
 - [Deployment:](#deployment)
     - [Deploying on Heroku:](#deploying-on-heroku)
 
-<!-- /TOC -->
-
 ## Welcome Reader,
 
 This is a description of this website and all It's workings which covers the main features and functions right through to bug fixes and deployment.
+
 
 ---
 
@@ -61,6 +60,8 @@ I've given the user the ability to C.R.U.D. Create an order, Read back they,re o
 
 I've also added special role based authentication to a staff user to gain full access the admin section which again brings in the C.R.U.D.
 
+- [Back to the top](#urais-thai-kitchen)
+
 ---
 
 ##  Screen shots of the site and it's responsive abilities:
@@ -69,6 +70,8 @@ I've also added special role based authentication to a staff user to gain full a
 I used http://ami.responsivedesign.is/ to check what it would look like on all devices.
 As you can see it's fully responsive right across all devices and adapts to any screen sizes.
 ![An image of the site on multiple screen sizes](static/media/images/urais-kitchen-responsive.jpg)
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -80,6 +83,8 @@ As you can see it's fully responsive right across all devices and adapts to any 
 ![User stories](static/media/images/user-stories2.jpg)
 ![User stories](static/media/images/user-stories3.jpg)
 ![User stories](static/media/images/user-stories4.jpg)
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -107,6 +112,8 @@ As you can see it's fully responsive right across all devices and adapts to any 
 
  ### All of the above user stories were met except receiving an email as we have only learnt how to attach our own email address not users. As my skills build this will surly be added in the future.
 
+- [Back to the top](#urais-thai-kitchen)
+
  ---
 
  # Content Requirements:
@@ -125,6 +132,8 @@ As you can see it's fully responsive right across all devices and adapts to any 
     - Send an email of order confirmation
     - Clear order info for next order
 
+- [Back to the top](#urais-thai-kitchen)
+
 ---
 
 ## Wireframes, Created using https://balsamiq.com/wireframes/
@@ -137,12 +146,17 @@ The wire frames for the pages showcasing the bare structure of the site.
 - [Dessert Page](static/media/images/urais-kitchen-desserts-wireframe.jpg)
 - [Cart Page](static/media/images/urais-kitchen-cart-wireframe.jpg)
 - [Account Pages](static/media/images/urais-kitchen-account-pages-wireframe.jpg)
+
+- [Back to the top](#urais-thai-kitchen)
+
 ----
 
 ## Organization:
 
 All files are appropriately named with no capitalization or spaces and all in corresponding folders.
 Each page has its own css and javascript for ease of maintenance.
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -159,6 +173,8 @@ The Title is to represent the sign that would be on the front of the building an
 The restaurants phone number and opening times clearly displayed to the user.
 
 All fonts were used from https://fonts.google.com/ and they were Red Hat Display, sans-serif, Beau Rivage, cursive.
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -179,6 +195,8 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 7. If user is logged in (log out) will replace sign up and log in.
 8. The three lines on the right will open the dropdown menu on smaller screens.
  
+ - [Back to the top](#urais-thai-kitchen)
+
  ---
 
 # The Meals page:
@@ -191,6 +209,8 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 4. If user is signed in the then you can proceed to the cart with the button at the bottom otherwise the user is prompted to sign up or log in.
 5. If the user clicks the cart at the top they will again be prompted to sign up or log in to complete the order.
 
+- [Back to the top](#urais-thai-kitchen)
+
 ---
 
 # The Desserts page:
@@ -198,6 +218,8 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 ![Dessert page](static/media/images/urais-kitchen-dessert.jpg)
 
 The desserts page is much the same as the meals page in layout and responsiveness. Here you can see the authentication buttons in the orders section that take the user to the relevant account page.
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -209,8 +231,9 @@ The desserts page is much the same as the meals page in layout and responsivenes
 2. My copyright tag is shown at the bottom with a bold pop to stand out.
 3. All fully responsive.
 
----
+- [Back to the top](#urais-thai-kitchen)
 
+---
 
 # The Account pages:
 
@@ -227,6 +250,10 @@ The desserts page is much the same as the meals page in layout and responsivenes
 6. Delivery address.
 7. The user will be prompted for any errors in the form
 
+- [Back to the top](#urais-thai-kitchen)
+
+---
+
 # Log in page:
 ![Log in page](static/media/images/urais-kitchen-login.jpg)
 
@@ -238,6 +265,8 @@ The desserts page is much the same as the meals page in layout and responsivenes
 ![Log out page](static/media/images/urais-kitchen-logout.jpg)
 
 ## Just asks if the user is sure they want to sign out
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -255,12 +284,18 @@ The desserts page is much the same as the meals page in layout and responsivenes
 - Authentication system to gain access to admin panel
     - Log in as admin or staff member to gain access to Admin panel
 
+- [Back to the top](#urais-thai-kitchen)
+
+---
+
 ## Features to be added in the future:
 
 - Email confirmation to user
 - Save order details if user wants to access an existing order
 - Add nutritional values to description details
 - Genuine payment method for real functioning site 
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -277,6 +312,8 @@ The desserts page is much the same as the meals page in layout and responsivenes
 - I then ask friends and family to use the site with no instruction to see from a different perspective and ideas from real people for bug hunting and improvements.
 - Tests were made to ensure the role based user could add, delete or update the admin page successfully.
 - I then tested the site on Safari, Firefox and Chrome to make sure all was working correctly.
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -314,6 +351,10 @@ The desserts page is much the same as the meals page in layout and responsivenes
 
 ## See results below:
 ![Lighthouse results](static/media/images/urais-kitchen-lighthouse-report.jpg)
+
+- [Back to the top](#urais-thai-kitchen)
+
+---
 
 # Bugs and fixes:
 
@@ -358,6 +399,8 @@ The desserts page is much the same as the meals page in layout and responsivenes
 
 ---
 
+- [Back to the top](#urais-thai-kitchen)
+
 # CREDITS:
 
 - ## A special thank you to Daniel Callaghan for helping me get around the issue of clearing the cart but keeping the success page.
@@ -375,6 +418,8 @@ The desserts page is much the same as the meals page in layout and responsivenes
 - Wave.
 - Am I Responsive?
 - Web development tools.
+
+- [Back to the top](#urais-thai-kitchen)
 
 ---
 
@@ -422,3 +467,5 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     - Then run the following command: **heroku git:remote -a your_app_name_here** and replace your_app_name_here with the name of your Heroku app. This will link the app to your Gitpod terminal.
     - After linking your app to your workspace, you can then deploy new versions of the app by running the command **git push heroku main** enter your app name and Heroku API Key when prompted and your app will be deployed to Heroku.
     - Then go to Heroku and click on your new app and then click open app. 
+
+    - [Back to the top](#urais-thai-kitchen)

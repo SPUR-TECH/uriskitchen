@@ -19,7 +19,7 @@ function addDessert(dessertid) {
         size = 'M';
     } else {
         price = pri[1].value;
-        size = 'L'
+        size = 'L';
     }
 
     var orders = JSON.parse(localStorage.getItem('orders'));
