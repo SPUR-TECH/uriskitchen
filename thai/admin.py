@@ -1,16 +1,23 @@
 from django.contrib import admin
-from .models import Meal, Dessert
+from .models import Meal, Dessert, Comment
 
 
+@admin.register(Meal)
 class MealAdmin(admin.ModelAdmin):
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-admin.site.register(Meal, MealAdmin)
-
-
+@admin.register(Dessert)
 class DessertAdmin(admin.ModelAdmin):
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-admin.site.register(Dessert, DessertAdmin)
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('title', 'body', 'approved')
+    list_filter = ('approved',)
+    search_fields = ('title', 'email', 'body')
+    actions = ['approve_comments']
+
+    def approve_comments(self, request, queryset):
+        queryset.update(approved=True)

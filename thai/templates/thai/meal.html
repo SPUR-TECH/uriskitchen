@@ -43,10 +43,16 @@
                                 <p class="price">( L ) £{{ meal.price_Large }}</p>
                             </label>
                         </div>
+
+                        <div class="likes "> <i class="far fa-heart"></i>
+                            {{ meal.number_of_likes }}
+                            <i class="far fa-comment ml-4"></i>
+                            {{ meal.number_of_comments }}</div>
                         <div>
-                            <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
-                                Cart</button>
-                        </div>
+                            <div>
+                                <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
+                                    Cart</button>
+                            </div>
                     </fieldset>
                 </div>
 
