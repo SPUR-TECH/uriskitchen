@@ -1,5 +1,7 @@
 {% extends "account/base.html" %}
 
+{% load crispy_forms_tags %}
+
 {% block title %}Meals{% endblock %}
 
 {% block content %}
@@ -44,15 +46,16 @@
                             </label>
                         </div>
 
-                        <div class="likes "> <i class="far fa-heart"></i>
+                        <div class="meal-likes "> <i class="far fa-heart"></i>
                             {{ meal.number_of_likes }}
-                            <i class="far fa-comment ml-4"></i>
-                            {{ meal.number_of_comments }}</div>
+                        </div>
+                        <div class="meal-comments"> <i class="far fa-comment"></i>
+                            {{ meal.number_of_comments }}
+                        </div>
                         <div>
-                            <div>
-                                <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
-                                    Cart</button>
-                            </div>
+                            <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
+                                Cart</button>
+                        </div>
                     </fieldset>
                 </div>
 

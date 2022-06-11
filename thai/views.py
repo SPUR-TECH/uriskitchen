@@ -1,12 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-from .models import Meal, Home, Dessert
+from .models import Meal, Dessert
 from django.views.decorators.csrf import csrf_exempt
 
 
 def home_view(request):
-    template = "thai/index.html"
-    context = {'active_link': 'index'}
-    return render(request, template, context)
+    return render(request, "thai/index.html")
 
 
 def meal_view(request):

@@ -2,17 +2,16 @@ from django.contrib import admin
 from .models import Meal, Dessert, Comment
 
 
-@admin.register(Meal)
+# @admin.register(Meal)
 class MealAdmin(admin.ModelAdmin):
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-@admin.register(Dessert)
+# @admin.register(Dessert)
 class DessertAdmin(admin.ModelAdmin):
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-@admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('title', 'body', 'approved')
     list_filter = ('approved',)
@@ -21,3 +20,8 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
+
+admin.site.register(Comment, CommentAdmin)
+admin.site.register(Dessert, DessertAdmin)
+admin.site.register(Meal, MealAdmin)

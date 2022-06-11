@@ -143,6 +143,16 @@ h3 {
     color: rgb(228, 3, 3);
 }
 
+.meal-likes {
+    color: rgb(228, 3, 3);
+    font-size: 20px;
+}
+
+.meal-comments {
+    color: rgb(1, 207, 207);
+    font-size: 20px;
+}
+
 @media all and (max-width: 1500px) {
 
     .meal-menu-background {

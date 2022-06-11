@@ -104,8 +104,13 @@
     font-size: 2rem;
 }
 
-.likes {
+.dessert-likes {
     color: rgb(228, 3, 3);
+    font-size: 20px;
+}
+
+.dessert-comments {
+    color: rgb(1, 207, 207);
     font-size: 20px;
 }
 
