@@ -104,6 +104,11 @@
     font-size: 2rem;
 }
 
+.likes {
+    color: rgb(228, 3, 3);
+    font-size: 20px;
+}
+
 @media all and (max-width: 1500px) {
 
     .dessert-orders {

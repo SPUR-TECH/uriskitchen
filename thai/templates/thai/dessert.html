@@ -43,6 +43,10 @@
                             </label>
                         </div>
                     </fieldset>
+                    <div class="likes "> <i class="far fa-heart"></i>
+                        {{ dessert.number_of_likes }}
+                        <i class="far fa-comment ml-4"></i>
+                        {{ dessert.number_of_comments }}</div>
                     <div>
                         <button class="btn-info mt-3" onclick="addDessert('{{ dessert.id }}')">Add To Cart</button>
                     </div>
