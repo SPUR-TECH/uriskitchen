@@ -43,12 +43,6 @@ class Dessert(models.Model):
         return self.comments.count()
 
 
-class Comment(models.Model):  
-
-    title = models.CharField(max_length=80)
-    email = models.EmailField()
+class Comment(models.Model):
     body = models.TextField()
-    approved = models.BooleanField(default=False)
-
-    def approve_comments(self, request, queryset):
-        queryset.update(approved=True)
+    meal = models.ForeignKey(Meal, on_delete=models.CASCADE, default=1)

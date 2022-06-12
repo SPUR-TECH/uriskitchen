@@ -1,0 +1,28 @@
+{% extends "account/base.html" %}
+
+{% load static %}
+
+{% block title %}meal{% endblock %}
+
+{% block content %}
+
+
+<div class="col-md-6">
+
+    <h3 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h3>
+
+    ﻿<img class="meal-images" src="{{ meal.featured_image.url }}" alt="">
+
+    <h4 class="item-description">{{ meal.description }}</h4>
+
+    <a href="{% url 'comment_create' meal.pk %} ">Create Comment</a>
+    {{ comments }}
+    {% if comments %}
+    {% for comment in comments %}
+    <p>{{ comment.body }}</p>
+    <!-- <a href="{% url 'comment_update' comment.pk %} ">Edit</a>
+    <a href="{% url 'comment_delete' comment.pk %} ">Delete</a> -->
+    {% endfor %}
+    {% endif %}
+
+    {% endblock %}

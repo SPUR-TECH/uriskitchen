@@ -1,10 +1,22 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
-from .models import Meal, Dessert
+from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
+from .models import Meal, Dessert, Comment
 from django.views.decorators.csrf import csrf_exempt
 
 
 def home_view(request):
     return render(request, "thai/index.html")
+
+class mealDetailView(DetailView):
+    model = Meal
+    context_object_name = 'meal'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
+        context['comments'] = Comment.objects.filter(meal=self.object)
+        return context
 
 
 def meal_view(request):
@@ -21,8 +33,31 @@ def dessert_view(request):
     template = "thai/dessert.html"
     dessert_objects = Dessert.objects.all()
     context = {
-        'dessert_objects': dessert_objects,'active_link': 'dessert'}
+        'dessert_objects': dessert_objects, 'active_link': 'dessert'}
     return render(request, template, context)
+# comments
+
+class commentCreateView(CreateView):
+    model = Comment
+    context_object_name = 'comment'
+    fields = ['body']
+
+    def form_valid(self, form):
+        form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('meal_detail', kwargs={'pk': pk})
+
+
+class commentUpdateView(UpdateView):
+    model = Comment
+    context_object_name = 'comment'
+
+class commentDeleteView(DeleteView):
+    model = Comment
+    context_object_name = 'comment'
 
 
 @csrf_exempt

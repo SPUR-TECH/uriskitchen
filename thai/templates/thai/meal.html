@@ -19,12 +19,14 @@
     <div class="row text-center">
 
         <div class="col-md-7 text-center meal-menu-background">
-
             <div class="row">
-                {% for meal in meal_objects %}
-                <div class="col-md-6">
-                    <h3 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h3>
 
+                {% for meal in meal_objects %}
+
+                <div class="col-md-6">
+                    <a href="{% url 'meal_detail' meal.pk %}">
+                        <h3 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h3>
+                    </a>
                     ﻿<img class="meal-images" src="{{ meal.featured_image.url }}" alt="">
 
                     <h4 class="item-description">{{ meal.description }}</h4>
