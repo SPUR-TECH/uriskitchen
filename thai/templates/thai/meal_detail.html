@@ -18,7 +18,7 @@
 
             <h4 class="item-description">{{ meal.description }}</h4>
             <div class="comment">
-                <a href="{% url 'comment_create' meal.pk %} ">Click to Comment</a>
+                <a href="{% url 'comment_create' meal.pk %} ">Comment</a>
 
                 {% if comments %}
                 {% for comment in comments %}
