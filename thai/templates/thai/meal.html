@@ -22,73 +22,71 @@
             <div class="row">
 
                 {% for meal in meal_objects %}
+                <a href="{% url 'meal_detail' meal.pk %}">
+                    <div class="col-md-6">
 
-                <div class="col-md-6">
-                    <a href="{% url 'meal_detail' meal.pk %}">
                         <h3 class="item-title pb-3" id="mealname{{ meal.id }}">{{ meal.title }}</h3>
-                    </a>
-                    ﻿<img class="meal-images" src="{{ meal.featured_image.url }}" alt="">
 
-                    <h4 class="item-description">{{ meal.description }}</h4>
-                    <fieldset>
-                        <legend></legend>
-                        <div class="form-check-inline color-info ">
-                            <label class=" form-check-label">
-                                <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
-                                    value="{{ meal.price_Medium }}" checked>
-                                <p class="price">( M ) £{{ meal.price_Medium }}</p>
-                            </label>
-                        </div>
+                        ﻿<img class="meal-images" src="{{ meal.featured_image.url }}" alt="">
 
-                        <div class="form-check-inline">
-                            <label class=" form-check-label">
-                                <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
-                                    value="{{ meal.price_Large }}">
-                                <p class="price">( L ) £{{ meal.price_Large }}</p>
-                            </label>
-                        </div>
+                        <h4 class="item-description">{{ meal.description }}</h4>
+                        <fieldset>
+                            <legend></legend>
+                            <div class="form-check-inline color-info ">
+                                <label class=" form-check-label">
+                                    <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
+                                        value="{{ meal.price_Medium }}" checked>
+                                    <p class="price">( M ) £{{ meal.price_Medium }}</p>
+                                </label>
+                            </div>
 
-                        <div class="meal-likes "> <i class="far fa-heart"></i>
-                            {{ meal.number_of_likes }}
-                        </div>
-                        <div class="meal-comments"> <i class="far fa-comment"></i>
-                            {{ meal.number_of_comments }}
-                        </div>
-                        <div>
-                            <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
-                                Cart</button>
-                        </div>
-                    </fieldset>
+                            <div class="form-check-inline">
+                                <label class=" form-check-label">
+                                    <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
+                                        value="{{ meal.price_Large }}">
+                                    <p class="price">( L ) £{{ meal.price_Large }}</p>
+                                </label>
+                            </div>
+
+                            <div class="meal-comments">Leave a comment <i class="far fa-comment"></i>
+
+                            </div>
+                </a>
+                <div>
+                    <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
+                        Cart</button>
                 </div>
-
-                {% endfor %}
-
+                </fieldset>
             </div>
-        </div>
-        <div class="col-md-4 meal-orders">
-            <div class="meal-slate-cart">
-                <h3 class="text-center order-list pt-3">Order List</h3>
-                <ul id="mealcart"></ul>
-                <h4 class="text-center mt-5" id="mealtotal">Total: £ 0 </h4>
 
-                {% if user.is_authenticated %}
-                <div class="complete-order">
-                    <a href="{% url 'cart_view' %}">
-                        <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Go to
-                            Cart</button></a>
-                </div>
-                {% else %}
-                <div class="row sign-buttons">
-                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mr-4 mt-3">Log
-                            in</button></a>
-                    <h3>or</h3>
-                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info ml-4 mt-3">Sign
-                            up</button></a>
-                </div>
-                {% endif %}
-            </div>
+            {% endfor %}
+
         </div>
     </div>
+    <div class="col-md-4 meal-orders">
+        <div class="meal-slate-cart">
+            <h3 class="text-center order-list pt-3">Order List</h3>
+            <ul id="mealcart"></ul>
+            <h4 class="text-center mt-5" id="mealtotal">Total: £ 0 </h4>
+
+            {% if user.is_authenticated %}
+            <div class="complete-order">
+                <a href="{% url 'cart_view' %}">
+                    <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Go to
+                        Cart</button></a>
+            </div>
+            {% else %}
+            <div class="row sign-buttons">
+                <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mr-4 mt-3">Log
+                        in</button></a>
+                <h3>or</h3>
+                <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info ml-4 mt-3">Sign
+                        up</button></a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
 </div>
 <!-- Footer section -->
 

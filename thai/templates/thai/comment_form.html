@@ -1,4 +1,43 @@
-<form method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save">
-</form>
+{% extends "account/base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Meals{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <!-- <span>
+            <h3>Please leave your comment here</h3>
+        </span> -->
+
+
+        <div class="col-md-4 comment-area">
+
+
+            <form method="post">{% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Save">
+            </form>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer section -->
+
+<footer>
+    <div class="footer">
+        <p class="copyright">
+            &copy; Copyright SPUR-<b>TECH </b> Web Designs @ 2021
+        </p>
+    </div>
+</footer>
+
+<script src="{% static 'js/meal.js' %}"></script>
+
+{% endblock %}

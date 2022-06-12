@@ -8,6 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 def home_view(request):
     return render(request, "thai/index.html")
 
+
 class mealDetailView(DetailView):
     model = Meal
     context_object_name = 'meal'
@@ -28,6 +29,17 @@ def meal_view(request):
     return render(request, template, context)
 
 
+class dessertDetailView(DetailView):
+    model = Dessert
+    context_object_name = 'dessert'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
+        context['comments'] = Comment.objects.filter(dessert=self.object)
+        return context
+
+
 def dessert_view(request):
     request.session.set_expiry(0)
     template = "thai/dessert.html"
@@ -35,7 +47,9 @@ def dessert_view(request):
     context = {
         'dessert_objects': dessert_objects, 'active_link': 'dessert'}
     return render(request, template, context)
+
 # comments
+
 
 class commentCreateView(CreateView):
     model = Comment
@@ -55,9 +69,26 @@ class commentUpdateView(UpdateView):
     model = Comment
     context_object_name = 'comment'
 
+    def form_valid(self, form):
+        form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('meal_detail', kwargs={'pk': pk})
+
+
 class commentDeleteView(DeleteView):
     model = Comment
     context_object_name = 'comment'
+
+    def form_valid(self, form):
+        form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
 @csrf_exempt

@@ -10,17 +10,10 @@ class Meal(models.Model):
     price_Medium = models.DecimalField(max_digits=5, decimal_places=2)
     price_Large = models.DecimalField(max_digits=5, decimal_places=2)
     featured_image = CloudinaryField('image', default='placeholder')
-    likes = models.ManyToManyField(User, related_name='Meal_Likes')
     comments = models.ManyToManyField(User, related_name='Meal_Comments', blank=True)
 
     def __str__(self):
         return self.title
-
-    def number_of_likes(self):
-        return self.likes.count()
-
-    def number_of_comments(self):
-        return self.comments.count()
 
 
 class Dessert(models.Model):
@@ -30,17 +23,10 @@ class Dessert(models.Model):
     price_Medium = models.DecimalField(max_digits=5, decimal_places=2)
     price_Large = models.DecimalField(max_digits=5, decimal_places=2)
     featured_image = CloudinaryField('image', default='placeholder')
-    likes = models.ManyToManyField(User, related_name='Dessert_Likes', blank=True)
     comments = models.ManyToManyField(User, related_name='Dessert_Comments', blank=True)
 
     def __str__(self):
         return self.title
-
-    def number_of_likes(self):
-        return self.likes.count()
-
-    def number_of_comments(self):
-        return self.comments.count()
 
 
 class Comment(models.Model):
