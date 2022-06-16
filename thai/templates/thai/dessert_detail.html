@@ -1,0 +1,44 @@
+{% extends "account/base.html" %}
+
+{% load static %}
+
+{% block title %}dessert{% endblock %}
+
+{% block content %}
+<div container>
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 dessert-details-background text-center">
+
+            <h3 class="item-title pb-3" id="dessertname{{ dessert.id }}">{{ dessert.title }}</h3>
+
+            ﻿<img class="dessert-images" src="{{ dessert.featured_image.url }}" alt="">
+
+            <h4 class="item-description">{{ dessert.description }}</h4>
+            <div class="comment">
+                <a href="{% url 'dessert_comment_create' dessert.pk %} ">Comment</a>
+
+                {% if comments %}
+                {% for comment in comments %}
+
+                <p> - {{ comment.body }} - </p>
+                <!-- <a href="{% url 'comment_update' comment.pk %} ">Edit</a>
+                <a href="{% url 'comment_delete' comment.pk %} ">Delete</a> -->
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-3"></div>
+
+<footer>
+    <div class="footer">
+        <p class="copyright">
+            &copy; Copyright SPUR-<b>TECH </b> Web Designs @ 2021
+        </p>
+    </div>
+</footer>
+
+{% endblock %}

@@ -30,5 +30,18 @@ class Dessert(models.Model):
 
 
 class Comment(models.Model):
+    
     body = models.TextField()
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE, default=1)
+
+    def __str__(self):
+        return self.meal.title
+
+
+class DessertComment(models.Model):
+
+    body = models.TextField()
+    dessert = models.ForeignKey(Dessert, on_delete=models.CASCADE, default=1)
+
+    def __str__(self):
+        return self.dessert.title

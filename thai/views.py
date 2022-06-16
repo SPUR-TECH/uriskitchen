@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-from .models import Meal, Dessert, Comment
+from .models import Meal, Dessert, Comment, DessertComment
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -36,7 +36,7 @@ class dessertDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         pk = self.kwargs['pk']
-        context['comments'] = Comment.objects.filter(dessert=self.object)
+        context['comments'] = DessertComment.objects.filter(dessert=self.object)
         return context
 
 
@@ -89,6 +89,46 @@ class commentDeleteView(DeleteView):
     def get_success_url(self):
         pk = self.kwargs['pk']
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
+
+
+class dessertCommentCreateView(CreateView):
+    model = DessertComment
+    context_object_name = 'comment'
+    fields = ['body']
+
+    def form_valid(self, form):
+        form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('dessert_detail', kwargs={'pk': pk})
+
+
+class dessertCommentUpdateView(UpdateView):
+    model = DessertComment
+    context_object_name = 'comment'
+
+    def form_valid(self, form):
+        form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('dessert_detail', kwargs={'pk': pk})
+
+
+class dessertCommentDeleteView(DeleteView):
+    model = DessertComment
+    context_object_name = 'comment'
+
+    def form_valid(self, form):
+        form.instance.desseert = Desseert.objects.get(pk=self.kwargs['pk'])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse_lazy('desseert_detail', kwargs={'pk': pk})
 
 
 @csrf_exempt

@@ -47,11 +47,12 @@
                                 <p class="price">( L ) £{{ meal.price_Large }}</p>
                             </label>
                         </div>
+
                         <a href="{% url 'meal_detail' meal.pk %}">
                             <div class="meal-comments">Leave a comment <i class="far fa-comment"></i>
-
                             </div>
                         </a>
+
                         <div>
                             <button class="btn-info pb-1 mt-3" onclick="addMeal('{{ meal.id }}')">Add To
                                 Cart</button>
