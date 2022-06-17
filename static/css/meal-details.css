@@ -1,5 +1,5 @@
 .meal-details-background {
-    background: linear-gradient(rgba(78, 78, 78, 0.9), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(rgba(66, 66, 66, 0.9), rgba(0, 0, 0, 0.9));
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
@@ -20,7 +20,7 @@
 }
 
 .comment a {
-    background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(66, 66, 66, 0.9), rgba(0, 0, 0, 0.9));
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
