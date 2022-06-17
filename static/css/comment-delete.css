@@ -17,3 +17,17 @@
 .footer {
     margin-bottom: 0px;
 }
+
+@media all and (max-width: 1000px) {
+
+    .delete-title {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .delete-title {
+        font-size: 30px;
+    }
+}
