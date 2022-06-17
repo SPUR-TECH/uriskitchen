@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Meal, Dessert, Comment, DessertComment
 from django.views.decorators.csrf import csrf_exempt
+from .forms import CommentForm
 
 
 def home_view(request):
@@ -55,7 +56,7 @@ def dessert_view(request):
 class commentCreateView(LoginRequiredMixin, CreateView):
     model = Comment
     context_object_name = 'comment'
-    fields = ['body']
+    form_class = CommentForm
 
     def form_valid(self, form):
         form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])

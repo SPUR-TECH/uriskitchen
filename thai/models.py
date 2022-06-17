@@ -30,7 +30,7 @@ class Dessert(models.Model):
 
 
 class Comment(models.Model):
-    
+
     body = models.TextField()
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE, default=1)
 
