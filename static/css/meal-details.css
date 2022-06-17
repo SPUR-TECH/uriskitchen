@@ -33,6 +33,12 @@
 
 .comment p {
     font-size: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
     color: rgb(1, 207, 207);
+}
+
+.meal-edit-delete a {
+    font-size: 15px;
+    padding-bottom: 1px;
 }

@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}dessert{% endblock %}
+{% block title %}Dessert Details{% endblock %}
 
 {% block content %}
 <div container>
@@ -16,15 +16,19 @@
             ﻿<img class="dessert-images" src="{{ dessert.featured_image.url }}" alt="">
 
             <h4 class="item-description">{{ dessert.description }}</h4>
-            <div class="comment">
+            <div class="dessert-comment">
                 <a href="{% url 'dessert_comment_create' dessert.pk %} ">Comment</a>
 
                 {% if comments %}
                 {% for comment in comments %}
 
                 <p> - {{ comment.body }} - </p>
-                <!-- <a href="{% url 'comment_update' comment.pk %} ">Edit</a>
-                <a href="{% url 'comment_delete' comment.pk %} ">Delete</a> -->
+
+                <div class="dessert-edit-delete">
+                    <a href="{% url 'comment_update' comment.pk %} ">Edit</a>
+                    <a href="{% url 'comment_delete' comment.pk %} ">Delete</a>
+                </div>
+
                 {% endfor %}
                 {% endif %}
             </div>

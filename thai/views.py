@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Meal, Dessert, Comment, DessertComment
 from django.views.decorators.csrf import csrf_exempt
 
@@ -51,7 +52,7 @@ def dessert_view(request):
 # comments
 
 
-class commentCreateView(CreateView):
+class commentCreateView(LoginRequiredMixin, CreateView):
     model = Comment
     context_object_name = 'comment'
     fields = ['body']
@@ -65,7 +66,7 @@ class commentCreateView(CreateView):
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
-class commentUpdateView(UpdateView):
+class commentUpdateView(LoginRequiredMixin, UpdateView):
     model = Comment
     context_object_name = 'comment'
 
@@ -78,7 +79,7 @@ class commentUpdateView(UpdateView):
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
-class commentDeleteView(DeleteView):
+class commentDeleteView(LoginRequiredMixin, DeleteView):
     model = Comment
     context_object_name = 'comment'
 
@@ -91,7 +92,7 @@ class commentDeleteView(DeleteView):
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
-class dessertCommentCreateView(CreateView):
+class dessertCommentCreateView(LoginRequiredMixin, CreateView):
     model = DessertComment
     context_object_name = 'comment'
     fields = ['body']
@@ -105,7 +106,7 @@ class dessertCommentCreateView(CreateView):
         return reverse_lazy('dessert_detail', kwargs={'pk': pk})
 
 
-class dessertCommentUpdateView(UpdateView):
+class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
     model = DessertComment
     context_object_name = 'comment'
 
@@ -118,7 +119,7 @@ class dessertCommentUpdateView(UpdateView):
         return reverse_lazy('dessert_detail', kwargs={'pk': pk})
 
 
-class dessertCommentDeleteView(DeleteView):
+class dessertCommentDeleteView(LoginRequiredMixin, DeleteView):
     model = DessertComment
     context_object_name = 'comment'
 
