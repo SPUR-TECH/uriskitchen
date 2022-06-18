@@ -16,7 +16,7 @@
 
             <p>Are you sure you want to Delete comment?</p>
 
-            <form method="post" action="{% url 'meal_view' %}">
+            <form method="post" action="{% url 'dessert_view' %}">
                 {% csrf_token %}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />

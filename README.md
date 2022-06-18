@@ -24,6 +24,9 @@ https://uriskitchen.herokuapp.com/
     - [features:](#features)
 - [The landing page:](#the-landing-page)
 - [The Meals page:](#the-meals-page)
+    - [The Meals detail page:](#meal-detail-page)
+    - [The Meals comment page:](#meal-comment-page)
+    - [The Meals delete page:](#meal-delete-page)
 - [The Desserts page:](#the-desserts-page)
 - [The footer:](#the-footer)
 - [The Account pages:](#the-account-pages)
@@ -54,11 +57,11 @@ This is a description of this website and all It's workings which covers the mai
 
 Urai,s Thai Kitchen is a thai food delivery service for the hungry folk that like Thai food and of course an easy to use eye catching website to obtain such joys.
 In this site the user can create an account so the next order will be easier with a simple login.
-It's also part of the Code Institute Fullstack Diploma Course and in this particular project using an Agile methodology I demonstrate the use of a database in two ways. Adding the menus via the admin section and summoning them back to the allocated pages with javascript. Saving the order in local storage and retrieving the order back to show my understanding of database usage.
+It's also part of the Code Institute Fullstack Diploma Course and in this particular project using an Agile methodology I demonstrate the use of a database. Adding the menus via the admin section and summoning them back to the allocated pages with javascript. Saving the order in local storage and retrieving the order back and saving comments to the allocated meals or desserts to show my understanding of database usage.
 
-I've given the user the ability to C.R.U.D. Create an order, Read back they,re order, Update it at any point until final purchase and of course Delete any items from that order until final purchase.
+I've given the user the ability to C.R.U.D. Create an order, Read back they,re order, Update it at any point until final purchase and of course Delete any items from that order until final purchase and leave a comment that can also be updated or deleted.
 
-I've also added special role based authentication to a staff user to gain full access the admin section which again brings in the C.R.U.D.
+I've also added special role based authentication to a staff user to gain full access the admin section which again brings in the C.R.U.D. functionality to life.
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -105,6 +108,10 @@ As you can see it's fully responsive right across all devices and adapts to any 
  - As a site user I would like to be notified on how long it will take to deliver.
 
  - As a site user I would like a confirmation email of my order.
+
+ - As a site user I would like to leave a comment on meals or desserts that I enjoyed.
+
+ - As a site user I would like to be able to edit or delete a comment I've made.
 
  - As the site owner I would like like to add or delete items in the menus and update anything that requires it.
 
@@ -213,6 +220,36 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 
 ---
 
+# Meal detail page:
+![Meal detail page](static/media/images/meal-detail-page.jpg)
+
+## Shows all comments left in this particular meal. 
+
+ - [Back to the top](#urais-thai-kitchen)
+
+---
+
+# Meal comment page:
+![Meal comment page](static/media/images/meal-comment-page.jpg)
+
+## When the user clicks the comment button on meal detail page.
+## When the user clicks the edit button the edit page is identical giving the user the ability to edit their previous comment.
+
+ - [Back to the top](#urais-thai-kitchen)
+
+---
+
+# Meal delete page:
+![Meal delete page](static/media/images/meal-delete-page.jpg)
+
+## When the user clicks the delete button on meal detail page.
+
+## The user then has the option to delete or cancel deletion.
+
+- [Back to the top](#urais-thai-kitchen)
+
+---
+
 # The Desserts page:
 
 ![Dessert page](static/media/images/urais-kitchen-dessert.jpg)
@@ -281,6 +318,7 @@ The desserts page is much the same as the meals page in layout and responsivenes
     - Sign up page to insert personal details
     - Log in page for quick access on returning users 
     - Log out page to exit from site
+    - Leave, Edit or Delete a message
 - Authentication system to gain access to admin panel
     - Log in as admin or staff member to gain access to Admin panel
 
@@ -308,9 +346,10 @@ The desserts page is much the same as the meals page in layout and responsivenes
 - I then tested the functionality of said code for instance if it's a button then that button must send the correct data and redirect the user to the relevant page.
 - I made sure that if the user is authenticated then the log out will display in the NAVBAR and the relevant buttons are shown in the cart.
 - I made sure that all buttons to delete item and any other buttons are removed in the success page.
-- I deployed the site early so I could physically check the media query has be coded correctly to have the responsive ability required.
+- I deployed the site early so I could physically check the media query has been coded correctly to have the responsive ability required.
 - I then ask friends and family to use the site with no instruction to see from a different perspective and ideas from real people for bug hunting and improvements.
 - Tests were made to ensure the role based user could add, delete or update the admin page successfully.
+- Tests were also made to ensure the user could add, delete or update their comments successfully.
 - I then tested the site on Safari, Firefox and Chrome to make sure all was working correctly.
 
 - [Back to the top](#urais-thai-kitchen)

@@ -17,15 +17,15 @@
 
             <h4 class="item-description">{{ dessert.description }}</h4>
             <div class="comment">
-                <a href="{% url 'dessert_comment_create' dessert.pk %} ">Comment</a>
+                <a href="{% url 'dessertcomment_create' dessert.pk %} ">Comment</a>
 
                 {% if comments %}
                 {% for comment in comments %}
 
                 <p> - {{ comment.body }} - </p>
 
-                <a href="{% url 'dessert_comment_update' comment.pk %} ">Edit</a>
-                <a href="{% url 'dessert_comment_delete' comment.pk %} ">Delete</a>
+                <a href="{% url 'dessertcomment_update' comment.pk %} ">Edit</a>
+                <a href="{% url 'dessertcomment_delete' comment.pk %} ">Delete</a>
 
                 {% endfor %}
                 {% endif %}

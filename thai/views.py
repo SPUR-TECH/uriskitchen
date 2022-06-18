@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
+from django.views.decorators.csrf import csrf_exempt
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Meal, Dessert, Comment, DessertComment
-from django.views.decorators.csrf import csrf_exempt
 from .forms import CommentForm, DessertCommentForm
 
 
@@ -110,13 +110,14 @@ class dessertCommentCreateView(LoginRequiredMixin, CreateView):
 
 
 class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
+    template = "thai/dessertcomment_update.html"
     model = DessertComment
     context_object_name = 'comment'
     form_class = DessertCommentForm
 
-    def form_valid(self, form):
-        form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
-        return super().form_valid(form)
+    # def form_valid(self, form):
+    #     form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
+    #     return super().form_valid(form)
 
     def get_success_url(self):
         pk = self.kwargs['pk']
