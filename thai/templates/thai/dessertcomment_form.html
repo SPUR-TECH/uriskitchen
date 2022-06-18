@@ -8,21 +8,21 @@
 
 {% load static %}
 
-<div class="container md-8">
-    <div class="row">
+<div class="container-fluid comment-area">
+    <div class=" row">
+        <div class="ml-4"></div>
 
         <span class="comment-title">
             <h3>Please leave your comment here</h3>
         </span>
 
-
-        <div class="col-md-6 comment-area">
-
+        <div class="col-md-12">
 
             <form method="post">
                 {% csrf_token %}
                 {{ form.body }}
-                <input type="submit" value="Save">
+
+                <input class="save-button" type="submit" value="Save">
             </form>
 
         </div>
@@ -38,5 +38,6 @@
         </p>
     </div>
 </footer>
+
 
 {% endblock %}

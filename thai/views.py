@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Meal, Dessert, Comment, DessertComment
 from django.views.decorators.csrf import csrf_exempt
-from .forms import CommentForm
+from .forms import CommentForm, DessertCommentForm
 
 
 def home_view(request):
@@ -70,6 +70,7 @@ class commentCreateView(LoginRequiredMixin, CreateView):
 class commentUpdateView(LoginRequiredMixin, UpdateView):
     model = Comment
     context_object_name = 'comment'
+    form_class = CommentForm
 
     def form_valid(self, form):
         form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
@@ -83,6 +84,7 @@ class commentUpdateView(LoginRequiredMixin, UpdateView):
 class commentDeleteView(LoginRequiredMixin, DeleteView):
     model = Comment
     context_object_name = 'comment'
+    form_class = CommentForm
 
     def form_valid(self, form):
         form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
@@ -96,7 +98,7 @@ class commentDeleteView(LoginRequiredMixin, DeleteView):
 class dessertCommentCreateView(LoginRequiredMixin, CreateView):
     model = DessertComment
     context_object_name = 'comment'
-    fields = ['body']
+    form_class = DessertCommentForm
 
     def form_valid(self, form):
         form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
@@ -110,6 +112,7 @@ class dessertCommentCreateView(LoginRequiredMixin, CreateView):
 class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
     model = DessertComment
     context_object_name = 'comment'
+    form_class = DessertCommentForm
 
     def form_valid(self, form):
         form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
@@ -123,9 +126,10 @@ class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
 class dessertCommentDeleteView(LoginRequiredMixin, DeleteView):
     model = DessertComment
     context_object_name = 'comment'
+    form_class = DessertCommentForm
 
     def form_valid(self, form):
-        form.instance.desseert = Desseert.objects.get(pk=self.kwargs['pk'])
+        form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
         return super().form_valid(form)
 
     def get_success_url(self):

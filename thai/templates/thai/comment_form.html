@@ -18,7 +18,7 @@
 
         <div class="col-md-12">
 
-            <form method="post" placeholder="Type Comment:">
+            <form method="post">
                 {% csrf_token %}
                 {{ form.body }}
 
@@ -38,7 +38,5 @@
         </p>
     </div>
 </footer>
-
-<script src="{% static 'js/meal.js' %}"></script>
 
 {% endblock %}

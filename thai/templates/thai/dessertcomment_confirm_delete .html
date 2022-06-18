@@ -1,0 +1,42 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% load static %}
+
+{% block title %}Delete{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mt-5 p-5">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="delete col-md-4 p-4 bg-dark text-light text-center">
+            <h3 class="delete-title">Delete Comment</h3>
+
+            <p>Are you sure you want to Delete comment?</p>
+
+            <form method="post" action="{% url 'meal_view' %}">
+                {% csrf_token %}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button type="submit" class="btn-danger pb-1">{% trans 'Delete' %}</button>
+                <button type="submit" class="btn-secondary pb-1">{% trans 'cancel' %}</button>
+            </form>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer section -->
+
+<footer>
+    <div class="footer">
+        <p class="copyright">
+            &copy; Copyright SPUR-<b>TECH</b>Web Designs @ 2021
+        </p>
+    </div>
+</footer>
+
+{% endblock %}
