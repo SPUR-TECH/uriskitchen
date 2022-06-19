@@ -72,10 +72,6 @@ class commentUpdateView(LoginRequiredMixin, UpdateView):
     context_object_name = 'comment'
     form_class = CommentForm
 
-    def form_valid(self, form):
-        form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
-        return super().form_valid(form)
-
     def get_success_url(self):
         pk = self.kwargs['pk']
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
@@ -85,10 +81,6 @@ class commentDeleteView(LoginRequiredMixin, DeleteView):
     model = Comment
     context_object_name = 'comment'
     form_class = CommentForm
-
-    def form_valid(self, form):
-        form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
-        return super().form_valid(form)
 
     def get_success_url(self):
         pk = self.kwargs['pk']
@@ -115,10 +107,6 @@ class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
     context_object_name = 'comment'
     form_class = DessertCommentForm
 
-    # def form_valid(self, form):
-    #     form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
-    #     return super().form_valid(form)
-
     def get_success_url(self):
         pk = self.kwargs['pk']
         return reverse_lazy('dessert_detail', kwargs={'pk': pk})
@@ -129,13 +117,10 @@ class dessertCommentDeleteView(LoginRequiredMixin, DeleteView):
     context_object_name = 'comment'
     form_class = DessertCommentForm
 
-    def form_valid(self, form):
-        form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
-        return super().form_valid(form)
-
+   
     def get_success_url(self):
         pk = self.kwargs['pk']
-        return reverse_lazy('desseert_detail', kwargs={'pk': pk})
+        return reverse_lazy('dessert_detail', kwargs={'pk': pk})
 
 
 @csrf_exempt

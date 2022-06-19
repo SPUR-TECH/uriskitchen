@@ -20,6 +20,7 @@
 
             <form method="post">
                 {% csrf_token %}
+                <input class="username-text mb-3" type="text" name="username" placeholder="Username">
                 {{ form.body }}
 
                 <input class="save-button" type="submit" value="Save">
