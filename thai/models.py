@@ -31,6 +31,7 @@ class Dessert(models.Model):
 
 class Comment(models.Model):
 
+    name = models.CharField(max_length=120),
     body = models.TextField()
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE, default=1)
 
@@ -40,6 +41,7 @@ class Comment(models.Model):
 
 class DessertComment(models.Model):
 
+    name = models.CharField(max_length=120),
     body = models.TextField()
     dessert = models.ForeignKey(Dessert, on_delete=models.CASCADE, default=1)
 
