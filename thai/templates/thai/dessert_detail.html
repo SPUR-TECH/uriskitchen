@@ -25,8 +25,8 @@
                 <p> - {{ comment.body }} - </p>
 
                 <div class="dessert-edit-delete">
-                    <a href="{% url 'comment_update' comment.pk %} ">Edit</a>
-                    <a href="{% url 'comment_delete' comment.pk %} ">Delete</a>
+                    <a href="{% url 'dessert_comment_update' comment.pk dessert.pk %} ">Edit</a>
+                    <a href="{% url 'dessert_comment_delete' comment.pk dessert.pk %} ">Delete</a>
                 </div>
 
                 {% endfor %}

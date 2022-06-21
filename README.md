@@ -243,8 +243,10 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 ![Meal delete page](static/media/images/meal-delete-page.jpg)
 
 ## When the user clicks the delete button on meal detail page.
+- The delete the comment button will delete and redirect to menu.
 
 ## The user then has the option to delete or cancel deletion.
+- The cancel button will just redirect to menu.
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -254,7 +256,8 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 
 ![Dessert page](static/media/images/urais-kitchen-dessert.jpg)
 
-The desserts page is much the same as the meals page in layout and responsiveness. Here you can see the authentication buttons in the orders section that take the user to the relevant account page.
+- The desserts page is much the same as the meals page in layout and responsiveness and the comments, edit and delete functions. 
+- Here you can see the authentication buttons in the orders section that take the user to the relevant account page.
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -435,6 +438,10 @@ The desserts page is much the same as the meals page in layout and responsivenes
     - Issue with Posting to database.
 - ## **FIX**... 
     - Researched the 'POST' method on Stack overflow and came across Ajax function this seemed to fix the issue.
+    - ## **BUG**... 
+    - Issue comment,edit and delete function.
+- ## **FIX**... 
+    - I sort the help of tutor support which helped me set a pk: to id the comments, the edits and deleting capability.
 
 ---
 

@@ -73,18 +73,16 @@ class commentUpdateView(LoginRequiredMixin, UpdateView):
     form_class = CommentForm
 
     def get_success_url(self):
-        pk = self.kwargs['pk']
+        pk = self.kwargs['id']
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
 class commentDeleteView(LoginRequiredMixin, DeleteView):
     model = Comment
-    context_object_name = 'comment'
-    form_class = CommentForm
 
     def get_success_url(self):
-        pk = self.kwargs['pk']
-        return reverse_lazy('meal_detail', kwargs={'pk': pk})
+        pk = self.kwargs['id']
+        return reverse_lazy('meal_detail', kwargs={'pk': self.object.meal.pk})
 
 
 class dessertCommentCreateView(LoginRequiredMixin, CreateView):
@@ -108,19 +106,16 @@ class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
     form_class = DessertCommentForm
 
     def get_success_url(self):
-        pk = self.kwargs['pk']
-        return reverse_lazy('dessert_detail', kwargs={'pk': pk})
+        pk = self.kwargs['id']
+        return reverse_lazy('dessert_detail', kwargs={'pk': self.object.dessert.pk})
 
 
 class dessertCommentDeleteView(LoginRequiredMixin, DeleteView):
     model = DessertComment
-    context_object_name = 'comment'
-    form_class = DessertCommentForm
-
    
     def get_success_url(self):
-        pk = self.kwargs['pk']
-        return reverse_lazy('dessert_detail', kwargs={'pk': pk})
+        pk = self.kwargs['id']
+        return reverse_lazy('dessert_detail', kwargs={'pk': self.object.dessert.pk})
 
 
 @csrf_exempt

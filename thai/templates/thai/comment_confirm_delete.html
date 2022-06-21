@@ -16,13 +16,11 @@
 
             <p>Are you sure you want to Delete comment?</p>
 
-            <form method="post" action="{% url 'meal_view' %}">
+            <form method="post">
                 {% csrf_token %}
-                {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                {% endif %}
-                <button type="submit" class="btn-danger pb-1">{% trans 'Delete' %}</button>
-                <button type="submit" class="btn-secondary pb-1">{% trans 'cancel' %}</button>
+                {{ form }}
+                <button type="submit" class="btn-danger pb-1">Delete</button>
+                <a href="{% url 'meal_view' %}" class="btn-secondary p-1 pb-2">Cancel</a>
             </form>
             <div class="col-md-4"></div>
         </div>
