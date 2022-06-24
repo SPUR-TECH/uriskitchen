@@ -131,12 +131,14 @@ def cart_view(request):
 def signup_view(request):
     template = "account_signup.html"
     context = {'active_link': 'signup'}
+    print('signup_view called')
     return render(request, template, context)
 
 
 def login_view(request):
     template = "account_login.html"
     context = {'active_link': 'login'}
+    print('login_view called')
     return render(request, template, context)
 
 

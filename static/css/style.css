@@ -126,9 +126,9 @@ body {
 }
 
 .phone {
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Red Hat Display', sans-serif;
     color: rgb(1, 207, 207);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .instruction-blue {
@@ -262,12 +262,12 @@ b {
     }
 
     .call {
-        font-size: xx-large;
+        font-size: 3rem;
         width: 300px;
     }
 
     .phone {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .slate-background {
@@ -319,8 +319,12 @@ b {
     .call-background {
         top: -50px;
         left: 100px;
-        height: 160px;
+        height: 170px;
         width: 250px;
+    }
+
+    .phone {
+        font-size: 1.2rem;
     }
 
     .home-slate-background {
@@ -381,8 +385,8 @@ b {
 
     .call-background {
         left: 20px;
-        width: 270px;
-        height: 210px;
+        width: 250px;
+        height: 180px;
     }
 
     .call {
@@ -390,7 +394,7 @@ b {
     }
 
     .phone {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .slate-background {

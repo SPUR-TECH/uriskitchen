@@ -9,7 +9,6 @@ class CommentForm(forms.ModelForm):
 
         widgets = {
 
-            'name': forms.CharField(max_length=120),
             'body': forms.Textarea(attrs={
                 'class': 'form-control', 'placeholder': 'Comment here.....'})
         }
@@ -22,7 +21,6 @@ class DessertCommentForm(forms.ModelForm):
 
         widgets = {
 
-            'name': forms.CharField(max_length=120),
             'body': forms.Textarea(attrs={
                 'class': 'form-control', 'placeholder': 'Comment here.....'})
         }

@@ -9,14 +9,13 @@
 <div class="container-fluid mt-5 p-5">
   <div class="row">
     <div class="col-md-3"></div>
+
     <div class="signup col-md-6 p-4 bg-dark text-light text-center">
-      <h1 class="signup-title">Sign Up</h1>
+      <h1 class="signup-title pb-2">Sign Up</h1>
       <form method="POST">
         {% csrf_token %}
-
         {% for field in form %}
-
-        <div class="form-group">
+        <div class="form-group mt-4">
           <div>
             {{ field.label_tag }}
           </div>
@@ -25,6 +24,7 @@
           </div>
         </div>
         {%  endfor %}
+
         <div>
           {% if form.errors %}
           {% for field in form %}
@@ -35,15 +35,16 @@
           {% endfor %}
           {% endfor %}
           {% endif %}
+
           <div class="field">
             <p>Card Details</p>
-
             <input type="text" placeholder="Bank Name" aria-label="Bank Name" name="Bank Name" required> <br>
             <input type="text" placeholder="Name on card" aria-label="Name on card" name="Name-on-card" required> <br>
             <input type="text" placeholder="Long card number" aria-label="Card number" name="card-number" required><br>
             <input type="text" placeholder="Expiry date" aria-label="Expiry date" name="Expiry-date" required><br>
             <input type="text" placeholder="CVV" aria-label="Security number" name="Security-number" required>
           </div>
+
           <br>
           <div class="field">
             <p>Delivery Address
@@ -51,11 +52,14 @@
             <textarea name="Delivery Address" placeholder="Delivery Address" aria-label="address area"
               id="delvery-address" required cols="30" rows="10"></textarea>
           </div>
-          <button type="submit" class="btn-info pb-1 mt-3 mb-2">SignUp</button>
-          <h3>or</h3>
-          <button type="submit" class="btn-info pb-1 mb-2">Log in</button>
-
+          <div class="signup-buttons">
+            <button type="submit" class="btn-info pb-1 mr-2">SignUp</button>
+            <h3>or</h3>
+            <a href="{% url 'account_login' %}" class="btn-info pb-2 pl-2 pr-2 pt-1 ml-2">Login</a>
+          </div>
+        </div>
       </form>
+
     </div>
     <div class="col-md-3"></div>
   </div>

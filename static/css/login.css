@@ -1,0 +1,13 @@
+/* Login page */
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

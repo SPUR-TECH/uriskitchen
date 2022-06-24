@@ -13,9 +13,7 @@
       <h1 class="signup-title">Login</h1>
       <form method="POST">
         {% csrf_token %}
-
         {% for field in form %}
-
         <div class="form-group">
           <div>
             {{ field.label_tag }}
@@ -25,13 +23,24 @@
           </div>
         </div>
         {%  endfor %}
-        <div>
-        </div>
 
-        <button type="submit" class="btn-info pb-1 mb-2">Log in</button>
-        <h3>or</h3>
-        <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info">Sign
-            up</button></a>
+        <div class="error-message">
+          {% if form.errors %}
+
+          {% for k, v in form.errors.items %}
+          <div>
+            <small style="color: rgb(0, 225, 255);">{{ v }}</small>
+          </div>
+          {% endfor %}
+
+          {% endif %}
+        </div>
+        <div class="login-buttons">
+          <button type="submit" class="btn-info pb-1 mr-2">Log in</button>
+          <h3>or</h3>
+          <a href="{% url 'account_signup' %}" class="btn-info pb-2 pl-2 pr-2 pt-1 ml-2">Sign
+            up</a>
+        </div>
       </form>
     </div>
     <div class="col-md-3"></div>
