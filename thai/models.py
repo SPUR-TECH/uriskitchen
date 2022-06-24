@@ -39,7 +39,7 @@ class Comment(models.Model):
 
 
 class DessertComment(models.Model):
-    
+
     body = models.TextField()
     dessert = models.ForeignKey(Dessert, on_delete=models.CASCADE, default=1)
 
