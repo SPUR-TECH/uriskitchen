@@ -23,10 +23,12 @@
                 {% for comment in comments %}
 
                 <p> - {{ comment.body }} - </p>
+                {% if request.user == comment_writer %}
                 <div class="meal-edit-delete">
                     <a href="{% url 'comment_update' comment.pk meal.pk %} ">Edit</a>
                     <a href="{% url 'comment_delete' comment.pk meal.pk %} ">Delete</a>
                 </div>
+                {% endif %}
                 {% endfor %}
                 {% endif %}
             </div>

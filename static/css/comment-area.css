@@ -13,7 +13,8 @@
      margin-top: 50px;
  }
 
- .comment-title h3 {
+ .comment-title h1 {
+     font-family: 'Beau Rivage', cursive;
      color: rgb(1, 207, 207);
  }
 

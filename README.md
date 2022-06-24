@@ -131,13 +131,15 @@ As you can see it's fully responsive right across all devices and adapts to any 
     - An easy to read menu of both meals and desserts.
     - A clear description of each meal or dessert.
     - Easy food ordering process.
+    - Clear order info for next order
     - Easy sign up, Log in and Log out system
 
 - The UI/UX **should** address these:
     
     - Instructions on how to order if user is new to the page.
     - Send an email of order confirmation
-    - Clear order info for next order
+    - Leave a comment 
+    
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -354,6 +356,11 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 - Tests were made to ensure the role based user could add, delete or update the admin page successfully.
 - Tests were also made to ensure the user could add, delete or update their comments successfully.
 - I then tested the site on Safari, Firefox and Chrome to make sure all was working correctly.
+
+- Testing sites accessability on https://wave.webaim.org/
+![Wave Accessability results](static/media/images/urais-kitchen-accessability-test.jpg)
+- No errors found.
+
 
 - [Back to the top](#urais-thai-kitchen)
 
