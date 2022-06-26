@@ -30,7 +30,6 @@ class Dessert(models.Model):
 class Comment(models.Model):
     body = models.TextField()
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE, default=1)
-    comment_writer = models.ManyToManyField(User)
 
     def __str__(self):
         return self.meal.title
