@@ -22,7 +22,8 @@
                 {% csrf_token %}
 
                 {{ form.body }}
-
+                <input type="hidden" name="dessert_comment_writer" value="{{ request.user.id }}"
+                    id="dessert_comment_writer">
                 <input class="save-button" type="submit" value="Save">
             </form>
 
