@@ -22,7 +22,7 @@
                 {% if comments %}
                 {% for comment in comments %}
 
-                <p> - {{ comment.body }} - </p>
+                <p> - {{ comment.comment }} - </p>
                 {% if request.user == comment.dessert_comment_writer %}
                 <div class="dessert-edit-delete">
                     <a href="{% url 'dessert_comment_update' comment.pk dessert.pk %} ">Edit</a>

@@ -5,24 +5,24 @@ from django import forms
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('body', 'comment_writer')
+        fields = ('comment', 'comment_writer')
 
         widgets = {
 
-            'body': forms.Textarea(attrs={
+            'comment': forms.Textarea(attrs={
                 'class': 'form-control', 'placeholder': 'Comment here.....'}),
-                'comment_writer': forms.HiddenInput()
+            'comment_writer': forms.HiddenInput()
         }
 
 
 class DessertCommentForm(forms.ModelForm):
     class Meta:
         model = DessertComment
-        fields = ('body', 'dessert_comment_writer')
+        fields = ('comment', 'dessert_comment_writer')
 
         widgets = {
 
-            'body': forms.Textarea(attrs={
+            'comment': forms.Textarea(attrs={
                 'class': 'form-control', 'placeholder': 'Comment here.....'}),
-                'dessert_comment_writer': forms.HiddenInput()
+            'dessert_comment_writer': forms.HiddenInput()
         }

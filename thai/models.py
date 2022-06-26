@@ -28,7 +28,7 @@ class Dessert(models.Model):
 
 
 class Comment(models.Model):
-    body = models.TextField()
+    comment = models.TextField()
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE, default=1)
     comment_writer = models.ForeignKey(User, on_delete=models.CASCADE)
 
@@ -37,7 +37,7 @@ class Comment(models.Model):
 
 
 class DessertComment(models.Model):
-    body = models.TextField()
+    comment = models.TextField()
     dessert = models.ForeignKey(Dessert, on_delete=models.CASCADE, default=1)
     dessert_comment_writer = models.ForeignKey(User, on_delete=models.CASCADE)
 

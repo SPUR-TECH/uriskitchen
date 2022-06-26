@@ -12,15 +12,15 @@ class DessertAdmin(admin.ModelAdmin):
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-class DessertComments(admin.ModelAdmin):
-    list_display = ('dessert.title', 'body')
+class DessertCommentsAdmin(admin.ModelAdmin):
+    list_display = ('dessert', 'comment', 'dessert_comment_writer')
 
 
-class Comments(admin.ModelAdmin):
-    list_display = ('meal.title', 'body')
+class CommentsAdmin(admin.ModelAdmin):
+    list_display = ('meal', 'comment', 'comment_writer')
 
 
-admin.site.register(Comment)
-admin.site.register(DessertComment)
+admin.site.register(Comment, CommentsAdmin)
+admin.site.register(DessertComment, DessertCommentsAdmin)
 admin.site.register(Dessert, DessertAdmin)
 admin.site.register(Meal, MealAdmin)

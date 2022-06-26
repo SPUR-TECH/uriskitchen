@@ -22,7 +22,7 @@
                 {% if comments %}
                 {% for comment in comments %}
 
-                <p> - {{ comment.body }} - </p>
+                <p> - {{ comment.comment }} - </p>
 
                 <div class="meal-edit-delete">
                     {% if request.user == comment.comment_writer %}
