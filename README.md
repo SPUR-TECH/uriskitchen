@@ -48,8 +48,7 @@ https://uriskitchen.herokuapp.com/
 
 ## Welcome Reader,
 
-This is a description of this website and all It's workings which covers the main features and functions right through to bug fixes and deployment.
-
+This is a description of this website and all it's workings which covers the main features and functions right through to bug fixes and deployment.
 
 ---
 
@@ -131,14 +130,15 @@ As you can see it's fully responsive right across all devices and adapts to any 
     - An easy to read menu of both meals and desserts.
     - A clear description of each meal or dessert.
     - Easy food ordering process.
-    - Clear order info for next order
-    - Easy sign up, Log in and Log out system
+    - Clear order info for next order.
+    - Easy sign up, Log in and Log out system.
+    - A user must not be able to edit or delete anyone else's comments.
 
 - The UI/UX **should** address these:
     
     - Instructions on how to order if user is new to the page.
-    - Send an email of order confirmation
-    - Leave a comment 
+    - Send an email of order confirmation.
+    - Leave a comment.
     
 
 - [Back to the top](#urais-thai-kitchen)
@@ -235,7 +235,7 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 ![Meal comment page](static/media/images/meal-comment-page.jpg)
 
 ## When the user clicks the comment button on meal detail page.
-## When the user clicks the edit button the edit page is identical giving the user the ability to edit their previous comment.
+## When the user clicks the edit button the edit page is identical giving the user the ability to edit their previous comments.
 
  - [Back to the top](#urais-thai-kitchen)
 
@@ -285,7 +285,7 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 ![Sign up page](static/media/images/urais-kitchen-signup.jpg)
 
 1. The Sign up page has Username that cant match existing Usernames.
-2. Email address.
+2. Email address. (optional).
 3. Password.
 4. Confirm Password.
 5. Bank details section but only a demo as I think that will be in the next Project.
@@ -314,18 +314,18 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 
 ## Existing features:
 
-- consistent NAVBAR on all pages for ease of use
-- flowing background image and styling
-- flowing typography on all pages
-- Clear instructions to ordering
-- consistent footer on all pages
-- Authentication system to complete order
-    - Sign up page to insert personal details
-    - Log in page for quick access on returning users 
-    - Log out page to exit from site
-    - Leave, Edit or Delete a message
-- Authentication system to gain access to admin panel
-    - Log in as admin or staff member to gain access to Admin panel
+- consistent NAVBAR on all pages for ease of use.
+- flowing background image and styling.
+- flowing typography on all pages.
+- Clear instructions to ordering.
+- consistent footer on all pages.
+- Authentication system to complete order.
+    - Sign up page to insert personal details.
+    - Log in page for quick access on returning users .
+    - Log out page to exit from site.
+    - Leave, Edit or Delete a comment.
+- Authentication system to gain access to admin panel.
+    - Log in as admin or staff member to gain access to Admin panel.
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -333,10 +333,10 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 
 ## Features to be added in the future:
 
-- Email confirmation to user
-- Save order details if user wants to access an existing order
-- Add nutritional values to description details
-- Genuine payment method for real functioning site 
+- Email confirmation to user.
+- Save order details if user wants to access an existing order.
+- Add nutritional values to description details.
+- Genuine payment method for real functioning site.
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -354,7 +354,7 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 - I deployed the site early so I could physically check the media query has been coded correctly to have the responsive ability required.
 - I then ask friends and family to use the site with no instruction to see from a different perspective and ideas from real people for bug hunting and improvements.
 - Tests were made to ensure the role based user could add, delete or update the admin page successfully.
-- Tests were also made to ensure the user could add, delete or update their comments successfully.
+- Tests were also made to ensure the user could add, delete or update their comments successfully and not access any other comments made by others.
 - I then tested the site on Safari, Firefox and Chrome to make sure all was working correctly.
 
 - Testing sites accessability on https://wave.webaim.org/
@@ -448,16 +448,20 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
     - ## **BUG**... 
     - Issue comment,edit and delete function.
 - ## **FIX**... 
-    - I sort the help of tutor support which helped me set a pk: to id the comments, the edits and deleting capability.
-
+    - I sort the help of **David Callaghan** from the Slack group  who helped me set a pk: to id the comments, the edits and deleting capability.
+     - ## **BUG**... 
+    - The user could edit or delete anyone's comment.
+- ## **FIX**...
+    - I sort the help of **Thanh Skustad** from the Slack group and we attached the comment to the comment writer and hide the edit and delete buttons if not comment writer.
 ---
 
 - [Back to the top](#urais-thai-kitchen)
 
 # CREDITS:
 
-- ## A special thank you to Daniel Callaghan for helping me get around the issue of clearing the cart but keeping the success page.
-- ## Also my mentor Jack_Mentor for advancing my abilities in the Git terminal.
+- ## A MASSIVE thank you to **Thanh Skustad** for helping me get around the issue of attaching a comment to the comment writer and hiding the edit and delete buttons if not comment writer.
+- ## A special thank you to **Daniel Callaghan** for helping me get around the issue of clearing the cart but keeping the success page and linking comments and editing capabilities.
+- ## Also my mentor **Jack_Mentor** for advancing my abilities in the Git terminal.
 - ## And the Slack guys and all family and fiends for taking the time to review my site.
 
 ---
