@@ -20,7 +20,7 @@
                 {% csrf_token %}
                 {{ form }}
                 <button type="submit" class="btn-danger pb-1">Delete</button>
-                <a href="{% url 'dessert_view' %}" class="btn-secondary p-1 pb-2">Cancel</a>
+                <a href="{% url 'dessert_detail' pk=comment.dessert.pk %}" class="btn-secondary p-1 pb-2">Cancel</a>
             </form>
             <div class="col-md-4"></div>
         </div>

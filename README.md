@@ -60,7 +60,7 @@ It's also part of the Code Institute Fullstack Diploma Course and in this partic
 
 I've given the user the ability to C.R.U.D. Create an order, Read back they,re order, Update it at any point until final purchase and of course Delete any items from that order until final purchase and leave a comment that can also be updated or deleted.
 
-I've also added special role based authentication to a staff user to gain full access the admin section which again brings in the C.R.U.D. functionality to life.
+I've also added special role based authentication via Admin to a staff user to gain full access the Admin section which again brings the C.R.U.D. functionality to life.
 
 - [Back to the top](#urais-thai-kitchen)
 
@@ -77,7 +77,7 @@ As you can see it's fully responsive right across all devices and adapts to any 
 
 ---
 
-## User stories in an Agile methodology:
+## User stories in an Agile methodology to construct the site and all it's functionality:
 
 ### This shows the structure of what went into the project:
 
@@ -353,8 +353,9 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 - I made sure that all buttons to delete item and any other buttons are removed in the success page.
 - I deployed the site early so I could physically check the media query has been coded correctly to have the responsive ability required.
 - I then ask friends and family to use the site with no instruction to see from a different perspective and ideas from real people for bug hunting and improvements.
-- Tests were made to ensure the role based user could add, delete or update the admin page successfully.
+- Tests were made to ensure the role based user could add, delete or update the menus, users  and comments in the admin page successfully.
 - Tests were also made to ensure the user could add, delete or update their comments successfully and not access any other comments made by others.
+- I tested the responsiveness through all screen sizes.
 - I then tested the site on Safari, Firefox and Chrome to make sure all was working correctly.
 
 - Testing sites accessability on https://wave.webaim.org/

@@ -7,28 +7,29 @@ from .models import Meal, Dessert, Comment, DessertComment
 from .forms import CommentForm, DessertCommentForm
 
 
-# Home page view
-
 def home_view(request):
+    """Home page view function
+    """
     return render(request, "thai/index.html")
 
 
-# Meal detail view shows comments and edit buttons
-
 class mealDetailView(DetailView):
+    """Meal detail view shows comments and edit buttons
+    """
     model = Meal
     context_object_name = 'meal'
 
     def get_context_data(self, **kwargs):
+        """ receives and filters the comment data
+        """
         context = super().get_context_data(**kwargs)
-        pk = self.kwargs['pk']
         context['comments'] = Comment.objects.filter(meal=self.object)
         return context
 
 
-# Meal view shows Meal menu page
-
 def meal_view(request):
+    """Meal view shows Meal menu page
+    """
     request.session.set_expiry(0)
     template = "thai/meal.html"
     meal_objects = Meal.objects.all()
@@ -37,22 +38,25 @@ def meal_view(request):
     return render(request, template, context)
 
 
-# Dessert detail view shows Dessert detail and comments and edit buttons
-
 class dessertDetailView(DetailView):
+    """dessert detail view displays the details and comments
+        of the dessert selected
+    """
     model = Dessert
     context_object_name = 'dessert'
 
     def get_context_data(self, **kwargs):
+        """ receives and filters the comment data
+        """
         context = super().get_context_data(**kwargs)
-        pk = self.kwargs['pk']
-        context['comments'] = DessertComment.objects.filter(dessert=self.object)
+        context['comments'] = DessertComment.objects.filter(
+            dessert=self.object)
         return context
 
 
-# Dessert view shows Dessert menu page
-
 def dessert_view(request):
+    """Dessert view shows Dessert menu page
+    """
     request.session.set_expiry(0)
     template = "thai/dessert.html"
     dessert_objects = Dessert.objects.all()
@@ -61,87 +65,104 @@ def dessert_view(request):
     return render(request, template, context)
 
 
-# Meal comments form
-
 class commentCreateView(LoginRequiredMixin, CreateView):
+    """Meal comments form
+    """
     model = Comment
     context_object_name = 'comment'
     form_class = CommentForm
 
     def form_valid(self, form):
+        """Assign Primary Key if form is valid
+        """
         form.instance.meal = Meal.objects.get(pk=self.kwargs['pk'])
         return super().form_valid(form)
 
     def get_success_url(self):
+        """Redirect to Meal Detail page
+        """
         pk = self.kwargs['pk']
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
-# Meal comments edit button
-
 class commentUpdateView(LoginRequiredMixin, UpdateView):
+    """Meal comments editing function
+    """
     model = Comment
     context_object_name = 'comment'
     form_class = CommentForm
 
     def get_success_url(self):
+        """Redirect to Meal Detail page
+        """
         pk = self.kwargs['id']
         return reverse_lazy('meal_detail', kwargs={'pk': pk})
 
 
-# Meal comments delete button
-
 class commentDeleteView(LoginRequiredMixin, DeleteView):
+    """Meal comments deleting function
+    """
     model = Comment
+    context_object_name = 'comment'
 
     def get_success_url(self):
-        pk = self.kwargs['id']
+        """Redirect to Meal Detail page
+        """
         return reverse_lazy('meal_detail', kwargs={'pk': self.object.meal.pk})
 
 
-# Dessert comments form
-
 class dessertCommentCreateView(LoginRequiredMixin, CreateView):
+    """Dessert comments form
+    """
     model = DessertComment
     context_object_name = 'comment'
     form_class = DessertCommentForm
 
     def form_valid(self, form):
+        """Assign Primary Key if form is valid
+        """
         form.instance.dessert = Dessert.objects.get(pk=self.kwargs['pk'])
         return super().form_valid(form)
 
     def get_success_url(self):
+        """Redirect to Dessert Detail page
+        """
         pk = self.kwargs['pk']
         return reverse_lazy('dessert_detail', kwargs={'pk': pk})
 
 
-# Dessert comments edit button
-
 class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
+    """Dessert comments editing function
+    """
     template = "thai/dessertcomment_update.html"
     model = DessertComment
     context_object_name = 'comment'
     form_class = DessertCommentForm
 
     def get_success_url(self):
-        pk = self.kwargs['id']
-        return reverse_lazy('dessert_detail', kwargs={'pk': self.object.dessert.pk})
+        """Redirect to Dessert Detail page
+        """
+        return reverse_lazy('dessert_detail', kwargs={
+            'pk': self.object.dessert.pk})
 
-
-# Dessert comments delete button
 
 class dessertCommentDeleteView(LoginRequiredMixin, DeleteView):
+    """Dessert comments delete function
+    """
     model = DessertComment
+    context_object_name = 'comment'
 
     def get_success_url(self):
-        pk = self.kwargs['id']
-        return reverse_lazy('dessert_detail', kwargs={'pk': self.object.dessert.pk})
+        """Redirect to Dessert Detail page
+        """
+        return reverse_lazy('dessert_detail', kwargs={
+            'pk': self.object.dessert.pk})
 
-
-# Cart page
 
 @csrf_exempt
 def cart_view(request):
+    """Cart view displays the shopping cart page
+    """
     request.session.set_expiry(0)
     if request.is_ajax():
         request.session['order'] = request.POST.get('orders')
@@ -150,27 +171,27 @@ def cart_view(request):
     return render(request, template, context)
 
 
-# Sign up page
-
 def signup_view(request):
+    """Sign up view function displays the sign up page
+    """
     template = "account_signup.html"
     context = {'active_link': 'signup'}
     print('signup_view called')
     return render(request, template, context)
 
 
-# Login page
-
 def login_view(request):
+    """Login view function displays the Login page
+    """
     template = "account_login.html"
     context = {'active_link': 'login'}
     print('login_view called')
     return render(request, template, context)
 
 
-# Success shown after order completion
-
 def success_view(request):
+    """Success view function displays the Success page
+    """
     order = request.session['order']
     template = "thai/success.html"
     total = request.session.get('total')

@@ -2,21 +2,27 @@ from django.contrib import admin
 from .models import Meal, Dessert, Comment, DessertComment
 
 
-# @admin.register(Meal)
 class MealAdmin(admin.ModelAdmin):
+    """Meal menu in admin area
+    """
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
-# @admin.register(Dessert)
 class DessertAdmin(admin.ModelAdmin):
+    """Dessert menu in admin area
+    """
     list_display = ('title', 'price_Medium', 'price_Large')
 
 
 class DessertCommentsAdmin(admin.ModelAdmin):
+    """Dessert comments in admin area
+    """
     list_display = ('dessert', 'comment', 'dessert_comment_writer')
 
 
 class CommentsAdmin(admin.ModelAdmin):
+    """Meal comments in admin area
+    """
     list_display = ('meal', 'comment', 'comment_writer')
 
 
