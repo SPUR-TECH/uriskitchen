@@ -44,8 +44,8 @@
 </head>
 
 <body>
-
     <div id="overlay-home"></div>
+
     <nav class="navbar navbar-expand-sm navbar-dark">
         <!-- Brand/logo -->
         <a class="navbar-brand mr-4" href="{% url 'home_view' %}">
@@ -69,21 +69,20 @@
             {% endif %}
 
             <li class="nav-item ml-2 mt-3 mr-4">
-
-                <a href="{% url 'cart_view' %}" name="cart"
-                    class="nav-link {% if active_link == 'cart' %}active{% endif %}">
+                <a href="{% url 'cart_view' %}" class="nav-link {% if active_link == 'cart' %}active{% endif %}">
                     <img src="https://res.cloudinary.com/dnczeth0j/image/upload/c_scale,w_30/v1651084569/static/images/icons8-shopping-cart-48_1_uxuqae.png"
                         alt="shopping cart"> <span id="cart"></span></a>
             </li>
         </ul>
 
-        <button class="navbar-toggler" type="button" aria="collapse" input="collapse" value="collapse"
-            data-toggle="collapse" data-target="#mynav" aria-controls="mynav">
+        <button class="navbar-toggler" type="button" value="collapse" data-toggle="collapse" data-target="#mynav"
+            aria-controls="mynav">
             <span class="navbar-toggler-icon">menu</span>
         </button>
+
         <div class="collapse navbar-collapse text-right" id="mynav">
             <!-- Links -->
-            <ul class="navbar-nav" class="col-sm-12">
+            <ul class="navbar-nav col-sm-12">
                 <li class="nav-item mt-1">
                     <a class="nav-link {% if active_link == 'index' %}active{% endif %}" aria-current="page"
                         href="{% url 'home_view' %}">HOME</a>
@@ -97,7 +96,6 @@
                         href="{% url 'dessert_view' %}">DESSERTS</a>
                 </li>
             </ul>
-
         </div>
     </nav>
 

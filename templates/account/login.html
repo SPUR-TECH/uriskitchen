@@ -36,9 +36,9 @@
           {% endif %}
         </div>
         <div class="login-buttons">
-          <button type="submit" class="btn-info pb-1 mr-2">Log in</button>
+          <a class="btn-info pb-1 mr-2" href="{% url 'account_signup' %}">Log in</a>
           <h3>or</h3>
-          <a href="{% url 'account_signup' %}" class="btn-info pb-2 pl-2 pr-2 pt-1 ml-2">Sign
+          <a href="{% url 'account_signup' %}" class="btn-info ml-2">Sign
             up</a>
         </div>
       </form>
