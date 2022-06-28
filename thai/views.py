@@ -22,6 +22,7 @@ class mealDetailView(DetailView):
     def get_context_data(self, **kwargs):
         """ receives and filters the comment data
         """
+        pk = self.kwargs['pk']
         context = super().get_context_data(**kwargs)
         context['comments'] = Comment.objects.filter(meal=self.object)
         return context
@@ -49,6 +50,7 @@ class dessertDetailView(DetailView):
         """ receives and filters the comment data
         """
         context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
         context['comments'] = DessertComment.objects.filter(
             dessert=self.object)
         return context
@@ -108,6 +110,7 @@ class commentDeleteView(LoginRequiredMixin, DeleteView):
     def get_success_url(self):
         """Redirect to Meal Detail page
         """
+        pk = self.kwargs['id']
         return reverse_lazy('meal_detail', kwargs={'pk': self.object.meal.pk})
 
 
@@ -142,6 +145,7 @@ class dessertCommentUpdateView(LoginRequiredMixin, UpdateView):
     def get_success_url(self):
         """Redirect to Dessert Detail page
         """
+        pk = self.kwargs['id']
         return reverse_lazy('dessert_detail', kwargs={
             'pk': self.object.dessert.pk})
 
@@ -155,6 +159,7 @@ class dessertCommentDeleteView(LoginRequiredMixin, DeleteView):
     def get_success_url(self):
         """Redirect to Dessert Detail page
         """
+        pk = self.kwargs['id']
         return reverse_lazy('dessert_detail', kwargs={
             'pk': self.object.dessert.pk})
 
