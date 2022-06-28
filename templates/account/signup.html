@@ -52,11 +52,10 @@
             <textarea name="Delivery Address" placeholder="Delivery Address" aria-label="address area"
               id="delvery-address" required cols="30" rows="10"></textarea>
           </div>
-          <div class="login-buttons">
-            <a href="{% url 'account_signup' %}" class="btn-info pb-1 mr-2">Sign
-              up</a>
+          <div class="signup-buttons">
+            <button type="submit" class="btn-info pb-1 mr-2">SignUp</button>
             <h3>or</h3>
-            <a class="btn-info ml-2" href="{% url 'account_signup' %}">Log in</a>
+            <a href="{% url 'account_login' %}" class="btn-info pb-2 pl-2 pr-2 pt-1 ml-2">Login</a>
           </div>
         </div>
       </form>

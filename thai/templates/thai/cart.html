@@ -28,11 +28,11 @@
                 </div>
                 {% else %}
                 <div class="row sign-buttons">
-                    <a class="btn-info mr-4 mt-3" href="{% url 'account_login' %}">Log
-                        in</a>
+                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mr-4 mt-3">Log
+                            in</button></a>
                     <h3>or</h3>
-                    <a class="btn-info ml-4 mt-3" href="{% url 'account_signup' %}">Sign
-                        up</a>
+                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info ml-4 mt-3">Sign
+                            up</button></a>
                 </div>
                 {% endif %}
             </div>
