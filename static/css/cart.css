@@ -47,6 +47,12 @@ li {
     font-weight: 600;
 }
 
+.sign-buttons a {
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .del:hover {
     cursor: pointer;
 }

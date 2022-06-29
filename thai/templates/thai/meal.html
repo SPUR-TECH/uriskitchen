@@ -33,19 +33,19 @@
                     <fieldset>
                         <legend></legend>
                         <div class="form-check-inline color-info ">
-                            <label class=" form-check-label">
+                            <div class=" form-check-label">
                                 <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
                                     value="{{ meal.price_Medium }}" checked>
-                                <p class="price">( M ) £{{ meal.price_Medium }}</p>
-                            </label>
+                                <h5 class="price">( M ) £{{ meal.price_Medium }}</h5>
+                            </div>
                         </div>
 
                         <div class="form-check-inline">
-                            <label class=" form-check-label">
+                            <div class=" form-check-label">
                                 <input class="form-check-input" type="radio" name="meal{{ meal.id }}"
                                     value="{{ meal.price_Large }}">
-                                <p class="price">( L ) £{{ meal.price_Large }}</p>
-                            </label>
+                                <h5 class="price">( L ) £{{ meal.price_Large }}</h5>
+                            </div>
                         </div>
 
                         <a href="{% url 'meal_detail' meal.pk %}">
@@ -72,17 +72,16 @@
 
                 {% if user.is_authenticated %}
                 <div class="complete-order">
-                    <a href="{% url 'cart_view' %}">
-                        <button type="submit" class="submit btn-info mt-3 pb-1" onclick="order()">Go to
-                            Cart</button></a>
+                    <a href="{% url 'cart_view' %}" class="submit btn-info mt-3 pb-1 pl-2 pr-2">Go to
+                        Cart</a>
                 </div>
                 {% else %}
                 <div class="row sign-buttons">
-                    <a href="{% url 'account_login' %}"><button type="submit" class="btn-info mr-4 mt-3">Log
-                            in</button></a>
+                    <a href="{% url 'account_login' %}" class="btn-info mr-4 mt-3">Log
+                        in</a>
                     <h3>or</h3>
-                    <a href="{% url 'account_signup' %}"><button type="submit" class="btn-info ml-4 mt-3">Sign
-                            up</button></a>
+                    <a href="{% url 'account_signup' %}" class="btn-info ml-4 mt-3">Sign
+                        up</a>
                 </div>
                 {% endif %}
             </div>

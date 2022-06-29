@@ -356,6 +356,12 @@ All fonts were used from https://fonts.google.com/ and they were Red Hat Display
 - Tests were made to ensure the role based user could add, delete or update the menus, users  and comments in the admin page successfully.
 - Tests were also made to ensure the user could add, delete or update their comments successfully and not access any other comments made by others.
 - I tested the responsiveness through all screen sizes.
+- Every page was put through the W3C HTML Validation checker and after working through all that was marked up the code as absolutely no errors or warnings.
+![W3C HTML Validation results](static/media/images/urais-kitchen-w3c-validation.jpg)
+- Every CSS page was put through the W3C CSS Validation checker with no errors or warnings.
+![W3C CSS Validation results](static/media/images/urais-kitchen-w3c-css-validation.jpg)
+- Every JS page was put through the JSHint Validation checker as it is an animation I'm returning a condition rather than an assignment so it shows as a warning but it's all ok.
+![JSHint javascript Validation results](static/media/images/urais-kitchen-jshint-validation.jpg)
 - I then tested the site on Safari, Firefox and Chrome to make sure all was working correctly.
 
 - Testing sites accessability on https://wave.webaim.org/

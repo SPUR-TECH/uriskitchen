@@ -92,8 +92,9 @@
 
 .price {
     color: rgb(86, 196, 36);
+    font-size: 15px;
     background-color: black;
-    width: 100px;
+    width: 80px;
     border-radius: 50%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -316,5 +317,9 @@ h3 {
 
     .item-description {
         margin: 0px;
+    }
+
+    .price {
+        font-size: 12px;
     }
 }

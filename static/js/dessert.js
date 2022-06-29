@@ -36,7 +36,7 @@ function addDessert(dessertid) {
 
     // Update items in cart
 
-    var cart = document.querySelector("#cart")
+    var cart = document.querySelector("#cart");
     cart.innerHTML = orders.length;
 
     var dessertcart = document.querySelector('#dessertcart');

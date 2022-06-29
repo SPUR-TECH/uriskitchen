@@ -2,23 +2,29 @@
 
 // // CREDIT TO TRAVERSY MEDIA FOR THE ANIMATION
 
-const loader = document.querySelector('.loader');
-const success_title = document.querySelector('.success-cart h1');
-const success_title2 = document.querySelector('.success-cart h2');
-const success_email = document.querySelector('.success-email');
+var loader = document.querySelector('.loader');
+var success_title = document.querySelector('.success-cart h1');
+var success_title2 = document.querySelector('.success-cart h2');
+var success_email = document.querySelector('.success-email');
 
 // Animation function
 function init() {
-    setTimeout(() => {
+    setTimeout(function () {
         loader.style.opacity = 0;
         loader.style.display = 'none';
 
         success_title.style.display = 'block';
         success_title2.style.display = 'block';
         success_email.style.display = 'block';
-        setTimeout(() => (success_email.style.opacity = 1), 2000);
-        setTimeout(() => (success_title.style.opacity = 1), 50);
-        setTimeout(() => (success_title2.style.opacity = 1), 2000);
+        setTimeout(function () {
+            return success_email.style.opacity = 1;
+        }, 2000);
+        setTimeout(function () {
+            return success_title.style.opacity = 1;
+        }, 50);
+        setTimeout(function () {
+            return success_title2.style.opacity = 1;
+        }, 2000);
     }, 4000);
 }
 
@@ -30,7 +36,7 @@ function successCart() {
     var total = localStorage.getItem('total');
     var cartSize = orders.length;
     successcart.innerHTML = '';
-    for (let i = 0; i < cartSize; i++) {
+    for (var i = 0; i < cartSize; i++) {
         remove = '<div <button class="success-del" onclick="removeMeal(' + i + ')">X</button></div>';
         successcart.innerHTML += '<li>' + orders[i][0] + ': ' + orders[i][1] + ' £' + orders[i][2] + ' ' + remove + '</li>';
     }
@@ -46,4 +52,4 @@ function clearOrder() {
     document.querySelector('#cart').innerHTML = '0';
 }
 
-const emptyBasket = setTimeout(clearOrder, 50)
+var emptyBasket = setTimeout(clearOrder, 50);
